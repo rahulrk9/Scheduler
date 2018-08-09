@@ -1,0 +1,14 @@
+<application-j2ee-engine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <provider-name>sap.com</provider-name>
+  <reference reference-type="hard">
+    <reference-target provider-name="sap.com" target-type= "service">
+           scheduler~runtime
+    </reference-target>
+  </reference>
+  <modules-additional>
+    <module>
+      <entry-name>kmd.dk~sftpejbtest.jar</entry-name>
+      <container-type>scheduler~container</container-type>
+    </module>
+  </modules-additional>
+</application-j2ee-engine>

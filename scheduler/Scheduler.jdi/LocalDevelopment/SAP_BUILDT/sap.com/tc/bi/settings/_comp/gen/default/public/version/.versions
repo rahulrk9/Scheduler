@@ -1,0 +1,24 @@
+# the "allowed" JDK versions for this plugins
+# this is legacy and only kept here for plugin handler v1 (6.40SP12 and earlier)
+jdk1=JDK1.4.2
+jdk2=JDK1.3.1
+jdk3=JDK1.4
+
+# the Jars which are needed for compilation
+# this is legacy and only kept here for plugin handler v1 (6.40SP12 and earlier)
+JDK1.3.1=lib/tools.jar
+JDK1.4.2=lib/tools.jar
+JDK1.4=lib/tools.jar
+
+# version info that is used e.g. to create provider.xml files.
+plugins.major-version=7
+plugins.minor-version=10
+plugins.micro-version=0
+
+# flag that separate i18n folder in the root directory of a DC is supported
+# for xlf-files.
+com.sap.separate-i18n-folder-support=true
+
+com.sap.j2ee.application-xml.doctype-system=http://java.sun.com/dtd/application_1_3.dtd
+com.sap.j2ee.application-xml.doctype-public=-//Sun Microsystems, Inc.//DTD J2EE Application 1.3//EN
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?> 
+<!-- 
+This is the default japro code classification file for JLin exclusions.
+It can be overwritten with a project or subproject local codeClassification.xml. 
+More info see http://bis.wdf.sap.corp:1080/twiki/bin/view/Techdev/JLinFAQ#4.4
+
+$Id: //buildenv/BE.JLin/cons/src/_tc~jtools~jlin~rt/pack/codeClassification.xml#1 $
+-->
+<codeClassification>
+   <!-- suppress JLin warnings for all known test-related technology folders -->
+   <classificationRule baseDirPattern=".*/test/java/.*" attributes="test" /> 
+   <classificationRule baseDirPattern=".*/junit/java/.*" attributes="test" /> 
+</codeClassification>
+

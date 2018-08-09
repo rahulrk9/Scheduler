@@ -1,0 +1,135 @@
+Development Component Build (2018-02-05 16:32:04 GMT+01:00 (CET))
+  Component name: ejbtest
+  Component vendor: demo.sap.com
+  SC compartment: MyComponents
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: Z8QRR@H46328
+  DC root folder: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\ejbtest\_comp\
+  DC type: J2EE
+  DC subtype: EJBModule
+  Host: H46328
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/ejbmodule"
+   validating dependency to  public part "archives" of DC "demo.sap.com/sftplib"
+   validating dependency to  public part "api" of DC "sap.com/com.sap.aii.af.lib.facade"
+   validating dependency to  public part "api" of DC "sap.com/tc/je/scheduler/api"
+   validating dependency to  public part "api" of DC "sap.com/com.sap.aii.af.svc.facade"
+   validating dependency to  public part "api" of DC "sap.com/engine.jee5.facade"
+   validating dependency to  public part "api" of DC "demo.sap.com/sftplib"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/ejbmodule
+   starting build plugin from : C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\ejbmodule\_comp\gen\default\public\ejb\
+
+
+
+Build Plugin 'EJBModulePlugin', Version 7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:47:10 +0200, CL206623)
+   development component:  ejbtest (demo.sap.com)
+      software component:  MyComponents (demo.sap.com)
+                location:  localDevelopment
+                    type:  J2EE, subtype EJBModule
+           build variant:  default
+         source location:  Z8QRR@H46328
+         output location:  C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\23DC6ECB26307FE832E16BD3FE857713\default
+       generation folder:  C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t\23DC6ECB26307FE832E16BD3FE857713
+       plugin start time:  2018-02-05 16:32:04 GMT+01:00 (CET)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.45-b01 (1.6, Sun Microsystems Inc.)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Package folder ".apt_generated" exists but is empty and will be ignored.
+Checking path lengths for sources
+Path length checks finished in 0.002 seconds
+ 
+Preparing data context..
+Using custom manifest file "ejbModule/META-INF/MANIFEST.MF"
+Data context preparation finished in 0.014 seconds
+ 
+Creating Ant build file..
+  Creating output file: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\23DC6ECB26307FE832E16BD3FE857713\default\logs\build.xml
+  Using Java class:     com.sap.tc.buildplugin.BuildEJBModule
+Build file creation finished in 0.024 seconds
+ 
+Starting Ant..
+  Using build file:     C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\23DC6ECB26307FE832E16BD3FE857713\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+compile:
+      [echo] Starting Java compiler using the current JVM
+      [echo] Settings:
+      [echo]         debug: on
+      [echo]      optimize: off
+      [echo]   deprecation: default
+      [echo]       verbose: default
+      [echo]      encoding: UTF-8
+      [echo]        source: default
+      [echo]        target: default
+      [echo]   source path: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\ejbtest\_comp\ejbModule
+      [echo]    class path:
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.svc.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.cpa.svc.filter.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.svc.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.svc.facade.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.svc.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.svc.filter.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.lib.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.lib.facade.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.lib.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.lib.filter.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.lib.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.sec.lib.filter.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\bcprov-jdk16-1.45.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\com.sap.security.api.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\com.sap.security_2.0.0.150324064358.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\com.sap.tc.security.https_2.0.0.150324064358.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\jsch-0.1.54.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\sap.com~tc~je~keystore_api~API.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\ec~java~jsf~api.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\engine.jee5.facade.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\orpersistence_client_lib_filtered.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\je\scheduler\api\_comp\gen\default\public\api\lib\java\tc~je~scheduler~api.jar
+      [echo]    output dir: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t\23DC6ECB26307FE832E16BD3FE857713\classes
+     [javac] Compiling 1 source file to C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t\23DC6ECB26307FE832E16BD3FE857713\classes
+     [timer] Java compilation finished in 0.179 seconds
+ 
+      [echo] Start XLF conversion
+  [xlf2prop] Found 0 XLF files to convert in folder "ejbModule"
+     [timer] XLF conversion finished in 0.001 seconds
+ 
+ 
+createPublicParts:
+  [pppacker] Packing public part 'client'
+  [pppacker] Nothing packed for public part 'client'
+     [timer] Packing of public part 'client' finished in 0.045 seconds
+ 
+  [pppacker] Packing public part 'ejbjar'
+  [pppacker] Packed   5 files for entity demo.sap.com~ejbtest (EJB-JAR)
+  [pppacker] Packed 1 entity for public part 'ejbjar'
+     [timer] Packing of public part 'ejbjar' finished in 0.097 seconds
+ 
+ 
+build:
+ 
+Ant runtime 0.346 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2018-02-05 16:32:05 GMT+01:00 (CET)
+Total build plugin runtime: 0.541 seconds
+ 
+Build finished with WARNING
+
+==== Post-Processing ====   started at 2018-02-05 16:32:05.214 CET
+Comparison of previous and actual build results took: 0.012 seconds
+
+Copy the build results 
+  from: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\23DC6ECB26307FE832E16BD3FE857713\default\
+  to:   C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\ejbtest\_comp\gen\default\
+
+The build results of the following public parts were not copied, since they have not changed:
+  ejbjar
+  client

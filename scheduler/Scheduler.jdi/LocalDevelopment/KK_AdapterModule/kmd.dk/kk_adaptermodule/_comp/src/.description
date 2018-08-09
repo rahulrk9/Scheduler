@@ -1,0 +1,9 @@
+#Software Component Description/null: (DC) kk_adaptermodule[kmd.dk] (Comp) KK_AdapterModule[kmd.dk]
+#Tue May 08 13:14:38 CEST 2018
+Name=KK_ADAPTERMODULE
+ElementTypeID=0
+PatchLevel=0
+GUID=fefdfca0-52b0-11e8-88bc-c5dbac1f2f51
+Version=1.0
+SupportPackage=0
+Vendor=kmd.dk

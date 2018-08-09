@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<development-component version="1.0.4"
+  xmlns:IDX="urn:sap.com:DevelopmentComponent:1.0"
+  xmlns="http://xml.sap.com/2002/11/DevelopmentComponent"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xml.sap.com/2002/11/DevelopmentComponent dcdef.xsd">
+  <name>tc/lm/sl/metamodel</name>
+  <vendor>sap.com</vendor>
+  <caption>DC wrapper for emf</caption>
+  <description></description>
+  <component-type>
+    <vendor>sap.com</vendor>
+    <type>Build Infrastructure Extension</type>
+  </component-type>
+  <access-control-list>
+    <!-- public access -->
+      <grant>
+        <dc-ref>
+          <name>*</name>
+          <vendor>*</vendor>
+        </dc-ref>
+      </grant>
+  </access-control-list>
+  <attributes>
+    <attribute>
+      <attribute-type>ACHAssignment</attribute-type>
+      <attribute-vendor>sap.com</attribute-vendor>
+      <attribute-value>BC-CCM-SLD</attribute-value>
+    </attribute>
+    <attribute>
+      <attribute-type>Project</attribute-type>
+      <attribute-vendor>sap.com</attribute-vendor>
+      <attribute-value>lm.authoring</attribute-value>
+    </attribute>
+    <attribute>
+      <attribute-type>Subproject</attribute-type>
+      <attribute-vendor>sap.com</attribute-vendor>
+      <attribute-value>_com.sap.lm.metamodel.slmodel.dcwrapper</attribute-value>
+    </attribute>
+  </attributes>
+</development-component>

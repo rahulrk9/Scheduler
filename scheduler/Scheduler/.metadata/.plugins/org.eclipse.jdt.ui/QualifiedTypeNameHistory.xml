@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.security.Key"/>
+<fullyQualifiedTypeName name="java.security.KeyStore"/>
+<fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+<fullyQualifiedTypeName name="java.security.cert.X509Certificate"/>
+<fullyQualifiedTypeName name="java.security.SecureRandom"/>
+<fullyQualifiedTypeName name="java.security.KeyPairGenerator"/>
+<fullyQualifiedTypeName name="java.io.StringWriter"/>
+<fullyQualifiedTypeName name="com.sap.security.core.server.ssf.SsfProfileKeyStore"/>
+<fullyQualifiedTypeName name="org.bouncycastle.openssl.PEMWriter"/>
+<fullyQualifiedTypeName name="com.sap.scheduler.runtime.JobParameter"/>
+<fullyQualifiedTypeName name="com.sap.aii.security.lib.KeyStoreManager"/>
+<fullyQualifiedTypeName name="com.sap.aii.security.lib.PermissionMode"/>
+<fullyQualifiedTypeName name="com.sap.aii.af.service.resource.SAPSecurityResources"/>
+<fullyQualifiedTypeName name="java.security.KeyStoreException"/>
+<fullyQualifiedTypeName name="com.sap.engine.interfaces.keystore.KeystoreManager"/>
+<fullyQualifiedTypeName name="java.security.PrivateKey"/>
+<fullyQualifiedTypeName name="com.sap.aii.af.lib.mp.module.Module"/>
+<fullyQualifiedTypeName name="com.sap.engine.interfaces.messaging.api.Message"/>
+<fullyQualifiedTypeName name="com.sap.engine.interfaces.messaging.api.MessageKey"/>
+<fullyQualifiedTypeName name="com.sap.engine.interfaces.messaging.api.Payload"/>
+<fullyQualifiedTypeName name="com.sap.engine.interfaces.messaging.api.PublicAPIAccessFactory"/>
+<fullyQualifiedTypeName name="com.sap.engine.interfaces.messaging.api.auditlog.AuditAccess"/>
+<fullyQualifiedTypeName name="com.sap.engine.interfaces.messaging.api.auditlog.AuditLogStatus"/>
+<fullyQualifiedTypeName name="com.sap.aii.af.lib.mp.module.ModuleLocal"/>
+<fullyQualifiedTypeName name="com.sap.aii.af.lib.mp.module.ModuleRemote"/>
+<fullyQualifiedTypeName name="com.sap.aii.af.lib.mp.module.ModuleHome"/>
+<fullyQualifiedTypeName name="com.sap.aii.af.lib.mp.module.ModuleLocalHome"/>
+</qualifiedTypeNameHistroy>

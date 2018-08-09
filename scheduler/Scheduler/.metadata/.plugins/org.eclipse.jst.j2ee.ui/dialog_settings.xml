@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="true" key="J2EE_EXPORT_OVERWRITE"/>
+	<item value="false" key="J2EE_EXPORT_SOURCE"/>
+	<list key="J2EE_EXPORT_JST_EAR">
+		<item value="C:\Users\z8qrr\Desktop\LocalDevelopment~sftpmodear~kmd.dk.ear"/>
+		<item value="C:\Users\z8qrr\Desktop\PI\Adapter Module\LocalDevelopment~sftpmodear~kmd.dk.ear"/>
+	</list>
+	<list key="J2EE_EXPORT_JST_EJB">
+		<item value="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_AdapterModule\kmd.dk\sftpmod\_comp\gen\default\public\ejbjar\src\java\LocalDevelopment~sftpmod~kmd.dk.jar"/>
+		<item value="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_AdapterModule\kmd.dk\sftpmod\_comp\LocalDevelopment~sftpmod~kmd.dk.jar"/>
+	</list>
+</section>

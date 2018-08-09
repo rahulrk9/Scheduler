@@ -1,0 +1,18 @@
+#macro (BytecodeModification)
+<project name="Postbuild" default="build" basedir=".">
+
+<property name="modifier_conf" value="${dc_rootDir}/cfg/bytecode-modifier.properties"/>
+
+<target name="build">
+<taskdef name="modify" classname="com.sap.engine.library.bytecode.modifier.ModifierTask"/>
+
+	#foreach($pp in $dc_public_parts)
+		#set( $myDestDir = "$ppdir/lib/java" )
+		#set ($jarName = "${dc_gen_publicDir}/${pp.Name}/lib/java/${dc_deployFile}~${pp.Name}.jar")
+
+	<modify inputFile="$jarName" outputFile="$jarName" conf="${modifier_conf}" verbosity="2" check="true" failonerror="true" />
+	#end
+
+</target>
+</project>
+#end

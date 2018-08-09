@@ -1,0 +1,124 @@
+Development Component Build (2018-05-08 15:43:53 GMT+01:00 (CEST))
+  Component name: sftptestear
+  Component vendor: kmd.dk
+  SC compartment: KK_SFTPMONITOR
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: Z8QRR@H46328
+  DC root folder: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftptestear\_comp\
+  DC type: J2EE
+  DC subtype: Enterprise Application
+  Host: H46328
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/enterpriseApplication"
+   validating dependency to  public part "ejbjar" of DC "kmd.dk/sftpejbtest"
+   validating dependency to used DC "kmd.dk/sftplib"
+   validating dependency to  public part "api" of DC "kmd.dk/sftplib"
+   validating dependency to  public part "archives" of DC "kmd.dk/sftplib"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/enterpriseApplication
+   starting build plugin from : C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\enterpriseApplication\_comp\gen\default\public\enterpriseApplication\
+
+
+
+Build Plugin 'EnterpriseApplicationPlugin', Version 7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:11 +0200, CL206623)
+   development component:  sftptestear (kmd.dk)
+      software component:  KK_SFTPMONITOR (kmd.dk)
+                location:  localDevelopment
+                    type:  J2EE, subtype Enterprise Application
+           build variant:  default
+         source location:  Z8QRR@H46328
+         output location:  C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\44BF65AFC2BDE54D3F4D791FFF6616F8\default
+       generation folder:  C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t\44BF65AFC2BDE54D3F4D791FFF6616F8
+       plugin start time:  2018-05-08 15:43:53 GMT+02:00 (CEST)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.45-b01 (1.6, Sun Microsystems Inc.)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Checking path lengths for sources
+Path length checks finished in 0 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.014 seconds
+ 
+Creating Ant build file..
+  Creating output file: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\44BF65AFC2BDE54D3F4D791FFF6616F8\default\logs\build.xml
+  Using Java class:     com.sap.tc.buildplugin.BuildEnterpriseApplication
+Target "createDeployArchive" has a dependency on "compile" but no such target exists. Dependency will be ignored.
+Build file creation finished in 0.025 seconds
+ 
+Starting Ant..
+  Using build file:     C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\44BF65AFC2BDE54D3F4D791FFF6616F8\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+createDeployArchive:
+       [cdu] Preparing archive for deploy unit "default"
+       [cdu]   deployment type: "J2EE"
+       [cdu] Runtime dependency to "sftplib" ("kmd.dk") will be ignored because of an incompatible type.
+       [cdu] Deploy-time dependency to "sftplib" ("kmd.dk") will be ignored because of an incompatible type.
+ 
+       [cdu] Creating Ant build file: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\44BF65AFC2BDE54D3F4D791FFF6616F8\default\logs\buildDeployArchive.xml
+ 
+       [cdu] Creating descriptor META-INF/sda-dd.xml ...
+ 
+       [cdu] Validating descriptor C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftptestear\_comp\META-INF\application.xml
+       [cdu] Display name "LocalDevelopment~sftptestear~kmd.dk" in application.xml does not match DC name "sftptestear".
+ 
+       [cdu] Validating descriptor C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftptestear\_comp\META-INF\application-j2ee-engine.xml
+       [cdu] Changing provider name "sap.com" with "kmd.dk".
+       [cdu] No component dependency exists for reference to "scheduler~runtime" (sap.com).
+ 
+       [cdu] Collecting modules ...
+       [cdu] Adding module 'kmd.dk~sftpejbtest.jar' from DC 'sftpejbtest' (vendor 'kmd.dk'), public part 'ejbjar'
+       [cdu] Adding module 'bcprov-jdk16-1.45.jar' from DC 'sftplib' (vendor 'kmd.dk'), public part 'archives'
+       [cdu] Adding module 'com.sap.aii.af.lib.mod.jar' from DC 'sftplib' (vendor 'kmd.dk'), public part 'archives'
+       [cdu] Adding module 'com.sap.aii.af.ms.ifc_api.jar' from DC 'sftplib' (vendor 'kmd.dk'), public part 'archives'
+       [cdu] Adding module 'com.sap.aii.af.svc_api.jar' from DC 'sftplib' (vendor 'kmd.dk'), public part 'archives'
+       [cdu] Adding module 'com.sap.security.api.jar' from DC 'sftplib' (vendor 'kmd.dk'), public part 'archives'
+       [cdu] Adding module 'com.sap.security_2.0.0.150324064358.jar' from DC 'sftplib' (vendor 'kmd.dk'), public part 'archives'
+       [cdu] Adding module 'com.sap.tc.security.https_2.0.0.150324064358.jar' from DC 'sftplib' (vendor 'kmd.dk'), public part 'archives'
+       [cdu] Adding module 'jsch-0.1.54.jar' from DC 'sftplib' (vendor 'kmd.dk'), public part 'archives'
+       [cdu] Adding module 'sap.com_tc_logging_java_impl.jar' from DC 'sftplib' (vendor 'kmd.dk'), public part 'archives'
+       [cdu] Adding module 'sap.com~tc~je~keystore_api~API.jar' from DC 'sftplib' (vendor 'kmd.dk'), public part 'archives'
+       [cdu] Multiple assemblies from component sftplib (kmd.dk) detected.
+       [cdu] Missing deploy-time dependency for hard runtime reference to "scheduler~runtime" (vendor "sap.com").
+       [cdu] Ant build file creation finished in 0.111 seconds
+ 
+packDeployArchive:
+ [srcpacker] Creating source archive
+ [srcpacker] Adding source archive from kmd.dk~sftpejbtest
+     [timer] Source archive creation finished in 0.055 seconds
+ 
+    [jarsap] Info: JarSAP version 20090803.1000
+    [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
+    [jarsap] Building: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\44BF65AFC2BDE54D3F4D791FFF6616F8\default\deploy\kmd.dk~sftptestear.ear with compression
+     [timer] JarSAP finished in 0.312 seconds
+ 
+ 
+build:
+ 
+Ant runtime 0.556 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2018-05-08 15:43:54 GMT+02:00 (CEST)
+Total build plugin runtime: 0.783 seconds
+ 
+Build finished with WARNING
+
+==== Post-Processing ====   started at 2018-05-08 15:43:54.178 CEST
+Comparison of previous and actual build results took: 0 seconds
+
+Copy the build results 
+  from: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\44BF65AFC2BDE54D3F4D791FFF6616F8\default\
+  to:   C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftptestear\_comp\gen\default\

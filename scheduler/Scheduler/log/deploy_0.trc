@@ -1,0 +1,1811 @@
+<!--LOGHEADER[START]/-->
+<!--HELP[Manual modification of the header may cause parsing problem!]/-->
+<!--LOGGINGVERSION[2.0.7.1006]/-->
+<!--NAME[C:/Work Related/Workspaces/Scheduler\log\deploy_%g.trc]/-->
+<!--PATTERN[deploy_%g.trc]/-->
+<!--FORMATTER[com.sap.tc.logging.TraceFormatter(%25d[%6s]:%m)]/-->
+<!--ENCODING[UTF8]/-->
+<!--FILESET[0, 5, 2097152]/-->
+<!--PREVIOUSFILE[deploy_4.trc]/-->
+<!--NEXTFILE[deploy_1.trc]/-->
+<!--LOGHEADER[END]/-->
+Nov 15, 2017 2:51:35 PM  [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@10e4b5] [com.sap.tc.logging.Location@1173264].
+Nov 15, 2017 2:51:35 PM  [Info  ]: [#0]: Will try to connect []:[-1]
+Nov 15, 2017 2:51:37 PM  [Info  ]: [#0]: Connected to []:[-1]
+Nov 15, 2017 2:51:38 PM  [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@10e4b5] [com.sap.tc.logging.Location@1173264].
+Nov 15, 2017 2:51:38 PM  [Info  ]: [#1]: Will try to connect []:[-1]
+Nov 15, 2017 2:51:38 PM  [Info  ]: [#1]: Connected to []:[-1]
+Nov 15, 2017 2:51:41 PM  [Info  ]: [#1]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 15, 2017 2:51:42 PM  [Info  ]: [#1]: +++ Deployment of session ID [361] finished with status [Success] +++. [[ deployerId=1 ]] [[#5: 2.026 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 15, 2017 3:27:07 PM  [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@f02418] [com.sap.tc.logging.Location@1d1aa4a].
+Nov 15, 2017 3:27:07 PM  [Info  ]: [#0]: Will try to connect []:[-1]
+Nov 15, 2017 3:27:09 PM  [Info  ]: [#0]: Connected to []:[-1]
+Nov 15, 2017 3:27:10 PM  [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@f02418] [com.sap.tc.logging.Location@1d1aa4a].
+Nov 15, 2017 3:27:10 PM  [Info  ]: [#1]: Will try to connect []:[-1]
+Nov 15, 2017 3:27:10 PM  [Info  ]: [#1]: Connected to []:[-1]
+Nov 15, 2017 3:27:15 PM  [Info  ]: [#1]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 15, 2017 3:27:15 PM  [Info  ]: [#1]: +++ Deployment of session ID [362] finished with status [Success] +++. [[ deployerId=1 ]] [[#5: 4.044 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 15, 2017 3:30:06 PM  [Path  ]: [#2]: The Log was reinitialized with [com.sap.tc.logging.Category@f02418] [com.sap.tc.logging.Location@1d1aa4a].
+Nov 15, 2017 3:30:06 PM  [Info  ]: [#2]: Will try to connect []:[-1]
+Nov 15, 2017 3:30:07 PM  [Info  ]: [#2]: Connected to []:[-1]
+Nov 15, 2017 3:30:07 PM  [Path  ]: [#3]: The Log was reinitialized with [com.sap.tc.logging.Category@f02418] [com.sap.tc.logging.Location@1d1aa4a].
+Nov 15, 2017 3:30:07 PM  [Info  ]: [#3]: Will try to connect []:[-1]
+Nov 15, 2017 3:30:08 PM  [Info  ]: [#3]: Connected to []:[-1]
+Nov 15, 2017 3:30:10 PM  [Info  ]: [#3]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 15, 2017 3:30:10 PM  [Info  ]: [#3]: +++ Deployment of session ID [352] finished with status [Success] +++. [[ deployerId=2 ]] [[#12: 1.087 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 15, 2017 3:47:06 PM  [Path  ]: [#4]: The Log was reinitialized with [com.sap.tc.logging.Category@f02418] [com.sap.tc.logging.Location@1d1aa4a].
+Nov 15, 2017 3:47:06 PM  [Info  ]: [#4]: Will try to connect []:[-1]
+Nov 15, 2017 3:47:07 PM  [Info  ]: [#4]: Connected to []:[-1]
+Nov 15, 2017 3:47:07 PM  [Path  ]: [#5]: The Log was reinitialized with [com.sap.tc.logging.Category@f02418] [com.sap.tc.logging.Location@1d1aa4a].
+Nov 15, 2017 3:47:07 PM  [Info  ]: [#5]: Will try to connect []:[-1]
+Nov 15, 2017 3:47:08 PM  [Info  ]: [#5]: Connected to []:[-1]
+Nov 15, 2017 3:47:09 PM  [Info  ]: [#5]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 15, 2017 3:47:09 PM  [Info  ]: [#5]: +++ Deployment of session ID [363] finished with status [Success] +++. [[ deployerId=3 ]] [[#19: 0.747 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 15, 2017 3:55:11 PM  [Path  ]: [#6]: The Log was reinitialized with [com.sap.tc.logging.Category@f02418] [com.sap.tc.logging.Location@1d1aa4a].
+Nov 15, 2017 3:55:11 PM  [Info  ]: [#6]: Will try to connect []:[-1]
+Nov 15, 2017 3:55:12 PM  [Info  ]: [#6]: Connected to []:[-1]
+Nov 15, 2017 3:55:13 PM  [Info  ]: [#6]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 15, 2017 3:55:13 PM  [Info  ]: [#6]: +++ Deployment of session ID [353] finished with status [Success] +++. [[ deployerId=4 ]] [[#25: 0.833 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 15, 2017 4:15:56 PM  [Path  ]: [#7]: The Log was reinitialized with [com.sap.tc.logging.Category@f02418] [com.sap.tc.logging.Location@1d1aa4a].
+Nov 15, 2017 4:15:56 PM  [Info  ]: [#7]: Will try to connect []:[-1]
+Nov 15, 2017 4:15:56 PM  [Info  ]: [#7]: Connected to []:[-1]
+Nov 15, 2017 4:15:57 PM  [Path  ]: [#8]: The Log was reinitialized with [com.sap.tc.logging.Category@f02418] [com.sap.tc.logging.Location@1d1aa4a].
+Nov 15, 2017 4:15:57 PM  [Info  ]: [#8]: Will try to connect []:[-1]
+Nov 15, 2017 4:15:57 PM  [Info  ]: [#8]: Connected to []:[-1]
+Nov 15, 2017 4:15:59 PM  [Info  ]: [#8]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 15, 2017 4:15:59 PM  [Info  ]: [#8]: +++ Deployment of session ID [354] finished with status [Success] +++. [[ deployerId=5 ]] [[#32: 0.669 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 15, 2017 4:33:49 PM  [Path  ]: [#9]: The Log was reinitialized with [com.sap.tc.logging.Category@f02418] [com.sap.tc.logging.Location@1d1aa4a].
+Nov 15, 2017 4:33:49 PM  [Info  ]: [#9]: Will try to connect []:[-1]
+Nov 15, 2017 4:33:50 PM  [Info  ]: [#9]: Connected to []:[-1]
+Nov 15, 2017 4:33:50 PM  [Path  ]: [#10]: The Log was reinitialized with [com.sap.tc.logging.Category@f02418] [com.sap.tc.logging.Location@1d1aa4a].
+Nov 15, 2017 4:33:50 PM  [Info  ]: [#10]: Will try to connect []:[-1]
+Nov 15, 2017 4:33:50 PM  [Info  ]: [#10]: Connected to []:[-1]
+Nov 15, 2017 4:33:52 PM  [Info  ]: [#10]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 15, 2017 4:33:52 PM  [Info  ]: [#10]: +++ Deployment of session ID [355] finished with status [Success] +++. [[ deployerId=6 ]] [[#39: 0.723 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 16, 2017 2:41:25 PM  [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@113d752] [com.sap.tc.logging.Location@19d7734].
+Nov 16, 2017 2:41:25 PM  [Info  ]: [#0]: Will try to connect []:[-1]
+Nov 16, 2017 2:41:27 PM  [Info  ]: [#0]: Connected to []:[-1]
+Nov 16, 2017 2:41:28 PM  [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@113d752] [com.sap.tc.logging.Location@19d7734].
+Nov 16, 2017 2:41:28 PM  [Info  ]: [#1]: Will try to connect []:[-1]
+Nov 16, 2017 2:41:28 PM  [Info  ]: [#1]: Connected to []:[-1]
+Nov 16, 2017 2:41:30 PM  [Info  ]: [#1]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 16, 2017 2:41:30 PM  [Info  ]: [#1]: +++ Deployment of session ID [356] finished with status [Success] +++. [[ deployerId=1 ]] [[#5: 0.853 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 17, 2017 11:36:56 AM [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@d25616] [com.sap.tc.logging.Location@111e09f].
+Nov 17, 2017 11:36:56 AM [Info  ]: [#0]: Will try to connect []:[-1]
+Nov 17, 2017 11:36:58 AM [Info  ]: [#0]: Connected to []:[-1]
+Nov 17, 2017 11:36:59 AM [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@d25616] [com.sap.tc.logging.Location@111e09f].
+Nov 17, 2017 11:36:59 AM [Info  ]: [#1]: Will try to connect []:[-1]
+Nov 17, 2017 11:36:59 AM [Info  ]: [#1]: Connected to []:[-1]
+Nov 17, 2017 11:37:01 AM [Info  ]: [#1]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 17, 2017 11:37:01 AM [Info  ]: [#1]: +++ Deployment of session ID [357] finished with status [Success] +++. [[ deployerId=1 ]] [[#5: 1.0 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 17, 2017 11:39:34 AM [Path  ]: [#2]: The Log was reinitialized with [com.sap.tc.logging.Category@d25616] [com.sap.tc.logging.Location@111e09f].
+Nov 17, 2017 11:39:34 AM [Info  ]: [#2]: Will try to connect []:[-1]
+Nov 17, 2017 11:39:34 AM [Info  ]: [#2]: Connected to []:[-1]
+Nov 17, 2017 11:39:36 AM [Info  ]: [#2]: Undeployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 17, 2017 11:39:36 AM [Info  ]: [#2]: +++ Undeployment finished with status [Success] +++ [[#9: 0.503 sec]] [
+===== Summary - Undeploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : demo.sap.com_testear, 
+------------------------
+===== Summary - Undeploy Result - End =====
+]
+Nov 17, 2017 11:39:48 AM [Path  ]: [#3]: The Log was reinitialized with [com.sap.tc.logging.Category@d25616] [com.sap.tc.logging.Location@111e09f].
+Nov 17, 2017 11:39:48 AM [Info  ]: [#3]: Will try to connect []:[-1]
+Nov 17, 2017 11:39:49 AM [Info  ]: [#3]: Connected to []:[-1]
+Nov 17, 2017 11:39:51 AM [Info  ]: [#3]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 17, 2017 11:39:51 AM [Info  ]: [#3]: +++ Deployment of session ID [358] finished with status [Success] +++. [[ deployerId=2 ]] [[#15: 0.937 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 17, 2017 11:40:18 AM [Path  ]: [#4]: The Log was reinitialized with [com.sap.tc.logging.Category@d25616] [com.sap.tc.logging.Location@111e09f].
+Nov 17, 2017 11:40:18 AM [Info  ]: [#4]: Will try to connect []:[-1]
+Nov 17, 2017 11:40:18 AM [Info  ]: [#4]: Connected to []:[-1]
+Nov 17, 2017 11:40:19 AM [Path  ]: [#5]: The Log was reinitialized with [com.sap.tc.logging.Category@d25616] [com.sap.tc.logging.Location@111e09f].
+Nov 17, 2017 11:40:19 AM [Info  ]: [#5]: Will try to connect []:[-1]
+Nov 17, 2017 11:40:19 AM [Info  ]: [#5]: Connected to []:[-1]
+Nov 17, 2017 11:40:21 AM [Info  ]: [#5]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 17, 2017 11:40:21 AM [Info  ]: [#5]: +++ Deployment of session ID [365] finished with status [Success] +++. [[ deployerId=3 ]] [[#22: 0.612 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 17, 2017 2:42:26 PM  [Path  ]: [#6]: The Log was reinitialized with [com.sap.tc.logging.Category@d25616] [com.sap.tc.logging.Location@111e09f].
+Nov 17, 2017 2:42:26 PM  [Info  ]: [#6]: Will try to connect []:[-1]
+Nov 17, 2017 2:42:26 PM  [Info  ]: [#6]: Connected to []:[-1]
+Nov 17, 2017 2:42:27 PM  [Path  ]: [#7]: The Log was reinitialized with [com.sap.tc.logging.Category@d25616] [com.sap.tc.logging.Location@111e09f].
+Nov 17, 2017 2:42:27 PM  [Info  ]: [#7]: Will try to connect []:[-1]
+Nov 17, 2017 2:42:28 PM  [Info  ]: [#7]: Connected to []:[-1]
+Nov 17, 2017 2:42:29 PM  [Info  ]: [#7]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 17, 2017 2:42:30 PM  [Info  ]: [#7]: +++ Deployment of session ID [366] finished with status [Success] +++. [[ deployerId=4 ]] [[#29: 0.881 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 17, 2017 3:21:42 PM  [Path  ]: [#8]: The Log was reinitialized with [com.sap.tc.logging.Category@d25616] [com.sap.tc.logging.Location@111e09f].
+Nov 17, 2017 3:21:42 PM  [Info  ]: [#8]: Will try to connect []:[-1]
+Nov 17, 2017 3:21:42 PM  [Info  ]: [#8]: Connected to []:[-1]
+Nov 17, 2017 3:21:43 PM  [Path  ]: [#9]: The Log was reinitialized with [com.sap.tc.logging.Category@d25616] [com.sap.tc.logging.Location@111e09f].
+Nov 17, 2017 3:21:43 PM  [Info  ]: [#9]: Will try to connect []:[-1]
+Nov 17, 2017 3:21:43 PM  [Info  ]: [#9]: Connected to []:[-1]
+Nov 17, 2017 3:21:45 PM  [Info  ]: [#9]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 17, 2017 3:21:45 PM  [Info  ]: [#9]: +++ Deployment of session ID [359] finished with status [Success] +++. [[ deployerId=5 ]] [[#36: 0.729 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 17, 2017 3:25:52 PM  [Path  ]: [#10]: The Log was reinitialized with [com.sap.tc.logging.Category@d25616] [com.sap.tc.logging.Location@111e09f].
+Nov 17, 2017 3:25:52 PM  [Info  ]: [#10]: Will try to connect []:[-1]
+Nov 17, 2017 3:25:52 PM  [Info  ]: [#10]: Connected to []:[-1]
+Nov 17, 2017 3:25:52 PM  [Path  ]: [#11]: The Log was reinitialized with [com.sap.tc.logging.Category@d25616] [com.sap.tc.logging.Location@111e09f].
+Nov 17, 2017 3:25:52 PM  [Info  ]: [#11]: Will try to connect []:[-1]
+Nov 17, 2017 3:25:53 PM  [Info  ]: [#11]: Connected to []:[-1]
+Nov 17, 2017 3:25:54 PM  [Info  ]: [#11]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 17, 2017 3:25:54 PM  [Info  ]: [#11]: +++ Deployment of session ID [367] finished with status [Success] +++. [[ deployerId=6 ]] [[#43: 0.622 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 20, 2017 1:19:21 PM  [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@99b4fb] [com.sap.tc.logging.Location@138fd4f].
+Nov 20, 2017 1:19:21 PM  [Info  ]: [#0]: Will try to connect []:[-1]
+Nov 20, 2017 1:19:23 PM  [Info  ]: [#0]: Connected to []:[-1]
+Nov 20, 2017 1:19:25 PM  [Info  ]: [#0]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 20, 2017 1:19:26 PM  [Info  ]: [#0]: +++ Deployment of session ID [368] finished with status [Success] +++. [[ deployerId=1 ]] [[#4: 1.201 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 20, 2017 1:19:36 PM  [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@99b4fb] [com.sap.tc.logging.Location@138fd4f].
+Nov 20, 2017 1:19:36 PM  [Info  ]: [#1]: Will try to connect []:[-1]
+Nov 20, 2017 1:19:37 PM  [Info  ]: [#1]: Connected to []:[-1]
+Nov 20, 2017 1:19:37 PM  [Path  ]: [#2]: The Log was reinitialized with [com.sap.tc.logging.Category@99b4fb] [com.sap.tc.logging.Location@138fd4f].
+Nov 20, 2017 1:19:37 PM  [Info  ]: [#2]: Will try to connect []:[-1]
+Nov 20, 2017 1:19:38 PM  [Info  ]: [#2]: Connected to []:[-1]
+Nov 20, 2017 1:19:39 PM  [Info  ]: [#2]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 20, 2017 1:19:39 PM  [Info  ]: [#2]: +++ Deployment of session ID [369] finished with status [Success] +++. [[ deployerId=2 ]] [[#11: 0.596 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 20, 2017 1:33:50 PM  [Path  ]: [#3]: The Log was reinitialized with [com.sap.tc.logging.Category@99b4fb] [com.sap.tc.logging.Location@138fd4f].
+Nov 20, 2017 1:33:50 PM  [Info  ]: [#3]: Will try to connect []:[-1]
+Nov 20, 2017 1:33:51 PM  [Info  ]: [#3]: Connected to []:[-1]
+Nov 20, 2017 1:33:52 PM  [Info  ]: [#3]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 20, 2017 1:33:52 PM  [Info  ]: [#3]: +++ Deployment of session ID [360] finished with status [Success] +++. [[ deployerId=3 ]] [[#17: 0.765 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 20, 2017 1:51:27 PM  [Path  ]: [#4]: The Log was reinitialized with [com.sap.tc.logging.Category@99b4fb] [com.sap.tc.logging.Location@138fd4f].
+Nov 20, 2017 1:51:27 PM  [Info  ]: [#4]: Will try to connect []:[-1]
+Nov 20, 2017 1:51:28 PM  [Info  ]: [#4]: Connected to []:[-1]
+Nov 20, 2017 1:51:29 PM  [Path  ]: [#5]: The Log was reinitialized with [com.sap.tc.logging.Category@99b4fb] [com.sap.tc.logging.Location@138fd4f].
+Nov 20, 2017 1:51:29 PM  [Info  ]: [#5]: Will try to connect []:[-1]
+Nov 20, 2017 1:51:29 PM  [Info  ]: [#5]: Connected to []:[-1]
+Nov 20, 2017 1:51:31 PM  [Info  ]: [#5]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 20, 2017 1:51:31 PM  [Info  ]: [#5]: +++ Deployment of session ID [370] finished with status [Success] +++. [[ deployerId=4 ]] [[#24: 0.691 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 20, 2017 2:22:13 PM  [Path  ]: [#6]: The Log was reinitialized with [com.sap.tc.logging.Category@99b4fb] [com.sap.tc.logging.Location@138fd4f].
+Nov 20, 2017 2:22:13 PM  [Info  ]: [#6]: Will try to connect []:[-1]
+Nov 20, 2017 2:22:13 PM  [Info  ]: [#6]: Connected to []:[-1]
+Nov 20, 2017 2:22:14 PM  [Path  ]: [#7]: The Log was reinitialized with [com.sap.tc.logging.Category@99b4fb] [com.sap.tc.logging.Location@138fd4f].
+Nov 20, 2017 2:22:14 PM  [Info  ]: [#7]: Will try to connect []:[-1]
+Nov 20, 2017 2:22:14 PM  [Info  ]: [#7]: Connected to []:[-1]
+Nov 20, 2017 2:22:16 PM  [Info  ]: [#7]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 20, 2017 2:22:16 PM  [Info  ]: [#7]: +++ Deployment of session ID [371] finished with status [Success] +++. [[ deployerId=5 ]] [[#31: 0.832 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 20, 2017 2:26:15 PM  [Path  ]: [#8]: The Log was reinitialized with [com.sap.tc.logging.Category@99b4fb] [com.sap.tc.logging.Location@138fd4f].
+Nov 20, 2017 2:26:15 PM  [Info  ]: [#8]: Will try to connect []:[-1]
+Nov 20, 2017 2:26:16 PM  [Info  ]: [#8]: Connected to []:[-1]
+Nov 20, 2017 2:26:16 PM  [Path  ]: [#9]: The Log was reinitialized with [com.sap.tc.logging.Category@99b4fb] [com.sap.tc.logging.Location@138fd4f].
+Nov 20, 2017 2:26:16 PM  [Info  ]: [#9]: Will try to connect []:[-1]
+Nov 20, 2017 2:26:17 PM  [Info  ]: [#9]: Connected to []:[-1]
+Nov 20, 2017 2:26:18 PM  [Info  ]: [#9]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 20, 2017 2:26:18 PM  [Info  ]: [#9]: +++ Deployment of session ID [381] finished with status [Success] +++. [[ deployerId=6 ]] [[#38: 0.621 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 20, 2017 2:38:23 PM  [Path  ]: [#10]: The Log was reinitialized with [com.sap.tc.logging.Category@99b4fb] [com.sap.tc.logging.Location@138fd4f].
+Nov 20, 2017 2:38:23 PM  [Info  ]: [#10]: Will try to connect []:[-1]
+Nov 20, 2017 2:38:23 PM  [Info  ]: [#10]: Connected to []:[-1]
+Nov 20, 2017 2:38:24 PM  [Path  ]: [#11]: The Log was reinitialized with [com.sap.tc.logging.Category@99b4fb] [com.sap.tc.logging.Location@138fd4f].
+Nov 20, 2017 2:38:24 PM  [Info  ]: [#11]: Will try to connect []:[-1]
+Nov 20, 2017 2:38:24 PM  [Info  ]: [#11]: Connected to []:[-1]
+Nov 20, 2017 2:38:26 PM  [Info  ]: [#11]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 20, 2017 2:38:26 PM  [Info  ]: [#11]: +++ Deployment of session ID [372] finished with status [Success] +++. [[ deployerId=7 ]] [[#45: 0.681 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 21, 2017 3:01:28 PM  [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:01:28 PM  [Info  ]: [#0]: Will try to connect []:[-1]
+Nov 21, 2017 3:01:30 PM  [Info  ]: [#0]: Connected to []:[-1]
+Nov 21, 2017 3:01:32 PM  [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:01:32 PM  [Info  ]: [#1]: Will try to connect []:[-1]
+Nov 21, 2017 3:01:32 PM  [Info  ]: [#1]: Connected to []:[-1]
+Nov 21, 2017 3:01:35 PM  [Info  ]: [#1]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 21, 2017 3:01:35 PM  [Info  ]: [#1]: +++ Deployment of session ID [373] finished with status [Success] +++. [[ deployerId=1 ]] [[#5: 1.28 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 21, 2017 3:20:10 PM  [Path  ]: [#2]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:20:10 PM  [Info  ]: [#2]: Will try to connect []:[-1]
+Nov 21, 2017 3:20:10 PM  [Info  ]: [#2]: Connected to []:[-1]
+Nov 21, 2017 3:20:11 PM  [Path  ]: [#3]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:20:11 PM  [Info  ]: [#3]: Will try to connect []:[-1]
+Nov 21, 2017 3:20:11 PM  [Info  ]: [#3]: Connected to []:[-1]
+Nov 21, 2017 3:20:14 PM  [Info  ]: [#3]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 21, 2017 3:20:14 PM  [Info  ]: [#3]: +++ Deployment of session ID [374] finished with status [Success] +++. [[ deployerId=2 ]] [[#12: 0.922 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 21, 2017 3:21:49 PM  [Path  ]: [#4]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:21:49 PM  [Info  ]: [#4]: Will try to connect []:[-1]
+Nov 21, 2017 3:21:49 PM  [Info  ]: [#4]: Connected to []:[-1]
+Nov 21, 2017 3:21:53 PM  [Info  ]: [#4]: Undeployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 21, 2017 3:21:53 PM  [Info  ]: [#4]: +++ Undeployment finished with status [Success] +++ [[#16: 0.878 sec]] [
+===== Summary - Undeploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : demo.sap.com_testear, 
+------------------------
+===== Summary - Undeploy Result - End =====
+]
+Nov 21, 2017 3:22:05 PM  [Path  ]: [#5]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:22:05 PM  [Info  ]: [#5]: Will try to connect []:[-1]
+Nov 21, 2017 3:22:05 PM  [Info  ]: [#5]: Connected to []:[-1]
+Nov 21, 2017 3:22:06 PM  [Path  ]: [#6]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:22:06 PM  [Info  ]: [#6]: Will try to connect []:[-1]
+Nov 21, 2017 3:22:06 PM  [Info  ]: [#6]: Connected to []:[-1]
+Nov 21, 2017 3:22:08 PM  [Info  ]: [#6]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 21, 2017 3:22:08 PM  [Info  ]: [#6]: +++ Deployment of session ID [383] finished with status [Success] +++. [[ deployerId=3 ]] [[#23: 0.789 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 21, 2017 3:27:32 PM  [Path  ]: [#7]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:27:32 PM  [Info  ]: [#7]: Will try to connect []:[-1]
+Nov 21, 2017 3:27:32 PM  [Info  ]: [#7]: Connected to []:[-1]
+Nov 21, 2017 3:27:33 PM  [Path  ]: [#8]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:27:33 PM  [Info  ]: [#8]: Will try to connect []:[-1]
+Nov 21, 2017 3:27:33 PM  [Info  ]: [#8]: Connected to []:[-1]
+Nov 21, 2017 3:27:35 PM  [Info  ]: [#8]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 21, 2017 3:27:35 PM  [Info  ]: [#8]: +++ Deployment of session ID [375] finished with status [Success] +++. [[ deployerId=4 ]] [[#30: 0.644 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 21, 2017 3:33:36 PM  [Path  ]: [#9]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:33:36 PM  [Info  ]: [#9]: Will try to connect []:[-1]
+Nov 21, 2017 3:33:36 PM  [Info  ]: [#9]: Connected to []:[-1]
+Nov 21, 2017 3:33:37 PM  [Path  ]: [#10]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:33:37 PM  [Info  ]: [#10]: Will try to connect []:[-1]
+Nov 21, 2017 3:33:37 PM  [Info  ]: [#10]: Connected to []:[-1]
+Nov 21, 2017 3:33:39 PM  [Info  ]: [#10]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 21, 2017 3:33:39 PM  [Info  ]: [#10]: +++ Deployment of session ID [384] finished with status [Success] +++. [[ deployerId=5 ]] [[#37: 0.628 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 21, 2017 3:36:00 PM  [Path  ]: [#11]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:36:00 PM  [Info  ]: [#11]: Will try to connect []:[-1]
+Nov 21, 2017 3:36:00 PM  [Info  ]: [#11]: Connected to []:[-1]
+Nov 21, 2017 3:36:01 PM  [Path  ]: [#12]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:36:01 PM  [Info  ]: [#12]: Will try to connect []:[-1]
+Nov 21, 2017 3:36:01 PM  [Info  ]: [#12]: Connected to []:[-1]
+Nov 21, 2017 3:36:03 PM  [Info  ]: [#12]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 21, 2017 3:36:03 PM  [Info  ]: [#12]: +++ Deployment of session ID [376] finished with status [Success] +++. [[ deployerId=6 ]] [[#44: 0.631 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 21, 2017 3:47:59 PM  [Path  ]: [#13]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:47:59 PM  [Info  ]: [#13]: Will try to connect []:[-1]
+Nov 21, 2017 3:47:59 PM  [Info  ]: [#13]: Connected to []:[-1]
+Nov 21, 2017 3:48:00 PM  [Path  ]: [#14]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 3:48:00 PM  [Info  ]: [#14]: Will try to connect []:[-1]
+Nov 21, 2017 3:48:00 PM  [Info  ]: [#14]: Connected to []:[-1]
+Nov 21, 2017 3:48:02 PM  [Info  ]: [#14]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 21, 2017 3:48:02 PM  [Info  ]: [#14]: +++ Deployment of session ID [377] finished with status [Success] +++. [[ deployerId=7 ]] [[#51: 0.735 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 21, 2017 4:53:52 PM  [Path  ]: [#15]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 4:53:52 PM  [Info  ]: [#15]: Will try to connect []:[-1]
+Nov 21, 2017 4:53:53 PM  [Info  ]: [#15]: Connected to []:[-1]
+Nov 21, 2017 4:53:53 PM  [Path  ]: [#16]: The Log was reinitialized with [com.sap.tc.logging.Category@eaeef] [com.sap.tc.logging.Location@1fef806].
+Nov 21, 2017 4:53:53 PM  [Info  ]: [#16]: Will try to connect []:[-1]
+Nov 21, 2017 4:53:54 PM  [Info  ]: [#16]: Connected to []:[-1]
+Nov 21, 2017 4:53:55 PM  [Info  ]: [#16]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 21, 2017 4:53:55 PM  [Info  ]: [#16]: +++ Deployment of session ID [385] finished with status [Success] +++. [[ deployerId=8 ]] [[#58: 0.642 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 10:10:54 AM [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 10:10:54 AM [Info  ]: [#0]: Will try to connect []:[-1]
+Nov 22, 2017 10:10:56 AM [Info  ]: [#0]: Connected to []:[-1]
+Nov 22, 2017 10:10:57 AM [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 10:10:57 AM [Info  ]: [#1]: Will try to connect []:[-1]
+Nov 22, 2017 10:10:57 AM [Info  ]: [#1]: Connected to []:[-1]
+Nov 22, 2017 10:11:00 AM [Info  ]: [#1]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 10:11:00 AM [Info  ]: [#1]: +++ Deployment of session ID [378] finished with status [Success] +++. [[ deployerId=1 ]] [[#5: 1.004 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 10:53:58 AM [Path  ]: [#2]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 10:53:58 AM [Info  ]: [#2]: Will try to connect []:[-1]
+Nov 22, 2017 10:54:00 AM [Info  ]: [#2]: Connected to []:[-1]
+Nov 22, 2017 10:54:06 AM [Path  ]: [#3]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 10:54:06 AM [Info  ]: [#3]: Will try to connect []:[-1]
+Nov 22, 2017 10:54:09 AM [Info  ]: [#3]: Connected to []:[-1]
+Nov 22, 2017 10:54:19 AM [Info  ]: [#3]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 10:54:22 AM [Info  ]: [#3]: +++ Deployment of session ID [379] finished with status [Success] +++. [[ deployerId=2 ]] [[#12: 4.291 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 11:16:12 AM [Path  ]: [#4]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 11:16:12 AM [Info  ]: [#4]: Will try to connect []:[-1]
+Nov 22, 2017 11:16:13 AM [Info  ]: [#4]: Connected to []:[-1]
+Nov 22, 2017 11:16:15 AM [Info  ]: [#4]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 11:16:15 AM [Info  ]: [#4]: +++ Deployment of session ID [380] finished with status [Success] +++. [[ deployerId=3 ]] [[#18: 0.751 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 11:16:20 AM [Path  ]: [#5]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 11:16:20 AM [Info  ]: [#5]: Will try to connect []:[-1]
+Nov 22, 2017 11:16:20 AM [Info  ]: [#5]: Connected to []:[-1]
+Nov 22, 2017 11:16:20 AM [Path  ]: [#6]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 11:16:20 AM [Info  ]: [#6]: Will try to connect []:[-1]
+Nov 22, 2017 11:16:21 AM [Info  ]: [#6]: Connected to []:[-1]
+Nov 22, 2017 11:16:22 AM [Info  ]: [#6]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 11:16:22 AM [Info  ]: [#6]: +++ Deployment of session ID [391] finished with status [Success] +++. [[ deployerId=4 ]] [[#25: 0.53 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 11:19:57 AM [Path  ]: [#7]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 11:19:57 AM [Info  ]: [#7]: Will try to connect []:[-1]
+Nov 22, 2017 11:19:58 AM [Info  ]: [#7]: Connected to []:[-1]
+Nov 22, 2017 11:19:58 AM [Path  ]: [#8]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 11:19:58 AM [Info  ]: [#8]: Will try to connect []:[-1]
+Nov 22, 2017 11:19:58 AM [Info  ]: [#8]: Connected to []:[-1]
+Nov 22, 2017 11:20:00 AM [Info  ]: [#8]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 11:20:00 AM [Info  ]: [#8]: +++ Deployment of session ID [386] finished with status [Success] +++. [[ deployerId=5 ]] [[#32: 0.654 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 11:27:25 AM [Path  ]: [#9]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 11:27:25 AM [Info  ]: [#9]: Will try to connect []:[-1]
+Nov 22, 2017 11:27:26 AM [Info  ]: [#9]: Connected to []:[-1]
+Nov 22, 2017 11:27:27 AM [Path  ]: [#10]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 11:27:27 AM [Info  ]: [#10]: Will try to connect []:[-1]
+Nov 22, 2017 11:27:27 AM [Info  ]: [#10]: Connected to []:[-1]
+Nov 22, 2017 11:27:28 AM [Info  ]: [#10]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 11:27:28 AM [Info  ]: [#10]: +++ Deployment of session ID [392] finished with status [Success] +++. [[ deployerId=6 ]] [[#39: 0.685 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 11:36:08 AM [Path  ]: [#11]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 11:36:08 AM [Info  ]: [#11]: Will try to connect []:[-1]
+Nov 22, 2017 11:36:08 AM [Info  ]: [#11]: Connected to []:[-1]
+Nov 22, 2017 11:36:08 AM [Path  ]: [#12]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 11:36:08 AM [Info  ]: [#12]: Will try to connect []:[-1]
+Nov 22, 2017 11:36:09 AM [Info  ]: [#12]: Connected to []:[-1]
+Nov 22, 2017 11:36:10 AM [Info  ]: [#12]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 11:36:11 AM [Info  ]: [#12]: +++ Deployment of session ID [393] finished with status [Success] +++. [[ deployerId=7 ]] [[#46: 0.893 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 12:15:45 PM [Path  ]: [#13]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 12:15:45 PM [Info  ]: [#13]: Will try to connect []:[-1]
+Nov 22, 2017 12:15:45 PM [Info  ]: [#13]: Connected to []:[-1]
+Nov 22, 2017 12:15:46 PM [Path  ]: [#14]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 12:15:46 PM [Info  ]: [#14]: Will try to connect []:[-1]
+Nov 22, 2017 12:15:46 PM [Info  ]: [#14]: Connected to []:[-1]
+Nov 22, 2017 12:15:48 PM [Info  ]: [#14]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 12:15:48 PM [Info  ]: [#14]: +++ Deployment of session ID [394] finished with status [Success] +++. [[ deployerId=8 ]] [[#53: 0.709 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 12:27:19 PM [Path  ]: [#15]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 12:27:19 PM [Info  ]: [#15]: Will try to connect []:[-1]
+Nov 22, 2017 12:27:19 PM [Info  ]: [#15]: Connected to []:[-1]
+Nov 22, 2017 12:27:20 PM [Path  ]: [#16]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 12:27:20 PM [Info  ]: [#16]: Will try to connect []:[-1]
+Nov 22, 2017 12:27:20 PM [Info  ]: [#16]: Connected to []:[-1]
+Nov 22, 2017 12:27:21 PM [Info  ]: [#16]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 12:27:22 PM [Info  ]: [#16]: +++ Deployment of session ID [387] finished with status [Success] +++. [[ deployerId=9 ]] [[#60: 0.589 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 12:28:40 PM [Path  ]: [#17]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 12:28:40 PM [Info  ]: [#17]: Will try to connect []:[-1]
+Nov 22, 2017 12:28:41 PM [Info  ]: [#17]: Connected to []:[-1]
+Nov 22, 2017 12:28:42 PM [Info  ]: [#17]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 12:28:42 PM [Info  ]: [#17]: +++ Deployment of session ID [395] finished with status [Success] +++. [[ deployerId=10 ]] [[#66: 0.626 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 2:21:02 PM  [Path  ]: [#18]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 2:21:02 PM  [Info  ]: [#18]: Will try to connect []:[-1]
+Nov 22, 2017 2:21:03 PM  [Info  ]: [#18]: Connected to []:[-1]
+Nov 22, 2017 2:21:03 PM  [Path  ]: [#19]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 2:21:03 PM  [Info  ]: [#19]: Will try to connect []:[-1]
+Nov 22, 2017 2:21:04 PM  [Info  ]: [#19]: Connected to []:[-1]
+Nov 22, 2017 2:21:05 PM  [Info  ]: [#19]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 2:21:05 PM  [Info  ]: [#19]: +++ Deployment of session ID [388] finished with status [Success] +++. [[ deployerId=11 ]] [[#73: 0.647 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 2:22:06 PM  [Path  ]: [#20]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 2:22:06 PM  [Info  ]: [#20]: Will try to connect []:[-1]
+Nov 22, 2017 2:22:06 PM  [Info  ]: [#20]: Connected to []:[-1]
+Nov 22, 2017 2:22:07 PM  [Path  ]: [#21]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 2:22:07 PM  [Info  ]: [#21]: Will try to connect []:[-1]
+Nov 22, 2017 2:22:07 PM  [Info  ]: [#21]: Connected to []:[-1]
+Nov 22, 2017 2:22:09 PM  [Info  ]: [#21]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 2:22:09 PM  [Info  ]: [#21]: +++ Deployment of session ID [396] finished with status [Success] +++. [[ deployerId=12 ]] [[#80: 0.601 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 2:39:48 PM  [Path  ]: [#22]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 2:39:48 PM  [Info  ]: [#22]: Will try to connect []:[-1]
+Nov 22, 2017 2:39:49 PM  [Info  ]: [#22]: Connected to []:[-1]
+Nov 22, 2017 2:39:50 PM  [Path  ]: [#23]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 2:39:50 PM  [Info  ]: [#23]: Will try to connect []:[-1]
+Nov 22, 2017 2:39:50 PM  [Info  ]: [#23]: Connected to []:[-1]
+Nov 22, 2017 2:39:51 PM  [Info  ]: [#23]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 2:39:51 PM  [Info  ]: [#23]: +++ Deployment of session ID [397] finished with status [Success] +++. [[ deployerId=13 ]] [[#87: 0.657 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 3:22:55 PM  [Path  ]: [#24]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 3:22:55 PM  [Info  ]: [#24]: Will try to connect []:[-1]
+Nov 22, 2017 3:22:55 PM  [Info  ]: [#24]: Connected to []:[-1]
+Nov 22, 2017 3:22:56 PM  [Path  ]: [#25]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 3:22:56 PM  [Info  ]: [#25]: Will try to connect []:[-1]
+Nov 22, 2017 3:22:56 PM  [Info  ]: [#25]: Connected to []:[-1]
+Nov 22, 2017 3:22:58 PM  [Info  ]: [#25]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 3:22:58 PM  [Info  ]: [#25]: +++ Deployment of session ID [389] finished with status [Success] +++. [[ deployerId=14 ]] [[#94: 0.666 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 3:27:30 PM  [Path  ]: [#26]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 3:27:30 PM  [Info  ]: [#26]: Will try to connect []:[-1]
+Nov 22, 2017 3:27:32 PM  [Info  ]: [#26]: Connected to []:[-1]
+Nov 22, 2017 3:27:37 PM  [Path  ]: [#27]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 3:27:37 PM  [Info  ]: [#27]: Will try to connect []:[-1]
+Nov 22, 2017 3:27:37 PM  [Info  ]: [#27]: Connected to []:[-1]
+Nov 22, 2017 3:27:41 PM  [Info  ]: [#27]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 3:27:41 PM  [Info  ]: [#27]: +++ Deployment of session ID [390] finished with status [Success] +++. [[ deployerId=15 ]] [[#101: 1.252 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 3:49:39 PM  [Path  ]: [#28]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 3:49:39 PM  [Info  ]: [#28]: Will try to connect []:[-1]
+Nov 22, 2017 3:49:39 PM  [Info  ]: [#28]: Connected to []:[-1]
+Nov 22, 2017 3:49:40 PM  [Path  ]: [#29]: The Log was reinitialized with [com.sap.tc.logging.Category@4c933e] [com.sap.tc.logging.Location@156ef80].
+Nov 22, 2017 3:49:40 PM  [Info  ]: [#29]: Will try to connect []:[-1]
+Nov 22, 2017 3:49:41 PM  [Info  ]: [#29]: Connected to []:[-1]
+Nov 22, 2017 3:49:45 PM  [Info  ]: [#29]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 3:49:45 PM  [Info  ]: [#29]: +++ Deployment of session ID [401] finished with status [Success] +++. [[ deployerId=16 ]] [[#108: 1.281 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 22, 2017 4:07:12 PM  [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@1a660a5] [com.sap.tc.logging.Location@13321c].
+Nov 22, 2017 4:07:12 PM  [Info  ]: [#0]: Will try to connect []:[-1]
+Nov 22, 2017 4:07:13 PM  [Info  ]: [#0]: Connected to []:[-1]
+Nov 22, 2017 4:07:14 PM  [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@1a660a5] [com.sap.tc.logging.Location@13321c].
+Nov 22, 2017 4:07:14 PM  [Info  ]: [#1]: Will try to connect []:[-1]
+Nov 22, 2017 4:07:14 PM  [Info  ]: [#1]: Connected to []:[-1]
+Nov 22, 2017 4:07:18 PM  [Info  ]: [#1]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 22, 2017 4:07:18 PM  [Info  ]: [#1]: +++ Deployment of session ID [398] finished with status [Success] +++. [[ deployerId=1 ]] [[#5: 1.556 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 23, 2017 11:53:50 AM [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@1a2fbee] [com.sap.tc.logging.Location@149db9d].
+Nov 23, 2017 11:53:50 AM [Info  ]: [#0]: Will try to connect []:[-1]
+Nov 23, 2017 11:53:52 AM [Info  ]: [#0]: Connected to []:[-1]
+Nov 23, 2017 11:53:53 AM [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@1a2fbee] [com.sap.tc.logging.Location@149db9d].
+Nov 23, 2017 11:53:53 AM [Info  ]: [#1]: Will try to connect []:[-1]
+Nov 23, 2017 11:53:53 AM [Info  ]: [#1]: Connected to []:[-1]
+Nov 23, 2017 11:53:57 AM [Info  ]: [#1]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 23, 2017 11:53:57 AM [Info  ]: [#1]: +++ Deployment of session ID [402] finished with status [Success] +++. [[ deployerId=1 ]] [[#5: 1.272 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 27, 2017 10:25:53 AM [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@17c59bc] [com.sap.tc.logging.Location@e754c3].
+Nov 27, 2017 10:25:53 AM [Info  ]: [#0]: Will try to connect []:[-1]
+Nov 27, 2017 10:25:56 AM [Info  ]: [#0]: Connected to []:[-1]
+Nov 27, 2017 10:25:57 AM [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@17c59bc] [com.sap.tc.logging.Location@e754c3].
+Nov 27, 2017 10:25:57 AM [Info  ]: [#1]: Will try to connect []:[-1]
+Nov 27, 2017 10:25:57 AM [Info  ]: [#1]: Connected to []:[-1]
+Nov 27, 2017 10:26:02 AM [Info  ]: [#1]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 27, 2017 10:26:02 AM [Info  ]: [#1]: +++ Deployment of session ID [399] finished with status [Success] +++. [[ deployerId=1 ]] [[#5: 1.423 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 27, 2017 10:55:16 AM [Path  ]: [#2]: The Log was reinitialized with [com.sap.tc.logging.Category@17c59bc] [com.sap.tc.logging.Location@e754c3].
+Nov 27, 2017 10:55:16 AM [Info  ]: [#2]: Will try to connect []:[-1]
+Nov 27, 2017 10:55:17 AM [Info  ]: [#2]: Connected to []:[-1]
+Nov 27, 2017 10:55:17 AM [Path  ]: [#3]: The Log was reinitialized with [com.sap.tc.logging.Category@17c59bc] [com.sap.tc.logging.Location@e754c3].
+Nov 27, 2017 10:55:17 AM [Info  ]: [#3]: Will try to connect []:[-1]
+Nov 27, 2017 10:55:18 AM [Info  ]: [#3]: Connected to []:[-1]
+Nov 27, 2017 10:55:22 AM [Info  ]: [#3]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 27, 2017 10:55:22 AM [Info  ]: [#3]: +++ Deployment of session ID [403] finished with status [Success] +++. [[ deployerId=2 ]] [[#12: 1.195 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Nov 27, 2017 10:59:10 AM [Path  ]: [#4]: The Log was reinitialized with [com.sap.tc.logging.Category@17c59bc] [com.sap.tc.logging.Location@e754c3].
+Nov 27, 2017 10:59:10 AM [Info  ]: [#4]: Will try to connect []:[-1]
+Nov 27, 2017 10:59:10 AM [Info  ]: [#4]: Connected to []:[-1]
+Nov 27, 2017 10:59:11 AM [Path  ]: [#5]: The Log was reinitialized with [com.sap.tc.logging.Category@17c59bc] [com.sap.tc.logging.Location@e754c3].
+Nov 27, 2017 10:59:11 AM [Info  ]: [#5]: Will try to connect []:[-1]
+Nov 27, 2017 10:59:11 AM [Info  ]: [#5]: Connected to []:[-1]
+Nov 27, 2017 10:59:15 AM [Info  ]: [#5]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Nov 27, 2017 10:59:15 AM [Info  ]: [#5]: +++ Deployment of session ID [404] finished with status [Success] +++. [[ deployerId=3 ]] [[#19: 1.056 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Dec 15, 2017 2:32:36 PM  [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@c405f4] [com.sap.tc.logging.Location@162e4ed].
+Dec 15, 2017 2:32:36 PM  [Info  ]: [#0]: Will try to connect []:[-1]
+Dec 15, 2017 2:32:38 PM  [Info  ]: [#0]: Connected to []:[-1]
+Dec 15, 2017 2:32:39 PM  [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@c405f4] [com.sap.tc.logging.Location@162e4ed].
+Dec 15, 2017 2:32:39 PM  [Info  ]: [#1]: Will try to connect []:[-1]
+Dec 15, 2017 2:32:39 PM  [Info  ]: [#1]: Connected to []:[-1]
+Dec 15, 2017 2:32:45 PM  [Info  ]: [#1]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Dec 15, 2017 2:32:45 PM  [Info  ]: [#1]: +++ Deployment of session ID [413] finished with status [Success] +++. [[ deployerId=1 ]] [[#5: 3.127 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Dec 15, 2017 2:41:52 PM  [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@2d520a] [com.sap.tc.logging.Location@1652635].
+Dec 15, 2017 2:41:52 PM  [Info  ]: [#0]: Will try to connect []:[-1]
+Dec 15, 2017 2:41:53 PM  [Info  ]: [#0]: Connected to []:[-1]
+Dec 15, 2017 2:41:54 PM  [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@2d520a] [com.sap.tc.logging.Location@1652635].
+Dec 15, 2017 2:41:54 PM  [Info  ]: [#1]: Will try to connect []:[-1]
+Dec 15, 2017 2:41:54 PM  [Info  ]: [#1]: Connected to []:[-1]
+Dec 15, 2017 2:41:58 PM  [Info  ]: [#1]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Dec 15, 2017 2:41:58 PM  [Info  ]: [#1]: +++ Deployment of session ID [414] finished with status [Success] +++. [[ deployerId=1 ]] [[#5: 1.146 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Dec 17, 2017 10:27:37 AM [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@1c48ca6] [com.sap.tc.logging.Location@ee0a12].
+Dec 17, 2017 10:27:37 AM [Info  ]: [#0]: Will try to connect []:[-1]
+Dec 17, 2017 10:27:40 AM [Info  ]: [#0]: Connected to []:[-1]
+Dec 17, 2017 10:27:41 AM [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@1c48ca6] [com.sap.tc.logging.Location@ee0a12].
+Dec 17, 2017 10:27:41 AM [Info  ]: [#1]: Will try to connect []:[-1]
+Dec 17, 2017 10:27:42 AM [Info  ]: [#1]: Connected to []:[-1]
+Dec 17, 2017 10:27:52 AM [Info  ]: [#1]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Dec 17, 2017 10:27:52 AM [Info  ]: [#1]: +++ Deployment of session ID [415] finished with status [Success] +++. [[ deployerId=1 ]] [[#5: 1.648 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Dec 17, 2017 12:03:09 PM [Path  ]: [#2]: The Log was reinitialized with [com.sap.tc.logging.Category@1c48ca6] [com.sap.tc.logging.Location@ee0a12].
+Dec 17, 2017 12:03:09 PM [Info  ]: [#2]: Will try to connect []:[-1]
+Dec 17, 2017 12:03:09 PM [Info  ]: [#2]: Connected to []:[-1]
+Dec 17, 2017 12:03:20 PM [Info  ]: [#2]: Deployment of [name: 'testear', vendor: 'demo.sap.com' (sda)] finished.
+Dec 17, 2017 12:03:21 PM [Info  ]: [#2]: +++ Deployment of session ID [422] finished with status [Success] +++. [[ deployerId=2 ]] [[#11: 1.445 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'testear', vendor: 'demo.sap.com', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+Feb 1, 2018 4:13:20 PM   [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@f9ec92] [com.sap.tc.logging.Location@1a67cb].
+Feb 1, 2018 4:13:20 PM   [Info  ]: [#0]: Will try to connect []:[-1]
+Feb 1, 2018 4:13:21 PM   [Error ]:
+[EXCEPTION]
+javax.naming.NoPermissionException: Exception during getInitialContext operation. Wrong security principal/credentials. [Root exception is com.sap.engine.services.security.exceptions.BaseLoginException: Authentication did not succeed.]
+	at com.sap.engine.services.jndi.InitialContextFactoryImpl.handleUserProblem(InitialContextFactoryImpl.java:427)
+	at com.sap.engine.services.jndi.InitialContextFactoryImpl.getInitialContext(InitialContextFactoryImpl.java:341)
+	at javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:667)
+	at javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:288)
+	at javax.naming.InitialContext.init(InitialContext.java:223)
+	at javax.naming.InitialContext.<init>(InitialContext.java:197)
+	at com.sap.engine.services.dc.api.session.impl.SessionImpl.getContext(SessionImpl.java:215)
+	at com.sap.engine.services.dc.api.session.impl.SessionImpl.<init>(SessionImpl.java:150)
+	at com.sap.engine.services.dc.api.session.impl.SessionFactoryImpl.newSession(SessionFactoryImpl.java:36)
+	at com.sap.engine.services.dc.api.impl.ClientFactoryImpl.createClient(ClientFactoryImpl.java:127)
+	at com.sap.ide.eclipse.deployer.dc.DCClientImpl.<init>(DCClientImpl.java:100)
+	at com.sap.ide.eclipse.deployer.dc.DCClientFactoryImpl.createClient(DCClientFactoryImpl.java:120)
+	at com.sap.ide.eclipse.deployer.DeployerPlugin.getClient(DeployerPlugin.java:256)
+	at com.sap.ide.eclipse.sdm.threading.DeployThreadManager.deploy(DeployThreadManager.java:259)
+	at com.sap.ide.eclipse.sdm.SDMManager.deployArchives(SDMManager.java:194)
+	at com.sap.ide.wtpserver.engineadapter.SapDeployer.deployArchives(SapDeployer.java:46)
+	at com.sap.ide.wtpserver.engineadapter.SAPPublisher$DeployRunnable.run(SAPPublisher.java:453)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.sap.engine.services.security.exceptions.BaseLoginException: Authentication did not succeed.
+	at com.sap.engine.services.security.server.jaas.BasicPasswordLoginModule.login(BasicPasswordLoginModule.java:311)
+	at com.sap.engine.services.security.login.LoginModuleLoggingWrapperImpl.login(LoginModuleLoggingWrapperImpl.java:254)
+	at com.sap.engine.services.security.login.ModulesProcessAction.run(ModulesProcessAction.java:66)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sap.engine.services.security.login.FastLoginContext.login(FastLoginContext.java:285)
+	at com.sap.engine.services.security.remoteimpl.login.RemoteLoginContextHelperImpl.login(RemoteLoginContextHelperImpl.java:221)
+	at com.sap.engine.services.security.remoteimpl.login.RemoteLoginContextHelperImplp4_Skel.dispatch(RemoteLoginContextHelperImplp4_Skel.java:64)
+	at com.sap.engine.services.rmi_p4.DispatchImpl._runInternal(DispatchImpl.java:482)
+	at com.sap.engine.services.rmi_p4.server.ServerDispatchImpl.run(ServerDispatchImpl.java:81)
+	at com.sap.engine.services.rmi_p4.P4Message.process(P4Message.java:72)
+	at com.sap.engine.services.rmi_p4.P4Message.execute(P4Message.java:43)
+	at com.sap.engine.services.cross.fca.FCAConnectorImpl.executeRequest(FCAConnectorImpl.java:1026)
+	at com.sap.engine.services.rmi_p4.P4Message.process(P4Message.java:59)
+	at com.sap.engine.services.cross.fca.MessageReader.run(MessageReader.java:55)
+	at com.sap.engine.core.thread.execution.Executable.run(Executable.java:122)
+	at com.sap.engine.core.thread.execution.Executable.run(Executable.java:101)
+	at com.sap.engine.core.thread.execution.CentralExecutor$SingleThread.run(CentralExecutor.java:328)
+
+
+Feb 1, 2018 4:13:21 PM   [Error ]: [#0]: Could not establish connection to AS Java on [kkkdi00s.kmdpfosap.local:50204]. Authentication did not succeed. Wrong or missing security credentials (password) for principal [z6pql], or the specified principal has no permissions to perform JNDI related operations.
+Feb 1, 2018 4:13:21 PM   [Error ]:
+[EXCEPTION]
+javax.naming.NoPermissionException: Exception during getInitialContext operation. Wrong security principal/credentials. [Root exception is com.sap.engine.services.security.exceptions.BaseLoginException: Authentication did not succeed.]
+	at com.sap.engine.services.jndi.InitialContextFactoryImpl.handleUserProblem(InitialContextFactoryImpl.java:427)
+	at com.sap.engine.services.jndi.InitialContextFactoryImpl.getInitialContext(InitialContextFactoryImpl.java:341)
+	at javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:667)
+	at javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:288)
+	at javax.naming.InitialContext.init(InitialContext.java:223)
+	at javax.naming.InitialContext.<init>(InitialContext.java:197)
+	at com.sap.engine.services.dc.api.session.impl.SessionImpl.getContext(SessionImpl.java:215)
+	at com.sap.engine.services.dc.api.session.impl.SessionImpl.<init>(SessionImpl.java:150)
+	at com.sap.engine.services.dc.api.session.impl.SessionFactoryImpl.newSession(SessionFactoryImpl.java:36)
+	at com.sap.engine.services.dc.api.impl.ClientFactoryImpl.createClient(ClientFactoryImpl.java:127)
+	at com.sap.ide.eclipse.deployer.dc.DCClientImpl.<init>(DCClientImpl.java:100)
+	at com.sap.ide.eclipse.deployer.dc.DCClientFactoryImpl.createClient(DCClientFactoryImpl.java:120)
+	at com.sap.ide.eclipse.deployer.DeployerPlugin.getClient(DeployerPlugin.java:256)
+	at com.sap.ide.eclipse.sdm.threading.DeployThreadManager.deploy(DeployThreadManager.java:259)
+	at com.sap.ide.eclipse.sdm.SDMManager.deployArchives(SDMManager.java:194)
+	at com.sap.ide.wtpserver.engineadapter.SapDeployer.deployArchives(SapDeployer.java:46)
+	at com.sap.ide.wtpserver.engineadapter.SAPPublisher$DeployRunnable.run(SAPPublisher.java:453)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: com.sap.engine.services.security.exceptions.BaseLoginException: Authentication did not succeed.
+	at com.sap.engine.services.security.server.jaas.BasicPasswordLoginModule.login(BasicPasswordLoginModule.java:311)
+	at com.sap.engine.services.security.login.LoginModuleLoggingWrapperImpl.login(LoginModuleLoggingWrapperImpl.java:254)
+	at com.sap.engine.services.security.login.ModulesProcessAction.run(ModulesProcessAction.java:66)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sap.engine.services.security.login.FastLoginContext.login(FastLoginContext.java:285)
+	at com.sap.engine.services.security.remoteimpl.login.RemoteLoginContextHelperImpl.login(RemoteLoginContextHelperImpl.java:221)
+	at com.sap.engine.services.security.remoteimpl.login.RemoteLoginContextHelperImplp4_Skel.dispatch(RemoteLoginContextHelperImplp4_Skel.java:64)
+	at com.sap.engine.services.rmi_p4.DispatchImpl._runInternal(DispatchImpl.java:482)
+	at com.sap.engine.services.rmi_p4.server.ServerDispatchImpl.run(ServerDispatchImpl.java:81)
+	at com.sap.engine.services.rmi_p4.P4Message.process(P4Message.java:72)
+	at com.sap.engine.services.rmi_p4.P4Message.execute(P4Message.java:43)
+	at com.sap.engine.services.cross.fca.FCAConnectorImpl.executeRequest(FCAConnectorImpl.java:1026)
+	at com.sap.engine.services.rmi_p4.P4Message.process(P4Message.java:59)
+	at com.sap.engine.services.cross.fca.MessageReader.run(MessageReader.java:55)
+	at com.sap.engine.core.thread.execution.Executable.run(Executable.java:122)
+	at com.sap.engine.core.thread.execution.Executable.run(Executable.java:101)
+	at com.sap.engine.core.thread.execution.CentralExecutor$SingleThread.run(CentralExecutor.java:328)
+
+
+Feb 1, 2018 4:14:01 PM   [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@f9ec92] [com.sap.tc.logging.Location@1a67cb].
+Feb 1, 2018 4:14:01 PM   [Info  ]: [#1]: Will try to connect []:[-1]
+Feb 1, 2018 4:14:01 PM   [Info  ]: [#1]: Connected to []:[-1]
+Feb 1, 2018 4:14:03 PM   [Path  ]: [#2]: The Log was reinitialized with [com.sap.tc.logging.Category@f9ec92] [com.sap.tc.logging.Location@1a67cb].
+Feb 1, 2018 4:14:03 PM   [Info  ]: [#2]: Will try to connect []:[-1]
+Feb 1, 2018 4:14:03 PM   [Info  ]: [#2]: Connected to []:[-1]
+Feb 1, 2018 4:14:08 PM   [Info  ]: [#2]: Deployment of [name: 'sftptestear', vendor: 'kmd.dk' (sda)] finished.
+Feb 1, 2018 4:14:08 PM   [Error ]: [#2]: Deployment Exception during deployment phase [DeploymentException], cause=[ASJ.dpl_dc.001085 Operation [deploy] of [kmd.dk_sftptestear] failed]
+Feb 1, 2018 4:14:08 PM   [Error ]: [#2]: Deployment Items status: [
+----- Sorted Items -----
+	1. Client path 'C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftptestear\_comp\gen\default\deploy\kmd.dk~sftptestear.ear'
+		Deploy status is 'Aborted'
+		SDA : name 'sftptestear', vendor 'kmd.dk', location 'localDevelopment', version '20180201151057', software type ('J2EE', sub type ''), csn component '', dependencies :[none]
+
+----- Deployment Items -----
+	1. Client path 'C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftptestear\_comp\gen\default\deploy\kmd.dk~sftptestear.ear'
+		Deploy status is 'Aborted'
+		Description:'1. ASJ.dpl_ds.006193 Operation [deploy] of [/usr/sap/KDI/J02/j2ee/cluster/server0/temp/tc~bl~deploy_controller/archives/423/kmd.dk~sftptestear.ear] failed
+		 -> Deployment of jobs in application [kmd.dk/sftptestear] failed, reason is : [Job "SFTPTestJob" of bean "SFTPTest" does not have a connection factory name. The connection factory name for jobs must be "JobQueueFactory".]'.
+		SDA : name 'sftptestear', vendor 'kmd.dk', location 'localDevelopment', version '20180201151057', software type ('J2EE', sub type ''), csn component '', dependencies :[none]
+		Time statistics( ms ):
+			1.validate : -1
+				1.1.deployment : 1212
+					1.1.1.Notify:Event triggered : 117
+					1.1.2.Bulk deployment : 1080
+						1.1.2.1.Perform delivery : 1080
+							1.1.2.1.1.Application Deployer : 1079
+					1.1.3.Notify:Event performed : 15
+
+]
+Feb 1, 2018 4:14:28 PM   [Path  ]: [#3]: The Log was reinitialized with [com.sap.tc.logging.Category@f9ec92] [com.sap.tc.logging.Location@1a67cb].
+Feb 1, 2018 4:14:28 PM   [Info  ]: [#3]: Will try to connect []:[-1]
+Feb 1, 2018 4:14:28 PM   [Info  ]: [#3]: Connected to []:[-1]
+Feb 1, 2018 4:14:29 PM   [Path  ]: [#4]: The Log was reinitialized with [com.sap.tc.logging.Category@f9ec92] [com.sap.tc.logging.Location@1a67cb].
+Feb 1, 2018 4:14:29 PM   [Info  ]: [#4]: Will try to connect []:[-1]
+Feb 1, 2018 4:14:29 PM   [Info  ]: [#4]: Connected to []:[-1]
+Feb 1, 2018 4:14:34 PM   [Info  ]: [#4]: Deployment of [name: 'sftptestear', vendor: 'kmd.dk' (sda)] finished.
+Feb 1, 2018 4:14:35 PM   [Error ]: [#4]: Deployment Exception during deployment phase [DeploymentException], cause=[ASJ.dpl_dc.001085 Operation [deploy] of [kmd.dk_sftptestear] failed]
+Feb 1, 2018 4:14:35 PM   [Error ]: [#4]: Deployment Items status: [
+----- Sorted Items -----
+	1. Client path 'C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftptestear\_comp\gen\default\deploy\kmd.dk~sftptestear.ear'
+		Deploy status is 'Aborted'
+		SDA : name 'sftptestear', vendor 'kmd.dk', location 'localDevelopment', version '20180201151057', software type ('J2EE', sub type ''), csn component '', dependencies :[none]
+
+----- Deployment Items -----
+	1. Client path 'C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftptestear\_comp\gen\default\deploy\kmd.dk~sftptestear.ear'
+		Deploy status is 'Aborted'
+		Description:'1. ASJ.dpl_ds.006193 Operation [deploy] of [/usr/sap/KDI/J02/j2ee/cluster/server1/temp/tc~bl~deploy_controller/archives/416/kmd.dk~sftptestear.ear] failed
+		 -> Deployment of jobs in application [kmd.dk/sftptestear] failed, reason is : [Job "SFTPTestJob" of bean "SFTPTest" does not have a connection factory name. The connection factory name for jobs must be "JobQueueFactory".]'.
+		SDA : name 'sftptestear', vendor 'kmd.dk', location 'localDevelopment', version '20180201151057', software type ('J2EE', sub type ''), csn component '', dependencies :[none]
+		Time statistics( ms ):
+			1.validate : -1
+				1.1.deployment : 965
+					1.1.1.Notify:Event triggered : 15
+					1.1.2.Bulk deployment : 911
+						1.1.2.1.Perform delivery : 911
+							1.1.2.1.1.Application Deployer : 911
+					1.1.3.Notify:Event performed : 39
+
+]
+May 8, 2018 3:23:51 PM   [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@139608] [com.sap.tc.logging.Location@1def28a].
+May 8, 2018 3:23:51 PM   [Info  ]: [#0]: Will try to connect []:[-1]
+May 8, 2018 3:23:53 PM   [Info  ]: [#0]: Connected to []:[-1]
+May 8, 2018 3:23:57 PM   [Info  ]: [#0]: Deployment of [name: 'sftpmodear', vendor: 'kmd.dk' (sda)] finished.
+May 8, 2018 3:23:58 PM   [Info  ]: [#0]: +++ Deployment of session ID [611] finished with status [Warning] +++. [[ deployerId=1 ]] [[#4: 2.689 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Warning] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Warning] : name: 'sftpmodear', vendor: 'kmd.dk', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+May 8, 2018 3:28:28 PM   [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 3:28:28 PM   [Info  ]: [#0]: Will try to connect []:[-1]
+May 8, 2018 3:28:29 PM   [Info  ]: [#0]: Connected to []:[-1]
+May 8, 2018 3:28:35 PM   [Info  ]: [#0]: Deployment of [name: 'sftpmodear', vendor: 'kmd.dk' (sda)] finished.
+May 8, 2018 3:28:35 PM   [Info  ]: [#0]: +++ Deployment of session ID [621] finished with status [Success] +++. [[ deployerId=1 ]] [[#4: 4.733 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'sftpmodear', vendor: 'kmd.dk', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+May 8, 2018 3:33:35 PM   [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 3:33:35 PM   [Info  ]: [#1]: Will try to connect []:[-1]
+May 8, 2018 3:33:36 PM   [Info  ]: [#1]: Connected to []:[-1]
+May 8, 2018 3:33:37 PM   [Info  ]: [#1]: Deployment of [name: 'sftpmodear', vendor: 'kmd.dk' (sda)] finished.
+May 8, 2018 3:33:38 PM   [Info  ]: [#1]: +++ Deployment of session ID [622] finished with status [Success] +++. [[ deployerId=2 ]] [[#10: 0.695 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'sftpmodear', vendor: 'kmd.dk', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+May 8, 2018 3:43:54 PM   [Path  ]: [#2]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 3:43:54 PM   [Info  ]: [#2]: Will try to connect []:[-1]
+May 8, 2018 3:43:54 PM   [Info  ]: [#2]: Connected to []:[-1]
+May 8, 2018 3:43:55 PM   [Path  ]: [#3]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 3:43:55 PM   [Info  ]: [#3]: Will try to connect []:[-1]
+May 8, 2018 3:43:55 PM   [Info  ]: [#3]: Connected to []:[-1]
+May 8, 2018 3:44:00 PM   [Info  ]: [#3]: Deployment of [name: 'sftpmodear', vendor: 'kmd.dk' (sda)] finished.
+May 8, 2018 3:44:01 PM   [Info  ]: [#3]: Deployment of [name: 'sftptestear', vendor: 'kmd.dk' (sda)] finished.
+May 8, 2018 3:44:01 PM   [Error ]: [#3]: Deployment Exception during deployment phase [DeploymentException], cause=[ASJ.dpl_dc.001085 Operation [deploy] of [kmd.dk_sftptestear] failed]
+May 8, 2018 3:44:01 PM   [Error ]: [#3]: Deployment Items status: [
+----- Sorted Items -----
+	1. Client path 'C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_AdapterModule\kmd.dk\sftpmodear\_comp\gen\default\deploy\kmd.dk~sftpmodear.ear'
+		Deploy status is 'Success'
+		SDA : name 'sftpmodear', vendor 'kmd.dk', location 'localDevelopment', version '20180508132112', software type ('J2EE', sub type ''), csn component '', dependencies :[none]
+	2. Client path 'C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftptestear\_comp\gen\default\deploy\kmd.dk~sftptestear.ear'
+		Deploy status is 'Aborted'
+		SDA : name 'sftptestear', vendor 'kmd.dk', location 'localDevelopment', version '20180508134353', software type ('J2EE', sub type ''), csn component '', dependencies :[none]
+
+----- Deployment Items -----
+	1. Client path 'C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftptestear\_comp\gen\default\deploy\kmd.dk~sftptestear.ear'
+		Deploy status is 'Aborted'
+		Description:'1. Deployment of jobs in application [kmd.dk/sftptestear] failed, reason is : [Job "kmd.dk/sftptestear:SFTPTestJob" cannot be deployed. There is at least another job with the same name in another application]'.
+		SDA : name 'sftptestear', vendor 'kmd.dk', location 'localDevelopment', version '20180508134353', software type ('J2EE', sub type ''), csn component '', dependencies :[none]
+		Time statistics( ms ):
+			1.validate : -1
+				1.1.Resolve dependencies : 1
+				1.2.deployment : 1234
+					1.2.1.Notify:Event triggered : 35
+					1.2.2.Bulk deployment : 1182
+						1.2.2.1.Perform delivery : 1182
+							1.2.2.1.1.Application Deployer : 1179
+					1.2.3.Notify:Event performed : 17
+
+	2. Client path 'C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_AdapterModule\kmd.dk\sftpmodear\_comp\gen\default\deploy\kmd.dk~sftpmodear.ear'
+		Deploy status is 'Success'
+		SDA : name 'sftpmodear', vendor 'kmd.dk', location 'localDevelopment', version '20180508132112', software type ('J2EE', sub type ''), csn component '', dependencies :[none]
+		Time statistics( ms ):
+			1.Check version:kmd.dk_sftpmodear : 1
+			2.validate : -1
+				2.1.deployment : 668
+					2.1.1.Notify:Event triggered : 35
+					2.1.2.Bulk deployment : 609
+						2.1.2.1.Perform delivery : 556
+							2.1.2.1.1.Application Deployer : 556
+						2.1.2.2.Notify Observers : 53
+							2.1.2.2.1.Store in repository : 43
+							2.1.2.2.2.update CVers : 10
+					2.1.3.Notify:Event performed : 24
+
+]
+May 8, 2018 3:45:03 PM   [Path  ]: [#4]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 3:45:03 PM   [Info  ]: [#4]: Will try to connect []:[-1]
+May 8, 2018 3:45:03 PM   [Info  ]: [#4]: Connected to []:[-1]
+May 8, 2018 3:45:04 PM   [Path  ]: [#5]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 3:45:04 PM   [Info  ]: [#5]: Will try to connect []:[-1]
+May 8, 2018 3:45:04 PM   [Info  ]: [#5]: Connected to []:[-1]
+May 8, 2018 3:45:06 PM   [Info  ]: [#5]: Deployment of [name: 'sftpmodear', vendor: 'kmd.dk' (sda)] finished.
+May 8, 2018 3:45:06 PM   [Info  ]: [#5]: +++ Deployment of session ID [613] finished with status [Success] +++. [[ deployerId=4 ]] [[#24: 0.655 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'sftpmodear', vendor: 'kmd.dk', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+May 8, 2018 4:43:01 PM   [Path  ]: [#6]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 4:43:01 PM   [Info  ]: [#6]: Will try to connect []:[-1]
+May 8, 2018 4:43:02 PM   [Info  ]: [#6]: Connected to []:[-1]
+May 8, 2018 4:43:09 PM   [Info  ]: [#6]: Deployment of [name: 'sftpmodear', vendor: 'kmd.dk' (sda)] finished.
+May 8, 2018 4:43:09 PM   [Info  ]: [#6]: +++ Deployment of session ID [614] finished with status [Success] +++. [[ deployerId=5 ]] [[#30: 1.579 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'sftpmodear', vendor: 'kmd.dk', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+May 8, 2018 4:43:54 PM   [Path  ]: [#7]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 4:43:54 PM   [Info  ]: [#7]: Will try to connect []:[-1]
+May 8, 2018 4:43:54 PM   [Info  ]: [#7]: Connected to []:[-1]
+May 8, 2018 5:01:59 PM   [Path  ]: [#8]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 5:01:59 PM   [Info  ]: [#8]: Will try to connect []:[-1]
+May 8, 2018 5:02:00 PM   [Info  ]: [#8]: Connected to []:[-1]
+May 8, 2018 5:02:01 PM   [Error ]: [#8]: All Items Already Deployed Validation Exception during deployment phase [AllItemsAlreadyDeployedValidationException],cause=[ASJ.dpl_dc.003456 All batch items are marked as AlreadyDeployed because of Version check.]
+May 8, 2018 5:02:01 PM   [Error ]: [#8]: Deployment Items status: [
+----- Sorted Items -----
+----- Deployment Items -----
+	1. Client path 'C:\Users\z8qrr\Desktop\PI\Adapter Module\LocalDevelopment~sftpmodear~kmd.dk.ear'
+		Deploy status is 'AlreadyDeployed'
+		Description:'1. Already deployed component has version:20180508144220'.
+		SDA : name 'sftpmodear', vendor 'kmd.dk', location 'localDevelopment', version '20180508144220', software type ('J2EE', sub type ''), csn component '', dependencies :[none]
+
+]
+May 8, 2018 5:02:04 PM   [Path  ]: [#9]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 5:02:04 PM   [Info  ]: [#9]: Will try to connect []:[-1]
+May 8, 2018 5:02:04 PM   [Info  ]: [#9]: Connected to []:[-1]
+May 8, 2018 5:02:11 PM   [Path  ]: [#10]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 5:02:11 PM   [Info  ]: [#10]: Will try to connect []:[-1]
+May 8, 2018 5:02:11 PM   [Info  ]: [#10]: Connected to []:[-1]
+May 8, 2018 5:02:13 PM   [Info  ]: [#10]: Deployment of [name: 'sftpmodear', vendor: 'kmd.dk' (sda)] finished.
+May 8, 2018 5:02:13 PM   [Info  ]: [#10]: +++ Deployment of session ID [624] finished with status [Success] +++. [[ deployerId=7 ]] [[#44: 0.764 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'sftpmodear', vendor: 'kmd.dk', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+May 8, 2018 5:02:16 PM   [Path  ]: [#11]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 5:02:16 PM   [Info  ]: [#11]: Will try to connect []:[-1]
+May 8, 2018 5:02:16 PM   [Info  ]: [#11]: Connected to []:[-1]
+May 8, 2018 5:11:31 PM   [Path  ]: [#12]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 5:11:31 PM   [Info  ]: [#12]: Will try to connect []:[-1]
+May 8, 2018 5:11:31 PM   [Info  ]: [#12]: Connected to []:[-1]
+May 8, 2018 5:11:34 PM   [Info  ]: [#12]: Deployment of [name: 'sftpmodear', vendor: 'kmd.dk' (sda)] finished.
+May 8, 2018 5:11:34 PM   [Info  ]: [#12]: +++ Deployment of session ID [625] finished with status [Success] +++. [[ deployerId=8 ]] [[#51: 0.761 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'sftpmodear', vendor: 'kmd.dk', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+May 8, 2018 5:11:37 PM   [Path  ]: [#13]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 5:11:37 PM   [Info  ]: [#13]: Will try to connect []:[-1]
+May 8, 2018 5:11:37 PM   [Info  ]: [#13]: Connected to []:[-1]
+May 8, 2018 5:14:02 PM   [Path  ]: [#14]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 5:14:02 PM   [Info  ]: [#14]: Will try to connect []:[-1]
+May 8, 2018 5:14:02 PM   [Info  ]: [#14]: Connected to []:[-1]
+May 8, 2018 5:14:04 PM   [Info  ]: [#14]: Deployment of [name: 'sftpmodear', vendor: 'kmd.dk' (sda)] finished.
+May 8, 2018 5:14:04 PM   [Info  ]: [#14]: +++ Deployment of session ID [626] finished with status [Success] +++. [[ deployerId=9 ]] [[#58: 0.682 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'sftpmodear', vendor: 'kmd.dk', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+May 8, 2018 5:14:06 PM   [Path  ]: [#15]: The Log was reinitialized with [com.sap.tc.logging.Category@1189b13] [com.sap.tc.logging.Location@6d3353].
+May 8, 2018 5:14:06 PM   [Info  ]: [#15]: Will try to connect []:[-1]
+May 8, 2018 5:14:06 PM   [Info  ]: [#15]: Connected to []:[-1]
+May 11, 2018 12:27:16 PM [Path  ]: [#0]: The Log was reinitialized with [com.sap.tc.logging.Category@17ba293] [com.sap.tc.logging.Location@1ee793f].
+May 11, 2018 12:27:16 PM [Info  ]: [#0]: Will try to connect []:[-1]
+May 11, 2018 12:27:23 PM [Info  ]: [#0]: Connected to []:[-1]
+May 11, 2018 12:27:39 PM [Info  ]: [#0]: Deployment of [name: 'sftpmodear', vendor: 'kmd.dk' (sda)] finished.
+May 11, 2018 12:27:40 PM [Info  ]: [#0]: +++ Deployment of session ID [634] finished with status [Success] +++. [[ deployerId=1 ]] [[#4: 6.508 sec]] [
+===== Summary - Deploy Result - Start =====
+------------------------
+Type | Status  : Count
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : [1]
+------------------------
+------------------------
+Type | Status  : Id
+------------------------
+ > SCA(s)
+ > SDA(s)
+   - [Success] : name: 'sftpmodear', vendor: 'kmd.dk', 
+------------------------
+===== Summary - Deploy Result - End =====
+]
+May 11, 2018 12:27:45 PM [Path  ]: [#1]: The Log was reinitialized with [com.sap.tc.logging.Category@17ba293] [com.sap.tc.logging.Location@1ee793f].
+May 11, 2018 12:27:45 PM [Info  ]: [#1]: Will try to connect []:[-1]
+May 11, 2018 12:27:47 PM [Info  ]: [#1]: Connected to []:[-1]

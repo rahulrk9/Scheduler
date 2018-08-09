@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    development component
+                     name: sftplib
+                   vendor: kmd.dk
+                     type: External Library
+                 sub-type: 
+              type-vendor: sap.com
+
+       software component
+                     name: KK_SFTPMONITOR
+                   vendor: kmd.dk
+
+                 location: localDevelopment
+          source location: Z8QRR@H46328
+            build variant: default
+
+    building on H46328, Windows 8/x86, version 6.2
+    using Java VM 'Java HotSpot(TM) Client VM', version 20.45-b01 (Sun Microsystems Inc.)
+    build started at 2018-05-11 12:26:03 GMT+02:00 (CEST)
+
+    Build Plugin 'ExternalArchivePlugin', Version 7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:30 +0200, CL206623)
+    detailed versions:
+    sap.com:tc/bi/anttasks#def           7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:42 +0200, CL206623)
+    sap.com:tc/bi/bp/externalarchive#lib 7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:30 +0200, CL206623)
+    sap.com:tc/bi/core#def               7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:47:18 +0200, CL206623)
+    sap.com:tc/bi/exception#def          7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:41 +0200, CL206623)
+    sap.com:tc/bi/extddicdb#def          7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:45 +0200, CL206623)
+    sap.com:tc/bi/extsql#def             7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:42 +0200, CL206623)
+    sap.com:tc/bi/framework#def          7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:44:36 +0200, CL206623)
+    sap.com:tc/bi/i18n#def               7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:37 +0200, CL206623)
+    sap.com:tc/bi/javatech#def           7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:45:07 +0200, CL206623)
+    sap.com:tc/bi/jdoc#def               7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:42 +0200, CL206623)
+    sap.com:tc/bi/jdoc/util#def          7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:44:55 +0200, CL206623)
+    sap.com:tc/bi/jlincbs#def            7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:49 +0200, CL206623)
+    sap.com:tc/bi/settings#version       7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:00 +0200, CL206623)
+    sap.com:tc/bi/util#util              7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:44:46 +0200, CL206623)
+    sap.com:tc/bi/velocity#def           7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:37 +0200, CL206623)
+    sap.com:tc/bi/xml#def                7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:38 +0200, CL206623)
+ -->
+<project name="DC Build"
+         default="build"
+         basedir=".">
+<taskdef name="jlinppcheck" classname="com.sap.tc.buildplugin.pp.ant.JLinEECheckTask"/>
+<taskdef name="pppacker" classname="com.sap.tc.buildplugin.pp.PPPackTask"/>
+<taskdef name="propertybag" classname="com.sap.tools.ant.taskdefs.PropertyBag"/>
+<taskdef name="timer" classname="com.sap.tools.ant.taskdefs.Timer"/>
+
+<target name="createPublicParts">
+<timer/>
+<pppacker ppname="api">
+</pppacker>
+<timer message="Packing of public part 'api' finished in "/>
+<timer/>
+<pppacker ppname="archives">
+</pppacker>
+<timer message="Packing of public part 'archives' finished in "/>
+<jlinppcheck/>
+</target>
+
+<target name="build" depends="createPublicParts">
+
+</target>
+</project>

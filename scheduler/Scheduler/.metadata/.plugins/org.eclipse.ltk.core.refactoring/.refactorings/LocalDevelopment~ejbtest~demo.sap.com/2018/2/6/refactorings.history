@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 elements(s) to &apos;LocalDevelopment~sftpejbtest~kmd.dk/ejbModule/com.kk.kmd.dk&apos;&#x0D;&#x0A;- Original project: &apos;LocalDevelopment~ejbtest~demo.sap.com&apos;&#x0D;&#x0A;- Destination element: &apos;LocalDevelopment~sftpejbtest~kmd.dk/ejbModule/com.kk.kmd.dk&apos;&#x0D;&#x0A;- Original element: &apos;com.kk.dk.SFTPtest.java&apos;" description="Copy compilation unit" destination="=LocalDevelopment\~sftpejbtest\~kmd.dk/ejbModule&lt;com.kk.kmd.dk" element1="/ejbModule&lt;com.kk.dk{SFTPtest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1517843356823" units="1" version="1.0"/>
+</session>

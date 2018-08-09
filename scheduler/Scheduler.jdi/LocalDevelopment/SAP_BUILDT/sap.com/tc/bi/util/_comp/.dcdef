@@ -1,0 +1,1416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<development-component version="1.0.4"
+  xmlns:IDX="urn:sap.com:DevelopmentComponent:1.0"
+  xmlns="http://xml.sap.com/2002/11/DevelopmentComponent"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xml.sap.com/2002/11/DevelopmentComponent dcdef.xsd">
+  <name>tc/bi/util</name>
+  <vendor>sap.com</vendor>
+  <caption>Utilities for NWDI Build plugins</caption>
+  <description></description>
+  <component-type>
+    <vendor>sap.com</vendor>
+    <type>Build Plugin</type>
+  </component-type>
+  <access-control-list>
+    <!-- SAP NetWeaver internal access -->
+<grant>
+    <sc-ref>
+        <name>WD-RUNTIME-EXT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-WDTESTFC-EXT</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>FRAMEWORK-EXT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>VCFREESTYLEKIT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>NWMWDLAP</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-WDTESTFC</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>DEVTESTTOOLS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-WDTESTDT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-WDTESTOQ</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>NWMCLIENT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>VOICEVC</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BI-WDALV</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>DI_MLT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>APPL2VCTESTS</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM_MLT</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM_WDAPP</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BI-REPPLAN</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>CAF</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>CAF-MF</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>CAF-UI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>DI_CBS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>DI_CMS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>DI_DTR</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>DI_PRT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>DI_PVC</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ESI-UI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ES_UI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LM-PORTAL</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LMCFG</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>MMR_TOOLS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>NWKTPEU</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>NWMADMIN</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>NWTEC</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SAPEUPIDE</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SWLIFECYCL</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>UKMS_JAVA</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>UMEADMIN</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>CAF-TST</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-CAF</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-BIAPPL</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-LMAPPL</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-NW04CHK</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-NWKTPEU</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-NWMADM</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-UKMS_JAVA</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM_CBS</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM_CMS</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM_DTR</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SAP-EU-TST</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SAPER</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>GP-CORE</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>GP-PP</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>GP-VC</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>WDEXTENSIONS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BI-BASE-S</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BI-IBC</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BIWEBAPP</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-BI-BASE-S</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-BIWEBAPP</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-KMC-BC</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-KMC-CM</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-KMC-COL</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>KMC-BC</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>KMC-CM</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>KMC-COLL</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-UWLJWF</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-NWKTP</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>NWKTP</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>RTC</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>RTC-STREAM</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>JWF</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>UWLJWF</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ADSSAP</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>APPL1VCTESTS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BI_UDI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>DI_CLIENTS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>EP-BASIS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>EP-BASIS-API</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>EP_BUILDT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ESP_FRAMEWORK</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ETPRJSCHEDULER</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>FRAMEWORK</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-ATS-FW</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-EP-PSERV</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-EPUNDLVRD</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM_FW_J2EECFG</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-MMR</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HMPRTUT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-XIAFTEST</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-XITEST</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>KM-KW_JIKS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>MMR_SERVER</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SAP_BUILDT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SAP-XI3RDPARTY</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SAP_XIAF</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SAP-XICONS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SAP_XIPCK</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SAP_XITOOL</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>TEST</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>UDDI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>VCBASE</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>VCFRAMEWORK</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>VTP_BUILDT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>WD-ADOBE</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>WD-APPS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>WD-RUNTIME</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>XI_CNT_SAP_BASIS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ATS-CORE</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ATS-TESTS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BASETABLES</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>CFG_ZA</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ENGFACADE</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ENGINEAPI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>J2EE-APPS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>J2EE-FRMW</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LM-CORE</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SERVERCORE</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>VOICERT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>VCKITBI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LMNWAUIFRMRK</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LMNWACDP</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LMNWABASICAPPS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LMNWABASICMBEAN</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LM-TOOLS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LM-SLD</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-WDALV</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LMCTC</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-LMCTC</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HMCORETESTS</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SAPNWDEMO</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BPEM-CONTENT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BPEM-DEMO</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BPEM-FLEXUI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BPEM-HIM</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BPEM-MON</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BPEM-PP</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BPEM-TM</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BPEM-WDUI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-BPEM-TEST</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-BPEM-HIM</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-BPEM-TM</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>EP-CONNECTIVITY</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>EP-RUNTIME</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>EP-ADMIN</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>EP-APPS-EXT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>EP-MODELING</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>EP-APPS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>EP-WPC</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SAP_XIESR</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HMMOINTESTS</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LMNWABASICCOMP</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-ESI-UI</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LMNWATOOLS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SOAMON</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SOAMONBASIC</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>IDEDUMMY</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SERVICE-COMP</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ESREG-BASIC</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>SR-UI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>EP-MASHUP</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-SERVICE-COMP</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-LMES</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-TCK-REFDB</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-TCK-IPCW</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-TCK-ATSX</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>WD-FLEX</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-WD-FLEX</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ECM-ADMIN</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ECM-JEE-COMP</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ECM-CORE</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ECM-APPS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-ECM</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LMCFG-BYD</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BPEM-BASE</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BPEM-CORE</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-BPEM-CORE</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BRMS-CORE</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BRMS-MON</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BRMS-WDUI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM_NWDIFWRK</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ECM-STORE</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>UI-SVCS-COREWD</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>CCP-FRAMEWORK</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>CCP-BASE-WD</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>CCP-BASE-JAVA</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>CCP-CHP-COLL</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>UI-PAGEBUILD-FW</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HMLMSPMUNIT</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>EXTCFG_BUILDT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>BPEM-CUUI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>CCP-SCN-UIFLEX</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>CU-BASE-WD</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>CU-BASE-WD-EXT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>CU-WD4VC-ADPT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>COMP_BUILDT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-ECM-STORE</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-KMC-MIG</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-WD-WIDGETAPP</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>UI-SVCS-CORE</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>FP-INFRA</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-FP-INFRA</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-ADSSAP</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-WD-WIDGETS</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-LMACC</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LMACC</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-CCP-BASE-JAVA</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-UI-PAGEBUILD-FW</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-UI-SVC-COREWD</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-UI-SVCS-CORE</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HMNWAJSDTESTS</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LM-CTS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-LM-CTS</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>LM-CTS-UI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ESCONF_BUILDT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>DI_NTY</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM_DI_NTY</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>VCM</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-VCM</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-BAM-TST</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>VCM_TI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-VCMTI</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>ODATA-CXF-EXT</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>UISAPUI5_JAVA</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>INTG_VIS</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>INTG_VIS_DCJ</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM_INTG_VISIBILITY</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM_INTG_VISIBILITY_DCJ</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>TM-WLUI</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>HM-TM-WLUI</name>
+        <vendor>test.sap.com</vendor>
+    </sc-ref>
+</grant>
+<grant>
+    <sc-ref>
+        <name>OEE_MII</name>
+        <vendor>sap.com</vendor>
+    </sc-ref>
+</grant>
+
+  </access-control-list>
+  <attributes>
+    <attribute>
+      <attribute-type>ACHAssignment</attribute-type>
+      <attribute-vendor>sap.com</attribute-vendor>
+      <attribute-value>BC-CTS-CBS-PLG</attribute-value>
+    </attribute>
+    <attribute>
+      <attribute-type>Project</attribute-type>
+      <attribute-vendor>sap.com</attribute-vendor>
+      <attribute-value>bps.core</attribute-value>
+    </attribute>
+    <attribute>
+      <attribute-type>Subproject</attribute-type>
+      <attribute-vendor>sap.com</attribute-vendor>
+      <attribute-value>_util</attribute-value>
+    </attribute>
+  </attributes>
+</development-component>

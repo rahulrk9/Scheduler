@@ -1,0 +1,138 @@
+<technologies version="1">
+  <technology name="sap.com/tc/bi/core">
+    <buildstepcreators>
+      <creator type="nop"       classname="com.sap.tc.buildplugin.EmptyBuildStepCreator"/>
+      <creator type="pure-java" classname="com.sap.tc.buildplugin.JavaBuildStepCreator"/>
+      <creator type="content-checks" classname="com.sap.tc.buildplugin.CheckDCContentStep"/>
+      <creator type="context-preparation" classname="com.sap.tc.buildplugin.PrepareContextBuildStepCreator"/>
+      <creator type="context-finalization" classname="com.sap.tc.buildplugin.DestroyContextBuildStepCreator"/>
+      <creator type="default" classname="com.sap.tc.buildplugin.DefaultBuildStepCreator"/>
+      <creator type="velocity" classname="com.sap.tc.buildplugin.VelocityBuildStepCreator"/>
+      <creator type="precompile" classname="com.sap.tc.buildplugin.GetPrecompiledInfoStep"/>
+    </buildstepcreators>
+    <build-steps>
+      <step name="contentcheck" type="content-checks"/>
+      <step name="preparecontext" type="context-preparation"/>
+      <step name="destroycontext" type="context-finalization"/>
+      <step name="verify" type="nop"/>
+      <sequence name="build">
+        <step>contentcheck</step>
+        <step name="precompile" type="precompile"/>
+        <step>preparecontext</step>
+        <step name="prebuild" type="default">
+          <configuration macro-file="prebuild.vm" build-file="prebuild.xml"/>
+        </step>
+        <step name="build" type="default">
+          <configuration macro-file="build.vm" build-file="build.xml"/>
+        </step>
+        <step name="postbuild" type="default">
+          <configuration macro-file="postbuild.vm" build-file="postbuild.xml"/>
+        </step>
+        <step>verify</step>
+        <step>destroycontext</step>
+      </sequence>
+    </build-steps>
+    <archivepacker>
+      <packer type="filesystem" classname="com.sap.tc.buildplugin.pp.pack.FileSystemPacker"/>
+      <packer type="zip"        classname="com.sap.tc.buildplugin.pp.pack.ZipPacker"/>
+      <packer type="jar"        classname="com.sap.tc.buildplugin.pp.pack.JarPacker"/>
+      <packer type="sda"        classname="com.sap.tc.buildplugin.pp.pack.DeployArchivePacker"/>
+      <packer type="war"        classname="com.sap.tc.buildplugin.pp.pack.WarPacker"/>
+    </archivepacker>
+    <entity>
+      <descriptor type="Absolute File" subtype="Plain">
+        <description>
+          A single file relative to the root folder of the DC. The file must
+          be contained in a defined source or package folder.
+        </description>
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHAbsoluteFile">
+          <configuration destination="filesystem"/>
+        </handler>
+      </descriptor>
+      <descriptor type="Absolute Folder" subtype="Plain">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHAbsoluteFolder">
+          <configuration destination="filesystem"/>
+        </handler>
+      </descriptor>
+      <descriptor type="Absolute Folder Tree" subtype="Plain">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHAbsoluteFolderTree">
+          <configuration destination="filesystem"/>
+        </handler>
+      </descriptor>
+      <descriptor type="File" subtype="Plain">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHFile">
+          <configuration destination="filesystem"/>
+        </handler>
+      </descriptor>
+      <descriptor type="Folder" subtype="Plain">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHFolder">
+          <configuration destination="filesystem"/>
+        </handler>
+      </descriptor>
+      <descriptor type="Folder Tree" subtype="Plain">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHFolderTree">
+          <configuration destination="filesystem"/>
+        </handler>
+      </descriptor>
+    </entity>
+    <ant-tasks>
+      <task name="propertybag" classname="com.sap.tools.ant.taskdefs.PropertyBag"/>
+      <task name="timer" classname="com.sap.tools.ant.taskdefs.Timer"/>
+      <task name="jarsap" classname="com.sap.sdm.ant.JarSAP" on-demand="true"/>
+      <task name="srcpacker" classname="com.sap.tc.buildplugin.ant.taskdefs.SourceArchiveCreatorTask" on-demand="true"/>
+      <task name="redirectLog" classname="com.sap.tools.ant.taskdefs.EnableSAPLog" on-demand="true"/>
+      <task name="pppacker" classname="com.sap.tc.buildplugin.pp.PPPackTask" on-demand="true"/>
+      <task name="cda" classname="com.sap.tc.buildplugin.deploy.DeployArchiveTask" on-demand="true"/>
+      <task name="cdu" classname="com.sap.tc.buildplugin.deploy.DeployUnitTask" on-demand="true"/>
+      <task name="prepda" classname="com.sap.tc.buildplugin.deploy.DeployArchivePrepTask" on-demand="true"/>
+      <task name="dcinfo" classname="com.sap.tc.buildplugin.ant.taskdefs.DeployArchiveInfoTask" on-demand="true"/>
+      <task name="sdadd" classname="com.sap.tools.ant.taskdefs.SdaDDTask" on-demand="true"/>
+      <task name="checkzip" classname="com.sap.tools.ant.taskdefs.ZipChecker" on-demand="true"/>
+      <task name="checkxml" classname="com.sap.tools.ant.taskdefs.XMLFileChecker" on-demand="true"/>
+      <task name="checktxt" classname="com.sap.tools.ant.taskdefs.TextFileChecker" on-demand="true"/>
+      <task name="checkmf"  classname="com.sap.tools.ant.taskdefs.ManifestFileChecker" on-demand="true"/>
+      <task name="checkprop"  classname="com.sap.tools.ant.taskdefs.PropertyFileChecker" on-demand="true"/>
+      <task name="checkfileset"  classname="com.sap.tools.ant.taskdefs.EmptyFilesetCheck" on-demand="true"/>
+    </ant-tasks>
+    <descriptor-types>
+      <descriptor-type type="sda-deployment-descriptor">
+        <source-location>META-INF/sda-dd.xml</source-location>
+        <validator-class>com.sap.tc.buildplugin.deploy.val.SDADeploymentDescriptorValidator</validator-class>
+      </descriptor-type>
+    </descriptor-types>
+    <archive-types>
+      <archive-type type="sap.com~SDA"
+                    classname="com.sap.tc.buildplugin.deploy.JarSAPArchivePacker"
+                    deploy-type-prefix="SDA["
+                    deploy-type-suffix="]"
+                    default-file-suffix="sda"/>
+      <archive-type type="sap.com~zip"
+                    classname="com.sap.tc.buildplugin.deploy.ZipArchivePacker"
+                    default-file-suffix="zip"/>
+    </archive-types>
+    <buildfile-creators>
+      <library
+        implementation-name="com.sap.tc.buildplugin.ant.util.AntBase"
+        interface-name="com.sap.tc.buildplugin.util.IAntToolkit"
+        context-name="antBase"/>
+    </buildfile-creators>
+    <factory>
+      <configuration
+        interface="com.sap.tc.buildplugin.pp.IPublicPartPacker"
+        classname="com.sap.tc.buildplugin.pp.PPPacker"/>
+    </factory>
+    <build-options>
+      <option name="loglevel"/>
+      <option name="final_assembly" value="true,false"/>
+      <option name="com.sap.check-path-lengths-on-windows" value="true,false"/>
+      <option name="com.sap.check-java-source-encoding" value="true,false"/>
+      <option name="com.sap.use-default-exclude-patterns"/>
+      <option name="com.sap.exclude-patterns"/>
+      <option name="com.sap.deploy-dependency-check.enabled" value="true,false"/>
+      <option name="com.sap.runtime-dependency-check.enabled" value="true,false"/>
+      <option name="com.sap.archive-packaging.*.update-descriptors"/>
+      <option name="com.sap.sda.additional.substitution-variables"/>
+      <option name="com.sap.velocity.log-to-build-log"/>
+    </build-options>
+  </technology>
+</technologies>

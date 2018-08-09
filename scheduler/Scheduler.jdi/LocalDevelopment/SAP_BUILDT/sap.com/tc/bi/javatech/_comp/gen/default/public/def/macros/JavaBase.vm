@@ -1,0 +1,131 @@
+ #*
+ * This is the Velocity macro library used for all build plugins.
+ *
+ * Please consider the following points:
+ *
+ *   1. Please comment your macros! It's important for others who have to read
+ *      and understand macros.
+ *
+ *   2. Using proper indentation makes it much more easy to read the macros,
+ *      especially when nested conditions and iterations are used.
+ *      Although this may lead to badly formatted build.xml files, it's better
+ *      to have a clearly readable source. There are tools available that can
+ *      reformat XML files, but not the Velocity template files.
+ *
+ * Thank you in advance
+ *#
+
+###############################################################################
+##
+## Java Compilation
+##
+###############################################################################
+
+#macro(CompileDCJavaSources)
+    $javaBase.compileDCJavaSources()
+#end
+
+
+#**
+ * Default compilation macro for DCs.
+ *#
+#macro(CompileDCJavaSource $srcDirList $pathHash $classes)
+    $javaBase.compileDCJavaSource($srcDirList, $pathHash, $classes)
+#end
+
+#**
+ * Global cleanup after generation.
+ *#
+#macro(FinishGeneration)
+    ## empty macro. Only kept for legacy support
+#end
+
+
+#**
+ * Compiles Java sources from a single directory.
+ *
+ * @param $srcDir
+ *        the source directory
+ * @param $pathHash
+ *        A map whose values are absolute pathnames to directories. All the
+ *        directories must exist. All *.jar files available in the directories
+ *        will be put into compilation classpath.
+ * @param $classes
+ *        the destination folder
+ *#
+#macro(Compile $srcDir $pathHash $classes)
+    $javaBase.compile($srcDir, $pathHash, $classes)
+#end
+
+
+#**
+ * Compiles Java sources from multiple directories.
+ *
+ * @param $srcDirList
+ *        a list of source directories
+ * @param $pathHash
+ *        A map whose values are absolute pathnames to directories. All the
+ *        directories must exist. All *.jar files available in the directories
+ *        will be put into compilation classpath.
+ * @param $classes
+ *        the destination folder
+ *#
+#macro(CompileDirs $srcDirList $pathHash $classes)
+    $javaBase.compileDirs($srcDirList, $pathHash, "$classes")
+#end
+
+
+#**
+ * Generates the properties from xlf files.
+ *#
+#macro(Xlf2Prop $sourceDirs $outputDir)
+    $javaBase.xlf2props($sourceDirs, $outputDir)
+#end
+
+
+#**
+ * Generates the properties from xlf files
+ *#
+#macro(Xlf2PropDir $xlfSrcDir $xlfDestDir)
+    $javaBase.xlf2prop("$xlfSrcDir","$xlfDestDir")
+#end
+
+
+#**
+ * Sign jars contained in real public parts according to the specification
+ * list placed in the DC's cfg folder.
+ *#
+#macro(SignPublicPartJars)
+    $javaBase.signPublicPartJars()
+#end
+
+
+#macro(DefaultEARGeneration $assemblyPaths)
+    $javaBase.createDefaultEAR($assemblyPaths)
+#end
+
+#macro(CreateNW04WebServiceArchive $wsar_rootfolder)
+    $javaBase.createNW04WebServiceArchive("$wsar_rootfolder")
+#end
+
+###############################################################################
+##
+## JLin Static Source Code Analysis.
+##
+###############################################################################
+
+#**
+ * PRIVATE: For internal use only.
+ *#
+#macro(Jlin_SetEnv)
+    ## empty macro. Only kept for legacy support
+#end
+
+#macro(Jlin_AddCompilerHook)
+    ## empty macro. Only kept for legacy support
+#end
+
+#macro(Jlin_StoreResults)
+    ## empty macro. Only kept for legacy support
+#end
+

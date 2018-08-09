@@ -1,0 +1,30 @@
+<job-definitions>
+    <job-definition name="SFTPTestJob"
+                                description="Checks whether SFTP is working or not">
+      <job-definition-parameter name="Mailbox" 
+                                data-type="String" 
+                                direction="IN"/>
+      <job-definition-parameter name="From" 
+                                data-type="String" 
+                                direction="IN"/>
+      <job-definition-parameter name="To" 
+                                data-type="String" 
+                                direction="IN"/>
+      <job-definition-parameter name="Username" 
+                                data-type="String" 
+                                direction="IN"/>
+      <job-definition-parameter name="Host" 
+                                data-type="String" 
+                                direction="IN"/>
+       <job-definition-parameter name="Port" 
+                                data-type="String" 
+                                direction="IN"/>
+       <job-definition-parameter name="KEYSTORE_NAME" 
+                                data-type="String" 
+                                direction="IN"/>
+       <job-definition-parameter name="KEY_ALIAS" 
+                                data-type="String" 
+                                direction="IN"/>
+    </job-definition>
+    
+</job-definitions>

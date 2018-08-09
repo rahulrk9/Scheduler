@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!-- specify the title (will be used everywhere) and the description (is used on an all-SAP javadoc overview page -->
+<javadoc title="Build Plugin Framework"
+         description="APIs for extending the build logic for component based builds." >
+  <!-- package-groupings is optional. However should already be specified in the source code providing subprojects, if they own a group in full. The packages attribute value has the same syntax as in the ant javadoc task. -->
+  <!--<package-groupings>-->
+    <!--<group title="ReferencingPackage" packages="com.referencing*" />-->
+    <!--<group title="Some other group" package="com.other,com.other.*" />-->
+  <!--</package-groupings>-->
+  <!-- the web-links section is optional and used for linking to _external_ javadoc. JDK, J2EE and Eclipse javadocs are linked automatically and must not be specified here. -->
+  <!--<web-links>-->
+
+    <!--<link href="http://someserver.com/somejavadocrootaddress" />-->
+  <!--</web-links>-->
+</javadoc>

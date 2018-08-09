@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.sap.debug.framework.commonLaunchConfiguration">
+<booleanAttribute key="com.sap.ide.debug.framework.BuildDeploy" value="true"/>
+<stringAttribute key="com.sap.ide.debug.framework.SapSystem" value="KDI"/>
+<stringAttribute key="com.sap.ide.debug.framework.launchString" value="http://kkkdi00s.kmdpfosap.local:50200/"/>
+<stringAttribute key="com.sap.ide.debug.framework.moduleID" value="org.eclipse.jst.jee.server:LocalDevelopment~sftpmodear~kmd.dk"/>
+<stringAttribute key="generated_conf_id_attr" value="run_debug_on_srv_sapserver_KDI"/>
+</launchConfiguration>

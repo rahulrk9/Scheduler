@@ -1,0 +1,489 @@
+ #*
+ * This is the Velocity macro library used for all build plugins.
+ *
+ * This library is only provided for convenience. All macros defined in this
+ * file should be backed by some Java implementation.
+ *
+ * Please consider the following points:
+ *
+ *   1. Please comment your macros! It's important for others who have to read
+ *      and understand macros.
+ *
+ *   2. Using proper indentation makes it much more easy to read the macros,
+ *      especially when nested conditions and iterations are used.
+ *      Although this may lead to badly formatted build.xml files, it's better
+ *      to have a clearly readable source. There are tools available that can
+ *      reformat XML files, but not the Velocity template files.
+ *
+ * Thank you in advance
+ *#
+
+
+###############################################################################
+##
+## Ant Constructs
+##
+###############################################################################
+
+#**
+ * Starts a project. Simplified this will create a <project ...> tag. This is
+ * kept for legacy support as the framework will automatically generate an
+ * appropriate project.
+ *
+ * $Name    the name of the Ant project
+ * $Default the default target, typically "build"
+ * $Basedir the base directory, typically "."
+ *#
+#macro(StartProject $Name $Default $Basedir)
+## empty macro, legacy only
+#end
+
+#**
+ * Ends the project.
+ *#
+#macro(EndProject)
+## empty macro, legacy only
+#end
+
+#macro(AddProjectProperty $Name $Value)
+    $antBase.addProjectProperty($Name, $Value)
+#end
+
+#macro(SetProperty $Name $Value)
+	<property name="$Name" value="$Value"/>
+#end
+
+#macro(SetProps $props)
+	#foreach( $key in $props.keySet() )
+		#SetProperty($key $props.get($key))
+	#end
+#end
+
+#macro(MkDir $Dir)
+	<mkdir dir="$Dir"/>
+#end
+
+#**
+ * Starts a target. Simplified this will create:
+ *     <target name="$Name">.
+ *
+ * You should use these macros instead of declaring <target>s directly so that
+ * the framework can keep track of defined targets, extensions and correct
+ * dependencies
+ *
+ * These StartTarget* macros must be used in combination with EndTarget,
+ * it is an error to mix these macros with "raw" Ant xml.
+ *
+ * $Name    the name of the target
+ *#
+#macro(StartTarget $Name)
+    $antBase.startTarget($Name)
+#end
+
+#**
+ * Starts a target with defined dependencies. Simplified this will create:
+ *     <target name="$Name" depends="$Deps">.
+ * See description for StartTarget($Name) for more info
+ *
+ * $Name    the name of the target
+ * $Deps    a comma separated list of targets that this target depends upon.
+ *#
+#macro(StartTargetDep $Name $Deps)
+    $antBase.startTarget($Name, $Deps)
+#end
+
+#**
+ * Starts a target with defined dependencies. Simplified this will create:
+ *     <target name="$Name" depends="$Deps" if="$condition">.
+ * See description for StartTarget($Name) for more info
+ *
+ * $Name    the name of the target
+ * $Deps    a comma separated list of targets that this target depends upon.
+ * $condition   a condition that must be fulfilled
+ *#
+#macro(StartTargetIf $Name $Deps $condition)
+    $antBase.startTargetIf($Name, $Deps, $condition)
+#end
+
+#**
+ * Starts a target with defined dependencies. Simplified this will create:
+ *     <target name="$Name" depends="$Deps" unless="$condition">.
+ * See description for StartTarget($Name) for more info
+ *
+ * $Name    the name of the target
+ * $Deps    a comma separated list of targets that this target depends upon.
+ * $condition   a condition that must not be fulfilled
+ *#
+#macro(StartTargetUnless $Name $Deps $condition)
+    $antBase.startTargetUnless($Name, $Deps, $condition)
+#end
+
+#**
+ * DEPRECATED
+ * Starts a target named "build" with defined dependencies. Simplified this will create:
+ *     <target name="build" depends="$Deps">.
+ * See description for StartTarget($Name) for more info
+ *
+ * $Deps    a comma separated list of targets that this target depends upon.
+ *#
+#macro(StartBuildTarget $deps)
+    $antBase.startBuildTarget($deps) ## not in IAntToolkit interface!
+#end
+
+#**
+ * Ends a target.Simplified this will create:
+ *     </target>
+ *#
+#macro(EndTarget)
+    $antBase.endTarget()
+#end
+
+#macro(DelDir $Dir)
+	<delete dir="$Dir"/>
+#end
+
+#macro(DelFile $File)
+	<delete file="$File"/>
+#end
+
+#**
+ * DEPRECATED
+ *#
+#macro(StartTargetBuild $Depends)
+    $antBase.startTarget("build", $Depends)
+#end
+
+#macro(BeginAntPropertyBag $name)
+    <propertybag bagname="${name}">
+#end
+
+#macro(EndAntPropertyBag)
+    </propertybag>
+#end
+
+#**
+ * Creates an application-j2ee-engine.xml descriptor for the SAP J2EE engine.
+ * You must end the descriptor by calling the EndCreateAppJ2EEDescriptor macro.
+ * The descriptor file will be generated at Ant runtime.
+ *
+ * $file            the file that will be created
+ * $providername    the provider name for the descriptor
+ *#
+#macro(BeginCreateAppJ2EEDescriptor $file $providerName )
+    $antBase.taskdef("createappj2ee", "com.sap.tools.ant.taskdefs.ApplicationJ2EEEngineTask")
+    <createappj2ee file="${file}" providername="${providerName}">
+#end
+
+#macro(EndCreateAppJ2EEDescriptor)
+    </createappj2ee>
+#end
+
+#**
+ * Creates an application descriptor for EAR files.
+ * You must end the descriptor by calling the EndCreateAppDescriptor macro.
+ * The descriptor file will be generated at Ant runtime.
+ *
+ * $file            the file that will be created
+ * $displayname     the display name of the application
+ * $description     a description for the application
+ *#
+#macro(BeginCreateAppDescriptor $file $displayname $description )
+    $antBase.taskdef("createapp", "com.sap.tools.ant.taskdefs.ApplicationXmlTask")
+    <createapp file="${file}" displayname="${displayname}" description="${description}">
+#end
+
+#macro(EndCreateAppDescriptor)
+    </createapp>
+#end
+
+#**
+ * Creates an deployment descriptor for SDA files.
+ * You must end the descriptor by calling the EndCreateSDADescriptor macro.
+ * The descriptor file will be generated at Ant runtime.
+ *
+ * $file            the file that will be created
+ * $swtype          the software type, e.g. "J2EE"
+ * $descriptortype  the descriptor type, e.g. "engine"
+ *#
+#macro(BeginCreateSDADescriptor $file $swtype $descriptortype)
+    $antBase.beginCreateSDADescriptor("$file", $swtype, $descriptortype)
+#end
+
+#macro(BeginCreateSDAFSDescriptor $file $displayname)
+    <sdadd file="${file}" softwaretype="FS" descriptortype="fs" displayname="${displayname}">
+#end
+
+#macro(EndCreateSDADescriptor)
+    $antBase.endCreateSDADescriptor()
+#end
+
+#macro(CreateDefaultJ2EEEngineDescriptor $file)
+    $antBase.createDefaultJ2EEEngineDescriptor("$file")
+#end
+
+#**
+ * Workaround for Ant problems: this special task will delete the specified
+ * $jarfile if it is not a valid ZIP archive or if it contains no files
+ * outside the META-INF folder.
+ *#
+#macro(DeleteInvalidJar $jarfile)
+    $antBase.taskdef("emptyjarerasor", "com.sap.tools.ant.taskdefs.EmptyJarErasor")
+    <emptyjarerasor jarfile="$jarfile"/>
+#end
+
+
+#**
+ * Starts (and defines) a simple timer task. Use the ShowTimer macro to show
+ * the duration between StartTimer and ShowTimer.
+ *#
+#macro(StartTimer)
+    <timer/>
+#end
+
+#**
+ * Shows the time elapsed since the last #StartTimer or #ShowTimer use.
+ * E.g. if you use
+ *      #ShowTimer("Something")
+ * the output will look like this:
+ *      Something finished in 23.123 seconds.
+ *#
+#macro(ShowTimer $message)
+    <timer message="${message} finished in "/>
+#end
+
+###############################################################################
+##
+## Deploy archive packaging
+##
+###############################################################################
+
+#**
+ * Begin deploy file creation
+ *
+ * $type    the type of archive, e.g. "sap.com~SDA"
+ * $file  the file suffix that will be created
+ * $deployDescriptor   the absolute path where the deploy descriptor can be found
+ * $assemblyPaths      a list of public part root folders that will be assembled.
+ *#
+#macro(BeginCreateDeployFile $type $file $deployDescriptor $assemblyPaths)
+    $antBase.beginCreateDeployFile("$type", "$file", "$deployDescriptor", $assemblyPaths)
+#end
+
+#**
+ * End deploy file creation
+ *#
+#macro(EndCreateDeployFile)
+    $antBase.endCreateDeployFile()
+#end
+
+
+#macro(BeginCreateDeployUnit $key)
+    $antBase.beginCreateDeployUnit("$key")
+#end
+
+#macro(BeginCreateDeployUnitIn $key $folder)
+    $antBase.beginCreateDeployUnit("$key", $folder)
+#end
+
+#macro(EndCreateDeployUnit)
+    $antBase.endCreateDeployUnit()
+#end
+
+
+###############################################################################
+##
+## Source packaging
+##
+###############################################################################
+
+#**
+ * DEPRECATED This macro has been replaced by the BeginCreateDeployFile macro
+ * Creates a source archive (src.zip) in a technology specific folder that
+ * is placed in the variant folder so that the NetWeaver Developer Studio
+ * can access the sources (e.g. for code insight).
+ *
+ * The functionality is split into a Begin* and an End* macro so that DC specific
+ * code can be added.
+ *
+ *  #BeginCreateSourceArchive("java" $dc_depend_assemblyPPs)
+ *    #if($dc_build_options.shouldIncludeSources())
+ *       ## create custom <fileset>s.
+ *    #end
+ *  #EndCreateSourceArchive()
+ *
+ * @param $technology           the techology subfolder, e.g. "java"
+ * @param $usedPublicParts      a List of used public part root folders from
+ *                              which sources should be included.
+ *#
+#macro(BeginCreateSourceArchive $technology $usedPublicParts)
+    <fail message="Macro BeginCreateSourceArchive is no longer supported."/>
+#end
+
+#**
+ * DEPRECATED This macro has been replaced by the BeginCreateDeployFile macro
+ *#
+#macro(BeginCreateSourceArchiveWithRoot $rootFolder $technology $usedPublicParts)
+    <fail message="Macro BeginCreateSourceArchive is no longer supported."/>
+#end
+
+#**
+ * DEPRECATED This macro has been replaced by the BeginCreateDeployFile macro
+ *#
+#macro(EndCreateSourceArchive)
+
+#end
+
+#**
+ * DEPRECATED This macro has been replaced by the BeginCreateDeployFile macro
+ *#
+#macro(EndCreateSourceArchiveWithRoot $rootFolder)
+
+#end
+
+#**
+ * DEPRECATED This macro has been replaced by the BeginCreateDeployFile macro
+ * Convenience macro to include the created source archive in a deployable
+ *#
+#macro(IncludeSourceArchive)
+    #if($dc_build_options.shouldIncludeSources())
+    <!-- include packaged sources -->
+    <fileset dir="$dc_gen_variantDir">
+        <include name="src/**/src.zip"/>
+    </fileset>
+    #end
+#end
+
+
+###############################################################################
+##
+## Creating deployable archives
+##
+###############################################################################
+
+#**
+ * DEPRECATED This macro has been replaced by the BeginCreateDeployFile macro
+ * Begin a JarSAP operation
+ *#
+#macro(BeginJarSAP $jarFile $deployFile)
+   $dc_util.logWarning("Macro BeginJarSAP has been deprecated, please use BeginCreateDeployUnit")
+   $antBase.beginJarSAP("$jarFile", "$deployFile") ## not in IAntToolkit interface
+#end
+
+#**
+ * DEPRECATED This macro has been replaced by the BeginCreateDeployFile macro
+ * Begin a JarSAP operation with a specific softwareSubtype.
+ *#
+#macro(BeginJarSAPWithSubtype $jarFile $deployFile $softwareSubtype)
+   $dc_util.logWarning("Macro BeginJarSAP has been deprecated, please use BeginCreateDeployUnit")
+    $antBase.beginJarSAP("$jarFile", "$deployFile", "$softwareSubtype") ## not in IAntToolkit interface
+#end
+
+#**
+ * DEPRECATED This macro has been replaced by the BeginCreateDeployFile macro
+ *#
+#macro(IncludeDeployDependencies)
+    $antBase.includeDeployDependencies() ## not in IAntToolkit interface
+#end
+
+
+#**
+ * DEPRECATED This macro has been replaced by the BeginCreateDeployFile macro
+ *#
+#macro(IncludeJarSAPDeployDependencies $dependencies)
+    $antBase.includeDeployDependencies($dependencies) ## not in IAntToolkit interface
+#end
+
+#**
+ * DEPRECATED This macro has been replaced by the BeginCreateDeployFile macro
+ *#
+#macro(EndJarSAP)
+    $antBase.endJarSAP() ## not in IAntToolkit interface
+#end
+
+
+#macro(BeginJar $jarFile)
+	<jar jarfile="${jarFile}" manifest="${bi_manifest_Name}" duplicate="preserve">
+#end
+
+
+#macro(EndJar)
+    </jar>
+#end
+
+#macro(BeginZip $zipFile)
+	<zip destfile="${zipFile}" whenempty="skip" encoding="UTF-8" duplicate="preserve">
+#end
+
+
+#macro(EndZip)
+    </zip>
+#end
+
+
+###############################################################################
+##
+## Handling of Public Parts
+##
+###############################################################################
+
+#**
+ * convenience macro if no special entities, packers or generators are required.
+ *#
+#macro(PackPublicParts)
+    $antBase.packPublicParts()
+#end
+
+#**
+ * convenience macro if no special entities, packers or generators are required.
+ *#
+#macro(PackPublicPart $pp)
+    $antBase.packPublicPart($pp)
+#end
+
+#**
+ * Begin packaging of public parts via Java implementation.
+ * Typical use in a velocity macro should look like this:
+ *
+ *     #foreach($pp in $dc_public_parts)
+ *         <!-- Public Part: $pp.Name -->
+ *         <echo message="Public Part: $pp.Name"/>
+ *         #BeginPackPP($pp)
+ *             ## define specific generators/output paths/etc.
+ *             #foreach ( $pkgDir in $dc_packageDirs )
+ *                 <generator type="javac" srcpath="$pkgDir" destpath="classes"/>
+ *             #end
+ *         #EndPackPP()
+ *     #end
+ *
+ * For convenience this macro defines some default packers that should be more
+ * or less valid for all build plugins. If a location should be packaged in
+ * a different way this can be done by simply redefining the packer location.
+ * The last defined packer for a location will be used.
+ *#
+#macro(BeginPackPP $pp)
+    $antBase.beginPackPP($pp)
+#end
+
+#macro(EndPackPP)
+    $antBase.endPackPP()
+#end
+
+#macro(EndPackNamedPP $pp)
+    $antBase.endPackPP($pp)
+#end
+
+#**
+ * Begin packaging a public part that is not really defined for this DC.
+ * When using this macro you must add <entity> elements directly.
+ *#
+#macro(BeginPackInternalPP $name $root)
+    #set($dummy = $antBase.beginPackInternalPP("${name}", "assembly", "${root}"))
+#end
+
+#macro(BeginPackInternalPPWithPurpose $name $purpose $root)
+    #set($dummy = $antBase.beginPackInternalPP("${name}", "${purpose}", "${root}"))
+#end
+
+#macro(EndPackInternalPP $name)
+    $antBase.endPackInternalPP("${name}")
+#end

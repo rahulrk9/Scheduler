@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="1" hostname="kkkdi00s.kmdpfosap.local" id="sapserver_KDI" id-set="true" name="SAP Server&lt;KDI&gt;" server-type="org.eclipse.jst.server.generic.sap" server-type-id="org.eclipse.jst.server.generic.sap" start-timeout="900" stop-timeout="900" timestamp="88">
+    <list key="Generic_Server_Modules_List" value0="org.eclipse.jst.jee.server:LocalDevelopment~sftpmodear~kmd.dk"/>
+    <map SYSTEM_NAME="KDI" key="generic_server_instance_properties" number="2" projectName="LocalDevelopment~sftpmod~kmd.dk" run_debug_on_srv=""/>
+    <list key="modules" value0="LocalDevelopment~sftpmodear~kmd.dk::org.eclipse.jst.jee.server:LocalDevelopment~sftpmodear~kmd.dk::jst.ear::5.0"/>
+  </server>
+</servers>

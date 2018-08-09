@@ -1,0 +1,18 @@
+package com.kmd.sftp.mod;
+
+import javax.ejb.Stateless;
+
+/**
+ * Session Bean implementation class SftpMod
+ */
+@Stateless
+public class SftpMod {
+
+    /**
+     * Default constructor. 
+     */
+    public SftpMod() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

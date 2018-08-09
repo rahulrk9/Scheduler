@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>sftplib</name>
+<vendor>kmd.dk</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>External Library</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>api</name>
+<purpose>compilation</purpose>
+</public-part>
+<dependencies/>
+</metadata>
+<source-components/>
+<archives>
+<archive location="bcprov-jdk16-1.45.jar" type="filesystem">
+<additional-path attributes="jar,java-library">lib/java/bcprov-jdk16-1.45.jar</additional-path>
+</archive>
+<archive location="com.sap.aii.af.lib.mod.jar" type="filesystem">
+<additional-path attributes="jar,java-library">lib/java/com.sap.aii.af.lib.mod.jar</additional-path>
+</archive>
+<archive location="com.sap.aii.af.ms.ifc_api.jar" type="filesystem">
+<additional-path attributes="jar,java-library">lib/java/com.sap.aii.af.ms.ifc_api.jar</additional-path>
+</archive>
+<archive location="com.sap.aii.af.svc_api.jar" type="filesystem">
+<additional-path attributes="jar,java-library">lib/java/com.sap.aii.af.svc_api.jar</additional-path>
+</archive>
+<archive location="com.sap.security.api.jar" type="filesystem">
+<additional-path attributes="jar,java-library">lib/java/com.sap.security.api.jar</additional-path>
+</archive>
+<archive location="com.sap.security_2.0.0.150324064358.jar" type="filesystem">
+<additional-path attributes="jar,java-library">lib/java/com.sap.security_2.0.0.150324064358.jar</additional-path>
+</archive>
+<archive location="com.sap.tc.security.https_2.0.0.150324064358.jar" type="filesystem">
+<additional-path attributes="jar,java-library">lib/java/com.sap.tc.security.https_2.0.0.150324064358.jar</additional-path>
+</archive>
+<archive location="jsch-0.1.54.jar" type="filesystem">
+<additional-path attributes="jar,java-library">lib/java/jsch-0.1.54.jar</additional-path>
+</archive>
+<archive location="sap.com_tc_logging_java_impl.jar" type="filesystem">
+<additional-path attributes="jar,java-library">lib/java/sap.com_tc_logging_java_impl.jar</additional-path>
+</archive>
+<archive location="sap.com~tc~je~keystore_api~API.jar" type="filesystem">
+<additional-path attributes="jar,java-library">lib/java/sap.com~tc~je~keystore_api~API.jar</additional-path>
+</archive>
+</archives>
+<entities>
+<entity>
+<name>bcprov-jdk16-1.45.jar</name>
+<entity-type>Archive</entity-type>
+<entity-sub-type>Java Library</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="bcprov-jdk16-1.45.jar" source-location="DC" source-path="libraries">
+<file path="lib/java/bcprov-jdk16-1.45.jar" source-path="bcprov-jdk16-1.45.jar"/>
+</fileset>
+</entity>
+<entity>
+<name>com.sap.aii.af.lib.mod.jar</name>
+<entity-type>Archive</entity-type>
+<entity-sub-type>Java Library</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="com.sap.aii.af.lib.mod.jar" source-location="DC" source-path="libraries">
+<file path="lib/java/com.sap.aii.af.lib.mod.jar" source-path="com.sap.aii.af.lib.mod.jar"/>
+</fileset>
+</entity>
+<entity>
+<name>com.sap.aii.af.ms.ifc_api.jar</name>
+<entity-type>Archive</entity-type>
+<entity-sub-type>Java Library</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="com.sap.aii.af.ms.ifc_api.jar" source-location="DC" source-path="libraries">
+<file path="lib/java/com.sap.aii.af.ms.ifc_api.jar" source-path="com.sap.aii.af.ms.ifc_api.jar"/>
+</fileset>
+</entity>
+<entity>
+<name>com.sap.aii.af.svc_api.jar</name>
+<entity-type>Archive</entity-type>
+<entity-sub-type>Java Library</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="com.sap.aii.af.svc_api.jar" source-location="DC" source-path="libraries">
+<file path="lib/java/com.sap.aii.af.svc_api.jar" source-path="com.sap.aii.af.svc_api.jar"/>
+</fileset>
+</entity>
+<entity>
+<name>com.sap.security.api.jar</name>
+<entity-type>Archive</entity-type>
+<entity-sub-type>Java Library</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="com.sap.security.api.jar" source-location="DC" source-path="libraries">
+<file path="lib/java/com.sap.security.api.jar" source-path="com.sap.security.api.jar"/>
+</fileset>
+</entity>
+<entity>
+<name>com.sap.security_2.0.0.150324064358.jar</name>
+<entity-type>Archive</entity-type>
+<entity-sub-type>Java Library</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="com.sap.security_2.0.0.150324064358.jar" source-location="DC" source-path="libraries">
+<file path="lib/java/com.sap.security_2.0.0.150324064358.jar" source-path="com.sap.security_2.0.0.150324064358.jar"/>
+</fileset>
+</entity>
+<entity>
+<name>com.sap.tc.security.https_2.0.0.150324064358.jar</name>
+<entity-type>Archive</entity-type>
+<entity-sub-type>Java Library</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="com.sap.tc.security.https_2.0.0.150324064358.jar" source-location="DC" source-path="libraries">
+<file path="lib/java/com.sap.tc.security.https_2.0.0.150324064358.jar" source-path="com.sap.tc.security.https_2.0.0.150324064358.jar"/>
+</fileset>
+</entity>
+<entity>
+<name>jsch-0.1.54.jar</name>
+<entity-type>Archive</entity-type>
+<entity-sub-type>Java Library</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="jsch-0.1.54.jar" source-location="DC" source-path="libraries">
+<file path="lib/java/jsch-0.1.54.jar" source-path="jsch-0.1.54.jar"/>
+</fileset>
+</entity>
+<entity>
+<name>sap.com_tc_logging_java_impl.jar</name>
+<entity-type>Archive</entity-type>
+<entity-sub-type>Java Library</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="sap.com_tc_logging_java_impl.jar" source-location="DC" source-path="libraries">
+<file path="lib/java/sap.com_tc_logging_java_impl.jar" source-path="sap.com_tc_logging_java_impl.jar"/>
+</fileset>
+</entity>
+<entity>
+<name>sap.com~tc~je~keystore_api~API.jar</name>
+<entity-type>Archive</entity-type>
+<entity-sub-type>Java Library</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="sap.com~tc~je~keystore_api~API.jar" source-location="DC" source-path="libraries">
+<file path="lib/java/sap.com~tc~je~keystore_api~API.jar" source-path="sap.com~tc~je~keystore_api~API.jar"/>
+</fileset>
+</entity>
+</entities>
+</content>

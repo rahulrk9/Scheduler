@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+DC-Name: sftpmodear
+DC-SubType: Enterprise Application
+DC-Type: J2EE
+DC-Vendor: kmd.dk
+Implementation-Title: sftpmodear
+Implementation-Vendor: kmd.dk
+Implementation-Version: localDevelopment 20180511102651
+SC-Name: KK_AdapterModule
+SC-Vendor: kmd.dk
+
+Name: build-information
+Build-Counter: 20180511102651
+Build-Date: 2018-05-11
+Build-Location: localDevelopment
+Build-Time: 12:26:51 GMT+02:00 (CEST)
+Created-By: DC BuildTool
+Source-Location: Z8QRR@H46328
+

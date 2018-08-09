@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>ejbtest</name>
+<vendor>demo.sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</development-component>
+<public-part>
+<name>ejbjar</name>
+<purpose>assembly</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>sftplib</name>
+<vendor>demo.sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>External Library</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">archives</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>com.sap.aii.af.lib.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/je/scheduler/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Service</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>com.sap.aii.af.svc.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Service</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.jee5.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>sftplib</name>
+<vendor>demo.sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>External Library</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components/>
+<archives>
+<archive location="javalib" path="lib/java/demo.sap.com~ejbtest.jar" type="jar">
+<property key="attributes">J2EE-Module[module-type[ejb]],SAP-J2EE-Module[container-type[scheduler~container]],jar</property>
+</archive>
+<archive location="srcarchive" path="src/java/src.zip" type="zip"/>
+</archives>
+<entities>
+<entity>
+<name>demo.sap.com~ejbtest</name>
+<entity-type>EJB-JAR</entity-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="DC" source-path="ejbModule">
+<file path="META-INF/MANIFEST.MF"/>
+<file path="META-INF/ejb-j2ee-engine.xml"/>
+<file path="META-INF/job-definition.xml"/>
+</fileset>
+<fileset location="javalib" source-location="gen" source-path="classes">
+<file path="com/kk/dk/SFTPtest.class"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="ejbModule">
+<file path="com/kk/dk/SFTPtest.java"/>
+</fileset>
+</entity>
+</entities>
+</content>

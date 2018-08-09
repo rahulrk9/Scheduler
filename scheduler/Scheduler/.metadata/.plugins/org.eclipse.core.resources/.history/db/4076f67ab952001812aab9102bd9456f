@@ -1,0 +1,30 @@
+package com.kmd.sftp.mod;
+
+import javax.ejb.Stateless;
+
+import com.sap.aii.af.lib.mp.module.Module;
+import com.sap.aii.af.lib.mp.module.ModuleContext;
+import com.sap.aii.af.lib.mp.module.ModuleData;
+import com.sap.aii.af.lib.mp.module.ModuleException;
+
+/**
+ * Session Bean implementation class SftpMod
+ */
+@Stateless
+public class SftpMod implements Module {
+
+    /**
+     * Default constructor. 
+     */
+    public SftpMod() {
+        // TODO Auto-generated constructor stub
+    }
+
+	@Override
+	public ModuleData process(ModuleContext arg0, ModuleData arg1)
+			throws ModuleException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

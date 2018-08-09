@@ -1,0 +1,2 @@
+plugin.classname=com.sap.tc.buildplugin.DefaultPlugin
+plugin.name=sap.com/tc/bi/bp/scdef

@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+DC-Name: sftplib
+DC-Type: External Library
+DC-Vendor: demo.sap.com
+Implementation-Title: sftplib
+Implementation-Vendor: demo.sap.com
+Implementation-Version: localDevelopment 20180205153201
+SC-Name: MyComponents
+SC-Vendor: demo.sap.com
+
+Name: build-information
+Build-Counter: 20180205153201
+Build-Date: 2018-02-05
+Build-Location: localDevelopment
+Build-Time: 16:32:01 GMT+01:00 (CET)
+Created-By: DC BuildTool
+Source-Location: Z8QRR@H46328
+

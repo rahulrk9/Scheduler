@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mapping version="1.0">
+<development-component component-type="J2EE" name="sftpmod" src-archive="kmd.dk~sftpmod~ejbjar_srcarchive.zip" sub-type="EJBModule" type-vendor="sap.com" vendor="kmd.dk">
+<sourcefolder srcfolderpath="ejbModule">
+<sourceelement path="com/kmd/sftp/mod/LocalHome.java"/>
+<sourceelement path="com/kmd/sftp/mod/RemoteHome.java"/>
+<sourceelement path="com/kmd/sftp/mod/SftpMod.java"/>
+</sourcefolder>
+</development-component>
+</mapping>

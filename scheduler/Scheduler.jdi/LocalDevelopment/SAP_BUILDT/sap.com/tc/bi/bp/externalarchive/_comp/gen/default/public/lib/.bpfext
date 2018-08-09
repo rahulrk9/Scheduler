@@ -1,0 +1,19 @@
+<technologies version="1">
+  <technology name="sap.com/tc/bi/bp/externalarchive">
+    <uses>sap.com/tc/bi/javatech</uses>
+    <buildfile-creators>
+      <creator>
+        <classname>com.sap.tc.buildplugin.BuildExternalArchive</classname>
+        <step>build</step>
+        <sequence>build</sequence>
+      </creator>
+    </buildfile-creators>
+    <entity>
+      <descriptor type="Archive" subtype="Flex Library">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHFile">
+          <configuration destination="filesystem"/>
+        </handler>
+      </descriptor> 
+    </entity>
+  </technology>
+</technologies>

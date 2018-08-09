@@ -1,0 +1,117 @@
+Development Component Build (2018-05-11 12:26:51 GMT+01:00 (CEST))
+  Component name: sftpmodear
+  Component vendor: kmd.dk
+  SC compartment: KK_AdapterModule
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: Z8QRR@H46328
+  DC root folder: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_AdapterModule\kmd.dk\sftpmodear\_comp\
+  DC type: J2EE
+  DC subtype: Enterprise Application
+  Host: H46328
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/enterpriseApplication"
+   validating dependency to  public part "ejbjar" of DC "kmd.dk/sftpmod"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/enterpriseApplication
+   starting build plugin from : C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\enterpriseApplication\_comp\gen\default\public\enterpriseApplication\
+
+
+
+Build Plugin 'EnterpriseApplicationPlugin', Version 7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:11 +0200, CL206623)
+   development component:  sftpmodear (kmd.dk)
+      software component:  KK_AdapterModule (kmd.dk)
+                location:  localDevelopment
+                    type:  J2EE, subtype Enterprise Application
+           build variant:  default
+         source location:  Z8QRR@H46328
+         output location:  C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\2E71763D734CBDD99E2BF3004FB03AD1\default
+       generation folder:  C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t\2E71763D734CBDD99E2BF3004FB03AD1
+       plugin start time:  2018-05-11 12:26:51 GMT+02:00 (CEST)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.45-b01 (1.6, Sun Microsystems Inc.)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Checking path lengths for sources
+Path length checks finished in 0.001 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.023 seconds
+ 
+Creating Ant build file..
+  Creating output file: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\2E71763D734CBDD99E2BF3004FB03AD1\default\logs\build.xml
+  Using Java class:     com.sap.tc.buildplugin.BuildEnterpriseApplication
+Target "createDeployArchive" has a dependency on "compile" but no such target exists. Dependency will be ignored.
+Build file creation finished in 0.039 seconds
+ 
+Starting Ant..
+  Using build file:     C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\2E71763D734CBDD99E2BF3004FB03AD1\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+createDeployArchive:
+       [cdu] Preparing archive for deploy unit "default"
+       [cdu]   deployment type: "J2EE"
+ 
+       [cdu] Creating Ant build file: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\2E71763D734CBDD99E2BF3004FB03AD1\default\logs\buildDeployArchive.xml
+ 
+       [cdu] Creating descriptor META-INF/sda-dd.xml ...
+ 
+       [cdu] Skipping creation of application.xml for JEE5 archive.
+ 
+       [cdu] Validating descriptor C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_AdapterModule\kmd.dk\sftpmodear\_comp\META-INF\application-j2ee-engine.xml
+       [cdu] Setting provider name to "kmd.dk".
+       [cdu] No component dependency exists for reference to "engine.security.facade" (sap.com).
+       [cdu] No component dependency exists for reference to "engine.j2ee14.facade" (sap.com).
+       [cdu] No component dependency exists for reference to "com.sap.aii.af.svc.facade" (sap.com).
+       [cdu] No component dependency exists for reference to "com.sap.aii.af.lib.facade" (sap.com).
+       [cdu] No component dependency exists for reference to "com.sap.base.technology.facade" (sap.com).
+       [cdu] No component dependency exists for reference to "com.sap.aii.af.ifc.facade" (sap.com).
+ 
+       [cdu] Collecting modules ...
+       [cdu] Adding module 'kmd.dk~sftpmod.jar' from DC 'sftpmod' (vendor 'kmd.dk'), public part 'ejbjar'
+       [cdu] Missing deploy-time dependency for hard runtime reference to "engine.security.facade" (vendor "sap.com").
+       [cdu] Missing deploy-time dependency for hard runtime reference to "engine.j2ee14.facade" (vendor "sap.com").
+       [cdu] Missing deploy-time dependency for hard runtime reference to "com.sap.aii.af.svc.facade" (vendor "sap.com").
+       [cdu] Missing deploy-time dependency for hard runtime reference to "com.sap.aii.af.lib.facade" (vendor "sap.com").
+       [cdu] Missing deploy-time dependency for hard runtime reference to "com.sap.base.technology.facade" (vendor "sap.com").
+       [cdu] Missing deploy-time dependency for hard runtime reference to "com.sap.aii.af.ifc.facade" (vendor "sap.com").
+       [cdu] Ant build file creation finished in 0.083 seconds
+ 
+packDeployArchive:
+ [srcpacker] Creating source archive
+ [srcpacker] Adding source archive from kmd.dk~sftpmod
+     [timer] Source archive creation finished in 0.076 seconds
+ 
+    [jarsap] Info: JarSAP version 20090803.1000
+    [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
+    [jarsap] Building: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\2E71763D734CBDD99E2BF3004FB03AD1\default\deploy\kmd.dk~sftpmodear.ear with compression
+     [timer] JarSAP finished in 0.073 seconds
+ 
+ 
+build:
+ 
+Ant runtime 0.322 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2018-05-11 12:26:51 GMT+02:00 (CEST)
+Total build plugin runtime: 0.713 seconds
+ 
+Build finished with WARNING
+
+==== Post-Processing ====   started at 2018-05-11 12:26:51.961 CEST
+Comparison of previous and actual build results took: 0 seconds
+
+Copy the build results 
+  from: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\2E71763D734CBDD99E2BF3004FB03AD1\default\
+  to:   C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_AdapterModule\kmd.dk\sftpmodear\_comp\gen\default\

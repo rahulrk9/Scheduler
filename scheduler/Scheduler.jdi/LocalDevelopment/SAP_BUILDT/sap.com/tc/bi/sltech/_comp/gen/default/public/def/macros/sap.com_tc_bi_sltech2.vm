@@ -1,0 +1,9 @@
+#**
+ * Define your infrastructure macros in this file. We recommend to implement
+ * the actual logic in Java and just provide macro wrappers.
+ *
+ * If you don't need any macros you should delete this file to avoid
+ * unnecessary parsing at build time.
+ *#
+
+hallihallo

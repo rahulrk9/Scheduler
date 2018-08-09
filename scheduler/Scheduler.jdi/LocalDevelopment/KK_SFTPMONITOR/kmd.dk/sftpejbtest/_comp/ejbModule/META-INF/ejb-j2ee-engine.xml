@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-j2ee-engine xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance">
+  <enterprise-beans>
+    <enterprise-bean>
+      <ejb-name>SFTPtest</ejb-name>
+      <jndi-name>SFTPtest</jndi-name>
+      <message-props>
+        <destination-name>JobQueue</destination-name>
+        <connection-factory-name>JobQueueFactory</connection-factory-name>
+      </message-props>   
+    </enterprise-bean>
+  </enterprise-beans>
+</ejb-j2ee-engine>

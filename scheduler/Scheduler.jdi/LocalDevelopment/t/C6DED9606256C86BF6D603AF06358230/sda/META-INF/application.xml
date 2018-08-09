@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII" standalone="no"?>
+<application xmlns="http://java.sun.com/xml/ns/javaee" xmlns:application="http://java.sun.com/xml/ns/javaee/application_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd">
+  <display-name>LocalDevelopment~testear~demo.sap.com</display-name>
+  <module>
+    <ejb>demo.sap.com~ejbtest.jar</ejb>
+  </module>
+</application>

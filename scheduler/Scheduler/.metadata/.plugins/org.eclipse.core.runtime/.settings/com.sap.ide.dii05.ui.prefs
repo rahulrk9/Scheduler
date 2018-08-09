@@ -1,0 +1,16 @@
+#Tue May 08 13:14:37 CEST 2018
+defaultVendor=kmd.dk
+configPoolSLDURL=http\://172.20.172.135\:55600/
+defaultRelease=1.0
+LocalDevelopment\:\:KK_SFTPMONITOR\:\:kmd.dk\:\:SC.Release=0.0
+defaultSupportPackage=0
+defaultSupportPackage_HISTORY_LIST=0
+defaultPatchLevel_HISTORY_LIST=0
+LocalDevelopment\:\:KK_SFTPMONITOR\:\:kmd.dk\:\:SCExport.folder=C\:\\Users\\z8qrr\\Desktop
+dcSupportComponentField=NONE
+eclipse.preferences.version=1
+defaultPatchLevel=0
+DevelopmentConfigurationNature=
+defaultVendor_HISTORY_LIST=demo.sap.com;kmd.dk
+defaultRelease_HISTORY_LIST=0.0;1.0
+dialog.pref.build.option=true

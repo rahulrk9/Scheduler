@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+DC-Name: sftplib
+DC-Type: External Library
+DC-Vendor: kmd.dk
+Implementation-Title: sftplib
+Implementation-Vendor: kmd.dk
+Implementation-Version: localDevelopment 20180511102603
+SC-Name: KK_SFTPMONITOR
+SC-Vendor: kmd.dk
+
+Name: build-information
+Build-Counter: 20180511102603
+Build-Date: 2018-05-11
+Build-Location: localDevelopment
+Build-Time: 12:26:03 GMT+02:00 (CEST)
+Created-By: DC BuildTool
+Source-Location: Z8QRR@H46328
+

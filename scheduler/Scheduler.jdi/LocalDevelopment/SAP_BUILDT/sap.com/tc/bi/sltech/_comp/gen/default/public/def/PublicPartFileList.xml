@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>tc/bi/sltech</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>def</name>
+<purpose>infrastructure</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>com.sap.base.technology.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bi/ant</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bi/extsld</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">def</pp-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bi/extsld</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bi/framework</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bi/javatech</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">def</pp-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bi/javatech</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/lm/sl/metamodel</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<pp-ref purpose="infrastructure">libinf</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/lm/sl/metamodel</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/lm/sl/metamodel</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">libinf</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components/>
+<archives>
+<archive location="filesystem" type="filesystem"/>
+<archive location="javalib" path="lib/java/sap.com~tc~bi~sltech~def.jar" type="jar">
+<property key="attributes">jar,java-library</property>
+</archive>
+<archive location="srcarchive" path="src/java/src.zip" type="zip"/>
+</archives>
+<entities>
+<entity>
+<name>bp</name>
+<entity-type>Absolute Folder Tree</entity-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="filesystem" source-location="DC" source-path="bp">
+<file path="macros/sap.com_tc_bi_sltech2.vm"/>
+</fileset>
+</entity>
+<entity>
+<name>All Java classes</name>
+<entity-type>Java Package Tree</entity-type>
+<entity-sub-type>Class</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="DC" source-path="src">
+<file path="META-INF/MANIFEST.MF"/>
+<file path="data/cimmodel-eden-submodel.dat"/>
+<file path="data/cimmodel.dat"/>
+</fileset>
+<fileset location="javalib" source-location="gen" source-path="classes">
+<file path="com/sap/tc/buildplugin/pdef/PdefBuildFileCreator.class"/>
+<file path="com/sap/tc/buildplugin/pdef/PdefGeneratorTask.class"/>
+<file path="com/sap/tc/buildplugin/pdef/PdefTaskGenerator.class"/>
+<file path="com/sap/tc/buildplugin/pdef/PdefValidator.class"/>
+<file path="com/sap/tc/buildplugin/pdef/PluginUser.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/CIMExportUtil.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/CIMUriCollector.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/CIMUriHandler$ZipFileInputStreamWrapper.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/CIMUriHandler$_CIMUri.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/CIMUriHandler.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/MetamodelToCIMUtil.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/PdefMoinBuildFileCreator.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/PdefMoinGeneratorTask.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/PdefMoinTaskGenerator.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/PdefMoinValidator.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/SLDataEntityHandler.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/SLXmlAssemblyEntityHandler.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/VirtualCIMOM.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/CIMContentVerificationFactory.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/CircularDependenciesVerification.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/FunctionalUnitSCsVerification.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/LineIsNotMissingVerification.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/PartIdVerification.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/UsageTypeSCsVerification.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/VerificationClass.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/VerificationProperties.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/VerificationSuite.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/resource/CIMXmiResource$CIMResourceFactory.class"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/resource/CIMXmiResource.class"/>
+<file path="com/sap/tc/buildplugin/pdefnwproducts/JarUtil.class"/>
+<file path="com/sap/tc/buildplugin/pdefnwproducts/NWProductsGenerator$1.class"/>
+<file path="com/sap/tc/buildplugin/pdefnwproducts/NWProductsGenerator$2.class"/>
+<file path="com/sap/tc/buildplugin/pdefnwproducts/NWProductsGenerator$3.class"/>
+<file path="com/sap/tc/buildplugin/pdefnwproducts/NWProductsGenerator$4.class"/>
+<file path="com/sap/tc/buildplugin/pdefnwproducts/NWProductsGenerator.class"/>
+<file path="com/sap/tc/buildplugin/pdefnwproducts/UriResolver.class"/>
+<file path="com/sap/tc/buildplugin/scdef/Cdir.class"/>
+<file path="com/sap/tc/buildplugin/scdef/EdenBuildPlugin.class"/>
+<file path="com/sap/tc/buildplugin/scdef/EdenBuildPluginConstants.class"/>
+<file path="com/sap/tc/buildplugin/scdef/ScdefBuildFileCreator.class"/>
+<file path="com/sap/tc/buildplugin/scdef/ScdefDCUtil.class"/>
+<file path="com/sap/tc/buildplugin/scdef/ScdefGeneratorTask.class"/>
+<file path="com/sap/tc/buildplugin/scdef/ScdefTaskGenerator.class"/>
+<file path="com/sap/tc/buildplugin/scdef/ScdefValidator.class"/>
+<file path="com/sap/tc/buildplugin/scdef/Sdir.class"/>
+<file path="com/sap/tc/buildplugin/slentity/SlDataEntity.class"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="src">
+<file path="com/sap/tc/buildplugin/pdef/PdefBuildFileCreator.java"/>
+<file path="com/sap/tc/buildplugin/pdef/PdefGeneratorTask.java"/>
+<file path="com/sap/tc/buildplugin/pdef/PdefTaskGenerator.java"/>
+<file path="com/sap/tc/buildplugin/pdef/PdefValidator.java"/>
+<file path="com/sap/tc/buildplugin/pdef/PluginUser.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/CIMExportUtil.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/CIMUriCollector.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/CIMUriHandler.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/MetamodelToCIMUtil.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/PdefMoinBuildFileCreator.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/PdefMoinGeneratorTask.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/PdefMoinTaskGenerator.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/PdefMoinValidator.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/SLDataEntityHandler.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/SLXmlAssemblyEntityHandler.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/VirtualCIMOM.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/CIMContentVerificationFactory.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/CircularDependenciesVerification.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/FunctionalUnitSCsVerification.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/LineIsNotMissingVerification.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/PartIdVerification.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/UsageTypeSCsVerification.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/VerificationClass.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/VerificationProperties.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/checks/VerificationSuite.java"/>
+<file path="com/sap/tc/buildplugin/pdefmoin/resource/CIMXmiResource.java"/>
+<file path="com/sap/tc/buildplugin/pdefnwproducts/JarUtil.java"/>
+<file path="com/sap/tc/buildplugin/pdefnwproducts/NWProductsGenerator.java"/>
+<file path="com/sap/tc/buildplugin/pdefnwproducts/UriResolver.java"/>
+<file path="com/sap/tc/buildplugin/scdef/Cdir.java"/>
+<file path="com/sap/tc/buildplugin/scdef/EdenBuildPlugin.java"/>
+<file path="com/sap/tc/buildplugin/scdef/EdenBuildPluginConstants.java"/>
+<file path="com/sap/tc/buildplugin/scdef/ScdefBuildFileCreator.java"/>
+<file path="com/sap/tc/buildplugin/scdef/ScdefDCUtil.java"/>
+<file path="com/sap/tc/buildplugin/scdef/ScdefGeneratorTask.java"/>
+<file path="com/sap/tc/buildplugin/scdef/ScdefTaskGenerator.java"/>
+<file path="com/sap/tc/buildplugin/scdef/ScdefValidator.java"/>
+<file path="com/sap/tc/buildplugin/scdef/Sdir.java"/>
+<file path="com/sap/tc/buildplugin/slentity/SlDataEntity.java"/>
+</fileset>
+</entity>
+</entities>
+</content>

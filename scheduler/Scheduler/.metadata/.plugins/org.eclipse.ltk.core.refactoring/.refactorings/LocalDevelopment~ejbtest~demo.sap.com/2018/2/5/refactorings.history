@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 elements(s) to &apos;META-INF&apos;&#x0D;&#x0A;- Original project: &apos;LocalDevelopment~ejbtest~demo.sap.com&apos;&#x0D;&#x0A;- Destination element: &apos;META-INF&apos;&#x0D;&#x0A;- Original element: &apos;job-definition.xml&apos;" description="Copy file" element1="ejbModule/META-INF/job-definition.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1517497646670" target="/LocalDevelopment~sftpejbtest~kmd.dk/ejbModule/META-INF" units="0" version="1.0"/>
+</session>

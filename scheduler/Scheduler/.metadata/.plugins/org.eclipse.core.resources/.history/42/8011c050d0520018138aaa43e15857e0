@@ -1,0 +1,5 @@
+package com.kmd.sftp.mod;
+
+public @interface LocalHome {
+
+}

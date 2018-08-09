@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mapping version="1.0">
+<development-component component-type="J2EE" name="sftpejbtest" src-archive="kmd.dk~sftpejbtest~ejbjar_srcarchive.zip" sub-type="EJBModule" type-vendor="sap.com" vendor="kmd.dk">
+<sourcefolder srcfolderpath="ejbModule">
+<sourceelement path="com/kk/kmd/dk/SFTPtest.java"/>
+</sourcefolder>
+</development-component>
+</mapping>

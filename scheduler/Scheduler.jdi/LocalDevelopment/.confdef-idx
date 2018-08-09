@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration-index>
+<sc-compartments>
+<sc-compartment name="FRAMEWORK-EXT" root="FRAMEWORK-EXT"/>
+<sc-compartment name="VCFREESTYLEKIT" root="VCFREESTYLEKIT"/>
+<sc-compartment name="CAF" root="CAF"/>
+<sc-compartment name="J2EE-FRMW" root="J2EE-FRMW"/>
+<sc-compartment name="ECM-CORE" root="ECM-CORE"/>
+<sc-compartment name="KK_SFTPMONITOR" root="KK_SFTPMONITOR"/>
+<sc-compartment name="SAP_BUILDT" root="SAP_BUILDT"/>
+<sc-compartment name="WSRM" root="WSRM"/>
+<sc-compartment name="BRMS-BUILDT" root="BRMS-BUILDT"/>
+<sc-compartment name="VTP_BUILDT" root="VTP_BUILDT"/>
+<sc-compartment name="WDEXTENSIONS" root="WDEXTENSIONS"/>
+<sc-compartment name="BPEM-MM" root="BPEM-MM"/>
+<sc-compartment name="VOICEVC" root="VOICEVC"/>
+<sc-compartment name="KK_AdapterModule" root="KK_AdapterModule"/>
+<sc-compartment name="BPEM-BUILDT" root="BPEM-BUILDT"/>
+<sc-compartment name="VCFRAMEWORK" root="VCFRAMEWORK"/>
+<sc-compartment name="BRMS-FACADE" root="BRMS-FACADE"/>
+<sc-compartment name="ENGFACADE" root="ENGFACADE"/>
+<sc-compartment name="EP_BUILDT" root="EP_BUILDT"/>
+<sc-compartment name="CAF-MF" root="CAF-MF"/>
+<sc-compartment name="EP-BASIS-API" root="EP-BASIS-API"/>
+<sc-compartment name="PI-SCP-BUILDT" root="PI-SCP-BUILDT"/>
+<sc-compartment name="ENGINEAPI" root="ENGINEAPI"/>
+<sc-compartment name="SERVERCORE" root="SERVERCORE"/>
+<sc-compartment name="ESMP_BUILDT" root="ESMP_BUILDT"/>
+<sc-compartment name="KK_SFTPMONI" root="KK_SFTPMONI"/>
+<sc-compartment name="EP-BASIS" root="EP-BASIS"/>
+<sc-compartment name="SERVICE-COMP" root="SERVICE-COMP"/>
+<sc-compartment name="EP-MODELING" root="EP-MODELING"/>
+<sc-compartment name="FRAMEWORK" root="FRAMEWORK"/>
+<sc-compartment name="MOIN_BUILDT" root="MOIN_BUILDT"/>
+<sc-compartment name="MMR_SERVER" root="MMR_SERVER"/>
+<sc-compartment name="BPEM-ACC" root="BPEM-ACC"/>
+<sc-compartment name="BPEM-FACADE" root="BPEM-FACADE"/>
+<sc-compartment name="WD-RUNTIME" root="WD-RUNTIME"/>
+<sc-compartment name="MyComponents" root="DCs"/>
+<sc-compartment name="ESCONF_BUILDT" root="ESCONF_BUILDT"/>
+<sc-compartment name="SAP_XIAF" root="SAP_XIAF"/>
+<sc-compartment name="SEA-FACADE" root="SEA-FACADE"/>
+<sc-compartment name="UISAPUI5_JAVA" root="UISAPUI5_JAVA"/>
+<sc-compartment name="EP-RUNTIME" root="EP-RUNTIME"/>
+<sc-compartment name="BPEM-COLLAB" root="BPEM-COLLAB"/>
+<sc-compartment name="COMP_BUILDT" root="COMP_BUILDT"/>
+<sc-compartment name="GP-CORE" root="GP-CORE"/>
+<sc-compartment name="BPEM-CONTENT" root="BPEM-CONTENT"/>
+</sc-compartments>
+</configuration-index>

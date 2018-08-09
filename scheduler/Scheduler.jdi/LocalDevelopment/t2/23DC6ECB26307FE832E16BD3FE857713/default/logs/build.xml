@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    development component
+                     name: ejbtest
+                   vendor: demo.sap.com
+                     type: J2EE
+                 sub-type: EJBModule
+              type-vendor: sap.com
+
+       software component
+                     name: MyComponents
+                   vendor: demo.sap.com
+
+                 location: localDevelopment
+          source location: Z8QRR@H46328
+            build variant: default
+
+    building on H46328, Windows 8/x86, version 6.2
+    using Java VM 'Java HotSpot(TM) Client VM', version 20.45-b01 (Sun Microsystems Inc.)
+    build started at 2018-02-05 16:32:04 GMT+01:00 (CET)
+
+    Build Plugin 'EJBModulePlugin', Version 7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:47:10 +0200, CL206623)
+    detailed versions:
+    sap.com:tc/bi/anttasks#def     7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:42 +0200, CL206623)
+    sap.com:tc/bi/bp/ejbmodule#ejb 7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:47:10 +0200, CL206623)
+    sap.com:tc/bi/core#def         7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:47:18 +0200, CL206623)
+    sap.com:tc/bi/exception#def    7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:41 +0200, CL206623)
+    sap.com:tc/bi/extddicdb#def    7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:45 +0200, CL206623)
+    sap.com:tc/bi/extsql#def       7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:42 +0200, CL206623)
+    sap.com:tc/bi/framework#def    7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:44:36 +0200, CL206623)
+    sap.com:tc/bi/i18n#def         7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:37 +0200, CL206623)
+    sap.com:tc/bi/javatech#def     7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:45:07 +0200, CL206623)
+    sap.com:tc/bi/jdoc#def         7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:42 +0200, CL206623)
+    sap.com:tc/bi/jdoc/util#def    7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:44:55 +0200, CL206623)
+    sap.com:tc/bi/jlincbs#def      7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:49 +0200, CL206623)
+    sap.com:tc/bi/settings#version 7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:00 +0200, CL206623)
+    sap.com:tc/bi/util#util        7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:44:46 +0200, CL206623)
+    sap.com:tc/bi/velocity#def     7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:37 +0200, CL206623)
+    sap.com:tc/bi/xml#def          7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:46:38 +0200, CL206623)
+ -->
+<project name="DC Build"
+         default="build"
+         basedir=".">
+<taskdef name="checkfileset" classname="com.sap.tools.ant.taskdefs.EmptyFilesetCheck"/>
+<taskdef name="jlinppcheck" classname="com.sap.tc.buildplugin.pp.ant.JLinEECheckTask"/>
+<taskdef name="pppacker" classname="com.sap.tc.buildplugin.pp.PPPackTask"/>
+<taskdef name="propertybag" classname="com.sap.tools.ant.taskdefs.PropertyBag"/>
+<taskdef name="timer" classname="com.sap.tools.ant.taskdefs.Timer"/>
+<taskdef name="xlf2prop" classname="com.sap.tc.buildplugin.util.XlfConverter"/>
+
+<target name="compile">
+<mkdir dir="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t\23DC6ECB26307FE832E16BD3FE857713\classes"/>
+<!-- begin generator extension type 'sap.com~sqlj' for generator id 'sap.com~javac' -->
+<!-- No *.sqlj files found, skipping SQLJ preprocessing. -->
+<!-- end generator extension type 'sap.com~sqlj' for generator id 'sap.com~javac' -->
+<!-- begin generator id 'sap.com~javac', type 'sap.com~javac' -->
+<echo message="Starting Java compiler using the current JVM"/>
+<timer/>
+<echo message="Settings:"/>
+<echo message="        debug: on"/>
+<echo message="     optimize: off"/>
+<echo message="  deprecation: default"/>
+<echo message="      verbose: default"/>
+<echo message="     encoding: UTF-8"/>
+<echo message="       source: default"/>
+<echo message="       target: default"/>
+<echo message="  source path: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\ejbtest\_comp\ejbModule"/>
+<echo message="   class path:"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.svc.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.cpa.svc.filter.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.svc.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.svc.facade.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.svc.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.svc.filter.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.lib.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.lib.facade.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.lib.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.lib.filter.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.lib.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.sec.lib.filter.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\bcprov-jdk16-1.45.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\com.sap.security.api.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\com.sap.security_2.0.0.150324064358.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\com.sap.tc.security.https_2.0.0.150324064358.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\jsch-0.1.54.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\sap.com~tc~je~keystore_api~API.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\ec~java~jsf~api.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\engine.jee5.facade.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\orpersistence_client_lib_filtered.jar"/>
+<echo message="      C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\je\scheduler\api\_comp\gen\default\public\api\lib\java\tc~je~scheduler~api.jar"/>
+<echo message="   output dir: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t\23DC6ECB26307FE832E16BD3FE857713\classes"/>
+<checkfileset fail="false">
+<fileset dir="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\ejbtest\_comp\ejbModule">
+<include name="**/*.class"/>
+</fileset>
+</checkfileset>
+<javac includeAntRuntime="no"
+       destdir="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t\23DC6ECB26307FE832E16BD3FE857713\classes"
+       encoding="UTF-8"
+       deprecation="false"
+       debug="on"
+       tempdir="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t\23DC6ECB26307FE832E16BD3FE857713">
+<src path="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\ejbtest\_comp\ejbModule"/>
+<include name="**/*.java"/>
+<classpath>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.svc.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.cpa.svc.filter.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.svc.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.svc.facade.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.svc.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.svc.filter.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.lib.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.lib.facade.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.lib.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.lib.filter.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.lib.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.sec.lib.filter.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\bcprov-jdk16-1.45.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\com.sap.security.api.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\com.sap.security_2.0.0.150324064358.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\com.sap.tc.security.https_2.0.0.150324064358.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\jsch-0.1.54.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\sftplib\_comp\gen\default\public\api\lib\java\sap.com~tc~je~keystore_api~API.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\ec~java~jsf~api.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\engine.jee5.facade.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\orpersistence_client_lib_filtered.jar"/>
+<pathelement location="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\je\scheduler\api\_comp\gen\default\public\api\lib\java\tc~je~scheduler~api.jar"/>
+</classpath>
+</javac>
+<timer message="Java compilation finished in "/>
+<!-- end generator id 'sap.com~javac', type 'sap.com~javac' -->
+<!-- begin generator extension type 'sap.com~jlin' for generator id 'sap.com~javac' -->
+<!-- JLin disabled. -->
+<!-- end generator extension type 'sap.com~jlin' for generator id 'sap.com~javac' -->
+<!-- begin generator extension type 'sap.com~sqlj' for generator id 'sap.com~javac' -->
+<!-- No *.sqlj files found, skipping SQLJ post-processing. -->
+<!-- end generator extension type 'sap.com~sqlj' for generator id 'sap.com~javac' -->
+<!-- begin generator extension type 'sap.com~jdo' for generator id 'sap.com~javac' -->
+<!-- No *.jdo files found, skipping JDO enhancer. -->
+<!-- end generator extension type 'sap.com~jdo' for generator id 'sap.com~javac' -->
+<!-- begin generator extension type 'sap.com~xlf2prop' for generator id 'sap.com~javac' -->
+<echo message="Start XLF conversion"/>
+<timer/>
+<xlf2prop todir="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t\23DC6ECB26307FE832E16BD3FE857713\classes">
+<fileset dir="C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\DCs\demo.sap.com\ejbtest\_comp\ejbModule"/>
+</xlf2prop>
+<timer message="XLF conversion finished in "/>
+<!-- end generator extension type 'sap.com~xlf2prop' for generator id 'sap.com~javac' -->
+<!-- begin generator extension type 'sap.com~jdoc' for generator id 'sap.com~javac' -->
+<!-- Javadoc generation disabled. -->
+<!-- end generator extension type 'sap.com~jdoc' for generator id 'sap.com~javac' -->
+</target>
+
+<target name="createPublicParts" depends="compile">
+<timer/>
+<pppacker ppname="client">
+</pppacker>
+<timer message="Packing of public part 'client' finished in "/>
+<timer/>
+<pppacker ppname="ejbjar">
+</pppacker>
+<timer message="Packing of public part 'ejbjar' finished in "/>
+<jlinppcheck/>
+</target>
+
+<target name="build" depends="compile,createPublicParts">
+
+</target>
+</project>

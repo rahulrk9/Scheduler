@@ -1,0 +1,24 @@
+#Tue May 08 15:26:04 CEST 2018
+content_assist_proposals_foreground=0,0,0
+spelling_locale=en_GB
+spelling_locale_initialized=true
+content_assist_disabled_computers=org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000
+org.eclipse.jdt.ui.text.templates_migrated=true
+useAnnotationsPrefPage=true
+eclipse.preferences.version=1
+org.eclipse.jface.textfont=1|Courier New|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Courier New;
+tabWidthPropagated=true
+LexicalSortingAction.isChecked=true
+org.eclipse.jdt.ui.editor.tab.width=
+fontPropagated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+proposalOrderMigrated=true
+content_assist_proposals_background=255,255,255
+org.eclipse.jdt.ui.formatterprofiles.version=11
+org.eclipse.jdt.internal.ui.navigator.layout=2
+content_assist_number_of_computers=20
+useQuickDiffPrefPage=true
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="java" deleted\="false" description\="Lookup for an ejbs home interface" enabled\="true" name\="lookup EjbHomeInterface">${EjbHomeInterfaceType} ${ejbHomeVariable} \= null;\r\n   try {\r\n        javax.naming.InitialContext ctx \= new  javax.naming.InitialContext();\r\n    \t${ejbHomeVariable} \=\r\n    \t\t(${EjbHomeInterfaceType}) ctx.lookup("java\:comp/env/" + "${ejbReferenceName}");\r\n    } catch (javax.naming.NamingException e) {\r\n    \tSystem.out.println("${CustomMessage}" + e.getMessage());\r\n    }</template><template autoinsert\="true" context\="java" deleted\="false" description\="Lookup for an ejbs local home interface" enabled\="true" name\="lookup EjbLocalHomeInterface">${EjbLocalHomeInterfaceType} ${ejbLocalHomeVariable} \= null;\r\n   try {\r\n        javax.naming.InitialContext ctx \= new  javax.naming.InitialContext();\r\n    \t${ejbLocalHomeVariable} \=\r\n    \t\t(${EjbLocalHomeInterfaceType}) ctx.lookup("java\:comp/env/" + "${ejbReferenceName}");\r\n    } catch (javax.naming.NamingException e) {\r\n    \tSystem.out.println("${CustomMessage}" + e.getMessage());\r\n    }</template><template autoinsert\="true" context\="java" deleted\="false" description\="lookup JmsQueueConnectionFactory and Queue" enabled\="true" name\="lookup JmsQueue">javax.naming.Context ${jndiContext} \= null;\r\n try {\r\n ${jndiContext} \= new javax.naming.InitialContext();\r\n  } catch (javax.naming.NamingException e) {\r\n  System.out.println("${CustomMessage1}" + e.toString());\r\n  } \r\n\r\n javax.jms.QueueConnectionFactory  ${queueConnectionFactory} \= null;\r\n   javax.jms.Queue ${queue} \= null;\r\n   String ${queueName} \= "${CustomQueueName}"; \r\n try {\r\n        ${queueConnectionFactory} \= (javax.jms.QueueConnectionFactory) ${jndiContext}.lookup("QueueConnectionFactory");\r\n        ${queue} \= (javax.jms.Queue) ${jndiContext}.lookup(${queueName});\r\n    } catch (javax.naming.NamingException e) {\r\n        System.out.println("${CustomMessage2}" + e.toString());\r\n }</template><template autoinsert\="true" context\="java" deleted\="false" description\="lookup JmsTopicConnectionFactory and Topic" enabled\="true" name\="lookup JmsTopic">javax.naming.Context ${jndiContext} \= null;\r\n try {\r\n ${jndiContext} \= new javax.naming.InitialContext();\r\n  } catch (javax.naming.NamingException e) {\r\n  System.out.println("${CustomMessage1}" + e.toString());\r\n  } \r\n\r\n javax.jms.TopicConnectionFactory  ${topicConnectionFactory} \= null;\r\n   javax.jms.Topic ${topic} \= null;\r\n   String ${topicName} \= "${TopicName}"; \r\n try {\r\n        ${topicConnectionFactory} \= (javax.jms.TopicConnectionFactory) ${jndiContext}.lookup("TopicConnectionFactory");\r\n        ${topic} \= (javax.jms.Topic) ${jndiContext}.lookup(${topicName});\r\n    } catch (javax.naming.NamingException e) {\r\n        System.out.println("${CustomMessage2}" + e.toString());\r\n }</template></templates>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.sap.engine.interfaces.messaging.api.auditlog.AuditLogStatus"><rhs name\="com.sap.engine.interfaces.messaging.api.auditlog.AuditLogStatus"/></lhs></history>
+org.eclipse.jdt.ui.text.code_templates_migrated=true

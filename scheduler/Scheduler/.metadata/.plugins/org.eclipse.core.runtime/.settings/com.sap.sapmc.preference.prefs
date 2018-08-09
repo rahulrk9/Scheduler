@@ -1,0 +1,7 @@
+#Wed Dec 20 11:49:37 CET 2017
+eclipse.preferences.version=1
+AutoDetectLocalSystem=false
+KDI=Host<kkkdi00s.kmdpfosap.local>,InstanceNumber<2>,Secure<false>;
+DefaultSAPSystem=KDI
+SAPSystems=KDI;
+InstanceHistory=Host<kkkti00s.kmdpfosap.local>,InstanceNumber<12>,Secure<false>;Host<kkkdi00s.kmdpfosap.local>,InstanceNumber<2>,Secure<false>;

@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration
+		caption="Local Development"
+		config-version="8"
+		document-type-version="1.0"
+		is-local="yes"
+		name="LocalDevelopment"
+		sl-location="localDevelopment"
+		xmlns="http://xml.sap.com/2002/11/DevelopmentConfiguration"
+		xmlns:IDX="urn:sap.com:DevelopmentConfiguration:1.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xml.sap.com/2002/11/DevelopmentConfiguration confdef.xsd">
+	<config-description>LocalTest</config-description>
+	<sc-compartments>
+		<sc-compartment archive-state="yes" caption="BPEM-ACC" default-compartment="yes" local-archive-folder="BPEM-ACC" name="BPEM-ACC" sc-name="BPEM-ACC" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#BPEM-ACC" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>BPEM-FACADE</used-compartment>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="BPEM-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="BPEM-BUILDT" default-compartment="yes" local-archive-folder="BPEM-BUILDT" name="BPEM-BUILDT" sc-name="BPEM-BUILDT" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#BPEM-BUILDT" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>BPEM-MM</used-compartment>
+				<used-compartment>COMP_BUILDT</used-compartment>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>ESCONF_BUILDT</used-compartment>
+				<used-compartment>ESMP_BUILDT</used-compartment>
+				<used-compartment>MOIN_BUILDT</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="BPEM-MM" used-variant-name="default"/>
+						<variant-mapping used-compartment="COMP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="ESCONF_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ESMP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="MOIN_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="BPEM-COLLAB" default-compartment="yes" local-archive-folder="BPEM-COLLAB" name="BPEM-COLLAB" sc-name="BPEM-COLLAB" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#BPEM-COLLAB" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<build-variants>
+				<build-variant name="default"/>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="BPEM-CONTENT" default-compartment="yes" local-archive-folder="BPEM-CONTENT" name="BPEM-CONTENT" sc-name="BPEM-CONTENT" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#BPEM-CONTENT" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>BPEM-BUILDT</used-compartment>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>EP-BASIS-API</used-compartment>
+				<used-compartment>ESCONF_BUILDT</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>SERVICE-COMP</used-compartment>
+				<used-compartment>WD-RUNTIME</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="BPEM-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS-API" used-variant-name="default"/>
+						<variant-mapping used-compartment="ESCONF_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SERVICE-COMP" used-variant-name="default"/>
+						<variant-mapping used-compartment="WD-RUNTIME" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="BPEM-FACADE" default-compartment="yes" local-archive-folder="BPEM-FACADE" name="BPEM-FACADE" sc-name="BPEM-FACADE" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#BPEM-FACADE" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="BPEM-MM" default-compartment="yes" local-archive-folder="BPEM-MM" name="BPEM-MM" sc-name="BPEM-MM" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#BPEM-MM" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>FRAMEWORK</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="BRMS-BUILDT" default-compartment="yes" local-archive-folder="BRMS-BUILDT" name="BRMS-BUILDT" sc-name="BRMS-BUILDT" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#BRMS-BUILDT" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>BPEM-BUILDT</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="BPEM-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="BRMS-FACADE" default-compartment="yes" local-archive-folder="BRMS-FACADE" name="BRMS-FACADE" sc-name="BRMS-FACADE" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#BRMS-FACADE" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="CAF" default-compartment="yes" local-archive-folder="CAF" name="CAF" sc-name="CAF" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#CAF" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>CAF-MF</used-compartment>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>EP-BASIS-API</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>MMR_SERVER</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>WD-RUNTIME</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="CAF-MF" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS-API" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="MMR_SERVER" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="WD-RUNTIME" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="CAF-MF" default-compartment="yes" local-archive-folder="CAF-MF" name="CAF-MF" sc-name="CAF-MF" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#CAF-MF" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>MMR_SERVER</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="MMR_SERVER" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="COMP_BUILDT" default-compartment="yes" local-archive-folder="COMP_BUILDT" name="COMP_BUILDT" sc-name="COMP_BUILDT" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#COMP_BUILDT" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>BPEM-MM</used-compartment>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>ESCONF_BUILDT</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>MOIN_BUILDT</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="BPEM-MM" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="ESCONF_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="MOIN_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="ECM-CORE" default-compartment="yes" local-archive-folder="ECM-CORE" name="ECM-CORE" sc-name="ECM-CORE" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#ECM-CORE" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<build-variants>
+				<build-variant name="default"/>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="ENGFACADE" default-compartment="yes" local-archive-folder="ENGFACADE" name="ENGFACADE" sc-name="ENGFACADE" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#ENGFACADE" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<build-variants>
+				<build-variant name="default"/>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="ENGINEAPI" default-compartment="yes" local-archive-folder="ENGINEAPI" name="ENGINEAPI" sc-name="ENGINEAPI" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#ENGINEAPI" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<build-variants>
+				<build-variant name="default"/>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="EP-BASIS" default-compartment="yes" local-archive-folder="EP-BASIS" name="EP-BASIS" sc-name="EP-BASIS" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#EP-BASIS" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>EP-BASIS-API</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>FRAMEWORK-EXT</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>WD-RUNTIME</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS-API" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK-EXT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="WD-RUNTIME" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="EP-BASIS-API" default-compartment="yes" local-archive-folder="EP-BASIS-API" name="EP-BASIS-API" sc-name="EP-BASIS-API" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#EP-BASIS-API" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>FRAMEWORK-EXT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK-EXT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="EP-MODELING" default-compartment="yes" local-archive-folder="EP-MODELING" name="EP-MODELING" sc-name="EP-MODELING" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#EP-MODELING" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>EP-BASIS</used-compartment>
+				<used-compartment>EP-BASIS-API</used-compartment>
+				<used-compartment>FRAMEWORK-EXT</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>VCFRAMEWORK</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS-API" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK-EXT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="VCFRAMEWORK" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="EP-RUNTIME" default-compartment="yes" local-archive-folder="EP-RUNTIME" name="EP-RUNTIME" sc-name="EP-RUNTIME" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#EP-RUNTIME" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>EP-BASIS</used-compartment>
+				<used-compartment>EP-BASIS-API</used-compartment>
+				<used-compartment>EP_BUILDT</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>WD-RUNTIME</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS-API" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="WD-RUNTIME" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="EP_BUILDT" default-compartment="yes" local-archive-folder="EP_BUILDT" name="EP_BUILDT" sc-name="EP_BUILDT" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#EP_BUILDT" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="ESCONF_BUILDT" default-compartment="yes" local-archive-folder="ESCONF_BUILDT" name="ESCONF_BUILDT" sc-name="ESCONF_BUILDT" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#ESCONF_BUILDT" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>MOIN_BUILDT</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="MOIN_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="ESMP_BUILDT" default-compartment="yes" local-archive-folder="ESMP_BUILDT" name="ESMP_BUILDT" sc-name="ESMP_BUILDT" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#ESMP_BUILDT" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="FRAMEWORK" default-compartment="yes" local-archive-folder="FRAMEWORK" name="FRAMEWORK" sc-name="FRAMEWORK" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#FRAMEWORK" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="FRAMEWORK-EXT" default-compartment="yes" local-archive-folder="FRAMEWORK-EXT" name="FRAMEWORK-EXT" sc-name="FRAMEWORK-EXT" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#FRAMEWORK-EXT" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>ENGFACADE</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="GP-CORE" default-compartment="yes" local-archive-folder="GP-CORE" name="GP-CORE" sc-name="GP-CORE" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#GP-CORE" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>WD-RUNTIME</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="WD-RUNTIME" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="J2EE-FRMW" default-compartment="yes" local-archive-folder="J2EE-FRMW" name="J2EE-FRMW" sc-name="J2EE-FRMW" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#J2EE-FRMW" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<build-variants>
+				<build-variant name="default"/>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="no" caption="" default-compartment="yes" name="KK_AdapterModule" sc-name="KK_AdapterModule" sc-vendor="kmd.dk">
+			<source-state type="local"/>
+			<dependencies>
+				<used-compartment>BPEM-ACC</used-compartment>
+				<used-compartment>BPEM-BUILDT</used-compartment>
+				<used-compartment>BPEM-COLLAB</used-compartment>
+				<used-compartment>BPEM-CONTENT</used-compartment>
+				<used-compartment>BPEM-FACADE</used-compartment>
+				<used-compartment>BPEM-MM</used-compartment>
+				<used-compartment>BRMS-BUILDT</used-compartment>
+				<used-compartment>BRMS-FACADE</used-compartment>
+				<used-compartment>CAF</used-compartment>
+				<used-compartment>CAF-MF</used-compartment>
+				<used-compartment>COMP_BUILDT</used-compartment>
+				<used-compartment>ECM-CORE</used-compartment>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>ENGINEAPI</used-compartment>
+				<used-compartment>EP-BASIS</used-compartment>
+				<used-compartment>EP-BASIS-API</used-compartment>
+				<used-compartment>EP-MODELING</used-compartment>
+				<used-compartment>EP-RUNTIME</used-compartment>
+				<used-compartment>EP_BUILDT</used-compartment>
+				<used-compartment>ESCONF_BUILDT</used-compartment>
+				<used-compartment>ESMP_BUILDT</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>FRAMEWORK-EXT</used-compartment>
+				<used-compartment>GP-CORE</used-compartment>
+				<used-compartment>J2EE-FRMW</used-compartment>
+				<used-compartment>KK_SFTPMONITOR</used-compartment>
+				<used-compartment>MMR_SERVER</used-compartment>
+				<used-compartment>MOIN_BUILDT</used-compartment>
+				<used-compartment>PI-SCP-BUILDT</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>SAP_XIAF</used-compartment>
+				<used-compartment>SEA-FACADE</used-compartment>
+				<used-compartment>SERVERCORE</used-compartment>
+				<used-compartment>SERVICE-COMP</used-compartment>
+				<used-compartment>UISAPUI5_JAVA</used-compartment>
+				<used-compartment>VCFRAMEWORK</used-compartment>
+				<used-compartment>VCFREESTYLEKIT</used-compartment>
+				<used-compartment>VOICEVC</used-compartment>
+				<used-compartment>VTP_BUILDT</used-compartment>
+				<used-compartment>WD-RUNTIME</used-compartment>
+				<used-compartment>WDEXTENSIONS</used-compartment>
+				<used-compartment>WSRM</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="BPEM-ACC" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-COLLAB" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-CONTENT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-MM" used-variant-name="default"/>
+						<variant-mapping used-compartment="BRMS-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BRMS-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="CAF" used-variant-name="default"/>
+						<variant-mapping used-compartment="CAF-MF" used-variant-name="default"/>
+						<variant-mapping used-compartment="COMP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ECM-CORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGINEAPI" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS-API" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-MODELING" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-RUNTIME" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ESCONF_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ESMP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK-EXT" used-variant-name="default"/>
+						<variant-mapping used-compartment="GP-CORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="J2EE-FRMW" used-variant-name="default"/>
+						<variant-mapping used-compartment="KK_SFTPMONITOR" used-variant-name="default"/>
+						<variant-mapping used-compartment="MMR_SERVER" used-variant-name="default"/>
+						<variant-mapping used-compartment="MOIN_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="PI-SCP-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_XIAF" used-variant-name="default"/>
+						<variant-mapping used-compartment="SEA-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SERVERCORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SERVICE-COMP" used-variant-name="default"/>
+						<variant-mapping used-compartment="UISAPUI5_JAVA" used-variant-name="default"/>
+						<variant-mapping used-compartment="VCFRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="VCFREESTYLEKIT" used-variant-name="default"/>
+						<variant-mapping used-compartment="VOICEVC" used-variant-name="default"/>
+						<variant-mapping used-compartment="VTP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="WD-RUNTIME" used-variant-name="default"/>
+						<variant-mapping used-compartment="WDEXTENSIONS" used-variant-name="default"/>
+						<variant-mapping used-compartment="WSRM" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="no" caption="" default-compartment="yes" name="KK_SFTPMONI" sc-name="KK_SFTPMONI" sc-vendor="kmd.dk">
+			<source-state type="local"/>
+			<dependencies>
+				<used-compartment>BPEM-ACC</used-compartment>
+				<used-compartment>BPEM-BUILDT</used-compartment>
+				<used-compartment>BPEM-COLLAB</used-compartment>
+				<used-compartment>BPEM-CONTENT</used-compartment>
+				<used-compartment>BPEM-FACADE</used-compartment>
+				<used-compartment>BPEM-MM</used-compartment>
+				<used-compartment>BRMS-BUILDT</used-compartment>
+				<used-compartment>BRMS-FACADE</used-compartment>
+				<used-compartment>CAF</used-compartment>
+				<used-compartment>CAF-MF</used-compartment>
+				<used-compartment>COMP_BUILDT</used-compartment>
+				<used-compartment>ECM-CORE</used-compartment>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>ENGINEAPI</used-compartment>
+				<used-compartment>EP-BASIS</used-compartment>
+				<used-compartment>EP-BASIS-API</used-compartment>
+				<used-compartment>EP-MODELING</used-compartment>
+				<used-compartment>EP-RUNTIME</used-compartment>
+				<used-compartment>EP_BUILDT</used-compartment>
+				<used-compartment>ESCONF_BUILDT</used-compartment>
+				<used-compartment>ESMP_BUILDT</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>FRAMEWORK-EXT</used-compartment>
+				<used-compartment>GP-CORE</used-compartment>
+				<used-compartment>J2EE-FRMW</used-compartment>
+				<used-compartment>MMR_SERVER</used-compartment>
+				<used-compartment>MOIN_BUILDT</used-compartment>
+				<used-compartment>PI-SCP-BUILDT</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>SAP_XIAF</used-compartment>
+				<used-compartment>SEA-FACADE</used-compartment>
+				<used-compartment>SERVERCORE</used-compartment>
+				<used-compartment>SERVICE-COMP</used-compartment>
+				<used-compartment>UISAPUI5_JAVA</used-compartment>
+				<used-compartment>VCFRAMEWORK</used-compartment>
+				<used-compartment>VCFREESTYLEKIT</used-compartment>
+				<used-compartment>VOICEVC</used-compartment>
+				<used-compartment>VTP_BUILDT</used-compartment>
+				<used-compartment>WD-RUNTIME</used-compartment>
+				<used-compartment>WDEXTENSIONS</used-compartment>
+				<used-compartment>WSRM</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="BPEM-ACC" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-COLLAB" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-CONTENT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-MM" used-variant-name="default"/>
+						<variant-mapping used-compartment="BRMS-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BRMS-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="CAF" used-variant-name="default"/>
+						<variant-mapping used-compartment="CAF-MF" used-variant-name="default"/>
+						<variant-mapping used-compartment="COMP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ECM-CORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGINEAPI" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS-API" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-MODELING" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-RUNTIME" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ESCONF_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ESMP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK-EXT" used-variant-name="default"/>
+						<variant-mapping used-compartment="GP-CORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="J2EE-FRMW" used-variant-name="default"/>
+						<variant-mapping used-compartment="MMR_SERVER" used-variant-name="default"/>
+						<variant-mapping used-compartment="MOIN_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="PI-SCP-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_XIAF" used-variant-name="default"/>
+						<variant-mapping used-compartment="SEA-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SERVERCORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SERVICE-COMP" used-variant-name="default"/>
+						<variant-mapping used-compartment="UISAPUI5_JAVA" used-variant-name="default"/>
+						<variant-mapping used-compartment="VCFRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="VCFREESTYLEKIT" used-variant-name="default"/>
+						<variant-mapping used-compartment="VOICEVC" used-variant-name="default"/>
+						<variant-mapping used-compartment="VTP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="WD-RUNTIME" used-variant-name="default"/>
+						<variant-mapping used-compartment="WDEXTENSIONS" used-variant-name="default"/>
+						<variant-mapping used-compartment="WSRM" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="no" caption="" default-compartment="yes" name="KK_SFTPMONITOR" sc-name="KK_SFTPMONITOR" sc-vendor="kmd.dk">
+			<source-state type="local"/>
+			<dependencies>
+				<used-compartment>BPEM-ACC</used-compartment>
+				<used-compartment>BPEM-BUILDT</used-compartment>
+				<used-compartment>BPEM-COLLAB</used-compartment>
+				<used-compartment>BPEM-CONTENT</used-compartment>
+				<used-compartment>BPEM-FACADE</used-compartment>
+				<used-compartment>BPEM-MM</used-compartment>
+				<used-compartment>BRMS-BUILDT</used-compartment>
+				<used-compartment>BRMS-FACADE</used-compartment>
+				<used-compartment>CAF</used-compartment>
+				<used-compartment>CAF-MF</used-compartment>
+				<used-compartment>COMP_BUILDT</used-compartment>
+				<used-compartment>ECM-CORE</used-compartment>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>ENGINEAPI</used-compartment>
+				<used-compartment>EP-BASIS</used-compartment>
+				<used-compartment>EP-BASIS-API</used-compartment>
+				<used-compartment>EP-MODELING</used-compartment>
+				<used-compartment>EP-RUNTIME</used-compartment>
+				<used-compartment>EP_BUILDT</used-compartment>
+				<used-compartment>ESCONF_BUILDT</used-compartment>
+				<used-compartment>ESMP_BUILDT</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>FRAMEWORK-EXT</used-compartment>
+				<used-compartment>GP-CORE</used-compartment>
+				<used-compartment>J2EE-FRMW</used-compartment>
+				<used-compartment>MMR_SERVER</used-compartment>
+				<used-compartment>MOIN_BUILDT</used-compartment>
+				<used-compartment>PI-SCP-BUILDT</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>SAP_XIAF</used-compartment>
+				<used-compartment>SEA-FACADE</used-compartment>
+				<used-compartment>SERVERCORE</used-compartment>
+				<used-compartment>SERVICE-COMP</used-compartment>
+				<used-compartment>UISAPUI5_JAVA</used-compartment>
+				<used-compartment>VCFRAMEWORK</used-compartment>
+				<used-compartment>VCFREESTYLEKIT</used-compartment>
+				<used-compartment>VOICEVC</used-compartment>
+				<used-compartment>VTP_BUILDT</used-compartment>
+				<used-compartment>WD-RUNTIME</used-compartment>
+				<used-compartment>WDEXTENSIONS</used-compartment>
+				<used-compartment>WSRM</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="BPEM-ACC" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-COLLAB" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-CONTENT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-MM" used-variant-name="default"/>
+						<variant-mapping used-compartment="BRMS-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BRMS-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="CAF" used-variant-name="default"/>
+						<variant-mapping used-compartment="CAF-MF" used-variant-name="default"/>
+						<variant-mapping used-compartment="COMP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ECM-CORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGINEAPI" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS-API" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-MODELING" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-RUNTIME" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ESCONF_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ESMP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK-EXT" used-variant-name="default"/>
+						<variant-mapping used-compartment="GP-CORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="J2EE-FRMW" used-variant-name="default"/>
+						<variant-mapping used-compartment="MMR_SERVER" used-variant-name="default"/>
+						<variant-mapping used-compartment="MOIN_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="PI-SCP-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_XIAF" used-variant-name="default"/>
+						<variant-mapping used-compartment="SEA-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SERVERCORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SERVICE-COMP" used-variant-name="default"/>
+						<variant-mapping used-compartment="UISAPUI5_JAVA" used-variant-name="default"/>
+						<variant-mapping used-compartment="VCFRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="VCFREESTYLEKIT" used-variant-name="default"/>
+						<variant-mapping used-compartment="VOICEVC" used-variant-name="default"/>
+						<variant-mapping used-compartment="VTP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="WD-RUNTIME" used-variant-name="default"/>
+						<variant-mapping used-compartment="WDEXTENSIONS" used-variant-name="default"/>
+						<variant-mapping used-compartment="WSRM" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="MMR_SERVER" default-compartment="yes" local-archive-folder="MMR_SERVER" name="MMR_SERVER" sc-name="MMR_SERVER" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#MMR_SERVER" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<build-variants>
+				<build-variant name="default"/>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="MOIN_BUILDT" default-compartment="yes" local-archive-folder="MOIN_BUILDT" name="MOIN_BUILDT" sc-name="MOIN_BUILDT" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#MOIN_BUILDT" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="no" caption="MyComponents" default-compartment="yes" name="MyComponents" sc-name="MyComponents" sc-vendor="demo.sap.com">
+			<source-state type="local"/>
+			<dependencies>
+				<used-compartment>BPEM-ACC</used-compartment>
+				<used-compartment>BPEM-BUILDT</used-compartment>
+				<used-compartment>BPEM-COLLAB</used-compartment>
+				<used-compartment>BPEM-CONTENT</used-compartment>
+				<used-compartment>BPEM-FACADE</used-compartment>
+				<used-compartment>BPEM-MM</used-compartment>
+				<used-compartment>BRMS-BUILDT</used-compartment>
+				<used-compartment>BRMS-FACADE</used-compartment>
+				<used-compartment>CAF</used-compartment>
+				<used-compartment>CAF-MF</used-compartment>
+				<used-compartment>COMP_BUILDT</used-compartment>
+				<used-compartment>ECM-CORE</used-compartment>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>ENGINEAPI</used-compartment>
+				<used-compartment>EP-BASIS</used-compartment>
+				<used-compartment>EP-BASIS-API</used-compartment>
+				<used-compartment>EP-MODELING</used-compartment>
+				<used-compartment>EP-RUNTIME</used-compartment>
+				<used-compartment>EP_BUILDT</used-compartment>
+				<used-compartment>ESCONF_BUILDT</used-compartment>
+				<used-compartment>ESMP_BUILDT</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>FRAMEWORK-EXT</used-compartment>
+				<used-compartment>GP-CORE</used-compartment>
+				<used-compartment>J2EE-FRMW</used-compartment>
+				<used-compartment>MMR_SERVER</used-compartment>
+				<used-compartment>MOIN_BUILDT</used-compartment>
+				<used-compartment>PI-SCP-BUILDT</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>SAP_XIAF</used-compartment>
+				<used-compartment>SEA-FACADE</used-compartment>
+				<used-compartment>SERVERCORE</used-compartment>
+				<used-compartment>SERVICE-COMP</used-compartment>
+				<used-compartment>UISAPUI5_JAVA</used-compartment>
+				<used-compartment>VCFRAMEWORK</used-compartment>
+				<used-compartment>VCFREESTYLEKIT</used-compartment>
+				<used-compartment>VOICEVC</used-compartment>
+				<used-compartment>VTP_BUILDT</used-compartment>
+				<used-compartment>WD-RUNTIME</used-compartment>
+				<used-compartment>WDEXTENSIONS</used-compartment>
+				<used-compartment>WSRM</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="BPEM-ACC" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-COLLAB" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-CONTENT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-MM" used-variant-name="default"/>
+						<variant-mapping used-compartment="BRMS-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BRMS-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="CAF" used-variant-name="default"/>
+						<variant-mapping used-compartment="CAF-MF" used-variant-name="default"/>
+						<variant-mapping used-compartment="COMP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ECM-CORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGINEAPI" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS-API" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-MODELING" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-RUNTIME" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ESCONF_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ESMP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK-EXT" used-variant-name="default"/>
+						<variant-mapping used-compartment="GP-CORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="J2EE-FRMW" used-variant-name="default"/>
+						<variant-mapping used-compartment="MMR_SERVER" used-variant-name="default"/>
+						<variant-mapping used-compartment="MOIN_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="PI-SCP-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_XIAF" used-variant-name="default"/>
+						<variant-mapping used-compartment="SEA-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SERVERCORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SERVICE-COMP" used-variant-name="default"/>
+						<variant-mapping used-compartment="UISAPUI5_JAVA" used-variant-name="default"/>
+						<variant-mapping used-compartment="VCFRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="VCFREESTYLEKIT" used-variant-name="default"/>
+						<variant-mapping used-compartment="VOICEVC" used-variant-name="default"/>
+						<variant-mapping used-compartment="VTP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="WD-RUNTIME" used-variant-name="default"/>
+						<variant-mapping used-compartment="WDEXTENSIONS" used-variant-name="default"/>
+						<variant-mapping used-compartment="WSRM" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="PI-SCP-BUILDT" default-compartment="yes" local-archive-folder="PI-SCP-BUILDT" name="PI-SCP-BUILDT" sc-name="PI-SCP-BUILDT" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#PI-SCP-BUILDT" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<build-variants>
+				<build-variant name="default"/>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="SAP_BUILDT" default-compartment="yes" local-archive-folder="SAP_BUILDT" name="SAP_BUILDT" sc-name="SAP_BUILDT" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#SAP_BUILDT" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<build-variants>
+				<build-variant name="default"/>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="SAP_XIAF" default-compartment="yes" local-archive-folder="SAP_XIAF" name="SAP_XIAF" sc-name="SAP_XIAF" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#SAP_XIAF" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<build-variants>
+				<build-variant name="default"/>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="SEA-FACADE" default-compartment="yes" local-archive-folder="SEA-FACADE" name="SEA-FACADE" sc-name="SEA-FACADE" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#SEA-FACADE" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>EP-BASIS-API</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>WD-RUNTIME</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS-API" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="WD-RUNTIME" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="SERVERCORE" default-compartment="yes" local-archive-folder="SERVERCORE" name="SERVERCORE" sc-name="SERVERCORE" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#SERVERCORE" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<build-variants>
+				<build-variant name="default"/>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="SERVICE-COMP" default-compartment="yes" local-archive-folder="SERVICE-COMP" name="SERVICE-COMP" sc-name="SERVICE-COMP" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#SERVICE-COMP" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>COMP_BUILDT</used-compartment>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="COMP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="UISAPUI5_JAVA" default-compartment="yes" local-archive-folder="UISAPUI5_JAVA" name="UISAPUI5_JAVA" sc-name="UISAPUI5_JAVA" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#UISAPUI5_JAVA" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<build-variants>
+				<build-variant name="default"/>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="VCFRAMEWORK" default-compartment="yes" local-archive-folder="VCFRAMEWORK" name="VCFRAMEWORK" sc-name="VCFRAMEWORK" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#VCFRAMEWORK" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="VCFREESTYLEKIT" default-compartment="yes" local-archive-folder="VCFREESTYLEKIT" name="VCFREESTYLEKIT" sc-name="VCFREESTYLEKIT" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#VCFREESTYLEKIT" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>EP-BASIS-API</used-compartment>
+				<used-compartment>FRAMEWORK-EXT</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>VCFRAMEWORK</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS-API" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK-EXT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="VCFRAMEWORK" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="VOICEVC" default-compartment="yes" local-archive-folder="VOICEVC" name="VOICEVC" sc-name="VOICEVC" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#VOICEVC" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>VCFRAMEWORK</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="VCFRAMEWORK" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="VTP_BUILDT" default-compartment="yes" local-archive-folder="VTP_BUILDT" name="VTP_BUILDT" sc-name="VTP_BUILDT" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#VTP_BUILDT" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="WD-RUNTIME" default-compartment="yes" local-archive-folder="WD-RUNTIME" name="WD-RUNTIME" sc-name="WD-RUNTIME" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#WD-RUNTIME" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="WDEXTENSIONS" default-compartment="yes" local-archive-folder="WDEXTENSIONS" name="WDEXTENSIONS" sc-name="WDEXTENSIONS" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#WDEXTENSIONS" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<dependencies>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>EP-BASIS-API</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>WD-RUNTIME</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS-API" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="WD-RUNTIME" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="yes" caption="WSRM" default-compartment="yes" local-archive-folder="WSRM" name="WSRM" sc-name="WSRM" sc-vendor="sap.com">
+			<properties>
+				<archive-store type="arcpool" url="file:arcpool#WSRM" xmlns="http://xml.sap.com/2006/11/DevelopmentConfiguration/ArchiveProvider"/>
+			</properties>
+			<build-variants>
+				<build-variant name="default"/>
+			</build-variants>
+		</sc-compartment>
+	</sc-compartments>
+</configuration>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;arg0&apos; in &apos;com.kk.dk.SFTPtest.onJob(...)&apos; to &apos;ctx&apos;&#x0D;&#x0A;- Original project: &apos;LocalDevelopment~ejbtest~demo.sap.com&apos;&#x0D;&#x0A;- Original element: &apos;com.kk.dk.SFTPtest.onJob(JobContext).arg0&apos;&#x0D;&#x0A;- Renamed element: &apos;arg0&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;arg0&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/ejbModule&lt;com.kk.dk{SFTPtest.java[SFTPtest~onJob~QJobContext;@arg0!946!960!957!960!QJobContext;" name="ctx" references="true" stamp="1509705681078" version="1.0"/>
+</session>

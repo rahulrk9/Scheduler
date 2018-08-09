@@ -1,0 +1,12 @@
+<technologies version="1">
+  <technology name="sap.com/tc/bi/bp/ejbmodule">
+    <uses>sap.com/tc/bi/javatech</uses>
+    <buildfile-creators>
+      <creator classname="com.sap.tc.buildplugin.BuildEJBModule"
+               step="build" sequence="build"/>
+    </buildfile-creators>
+    <legacy-definition>
+      <folder-attributes path="META-INF" attribute="meta-inf"/>
+    </legacy-definition>
+  </technology>
+</technologies>

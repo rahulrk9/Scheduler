@@ -1,0 +1,52 @@
+package com.kmd.sftp.mod;
+
+import javax.ejb.Stateless;
+
+import com.sap.aii.af.lib.mp.module.Module;
+import com.sap.aii.af.lib.mp.module.ModuleContext;
+import com.sap.aii.af.lib.mp.module.ModuleData;
+import com.sap.aii.af.lib.mp.module.ModuleException;
+import com.sap.engine.interfaces.messaging.api.Message;
+import com.sap.engine.interfaces.messaging.api.MessageKey;
+import com.sap.engine.interfaces.messaging.api.Payload;
+
+/**
+ * Session Bean implementation class SftpMod
+ */
+@Stateless
+public class SftpMod implements Module {
+
+    /**
+     * Default constructor. 
+     */
+    public SftpMod() {
+        // TODO Auto-generated constructor stub
+    }
+
+	@Override
+	public ModuleData process(ModuleContext mContext, ModuleData mData)
+			throws ModuleException {
+		// TODO Auto-generated method stub
+		Object obj = null;
+		Message msg = null;
+		MessageKey key = null;
+		Payload pload = null;
+		String pdesc = null;
+		String pcontenttype = null;
+		String fullpload = null;
+		
+		try{
+			obj = mData.getPrincipalData();
+			msg = (Message)obj;
+			key = new MessageKey(msg.getMessageId(),msg.getMessageDirection());
+			
+			pload = msg.getMainPayload();
+			
+			
+		}catch(Exception e){
+			
+		}
+		return mData;
+	}
+
+}

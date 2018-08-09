@@ -1,0 +1,624 @@
+<technologies version="1">
+  <technology name="sap.com/tc/bi/javatech">
+    <uses>sap.com/tc/bi/core</uses>
+    <build-steps>
+      <step name="jlin" sequence="build" execute-after="verify" type="default">
+      	<configuration classname="com.sap.tc.buildplugin.gen.JLinReport" build-file="jlinreport.xml" checkclassname="com.sap.tc.buildplugin.jlin.JLinChecker"/>
+      </step>
+    </build-steps>
+    <entity>
+      <descriptor type="Java Class" subtype="Class,Source">
+        <description>A single Java Class including nested and inner classes.
+          Non-public classes that share the source file with a public class must
+          be explicitly added as a separate entity.</description>
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHJavaClass"/>
+      </descriptor>
+      <descriptor type="Java Class" subtype="Class" extend="true">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHExtJDocJavaClass"/>
+      </descriptor>      
+      <descriptor type="Java Package" subtype="Class,Source">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHJavaPackage"/>
+      </descriptor>
+      <descriptor type="Java Package" subtype="Class" extend="true">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHExtJDocJavaPackage"/>
+      </descriptor>            
+      <descriptor type="Java Package Tree" subtype="Class,Source">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHJavaPackageTree"/>
+      </descriptor>
+      <descriptor type="Java Package Tree" subtype="Class" extend="true">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHExtJDocJavaPackageTree"/>
+      </descriptor>      
+      <descriptor type="Absolute Java Class" subtype="Class,Source">
+        <description>A single Java Class including nested and inner classes.
+          Non-public classes that share the source file with a public class must
+          be explicitly added as a separate entity.
+          The package attribute of the entity is interpreted as relative path
+          to the root folder of the DC.
+        </description>
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHAbsoluteJavaClass"/>
+      </descriptor>
+      <descriptor type="Absolute Java Package" subtype="Class,Source">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHAbsoluteJavaPackage"/>
+      </descriptor>
+      <descriptor type="Absolute Java Package Tree" subtype="Class,Source">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHAbsoluteJavaPackageTree"/>
+      </descriptor>
+      <descriptor type="Absolute File">
+        <description>
+          A single file relative to the root folder of the DC. The file must
+          be contained in a defined source or package folder.
+        </description>
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHAbsoluteFile">
+          <configuration destination="javalib"/>
+        </handler>
+      </descriptor>
+      <descriptor type="Absolute Folder">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHAbsoluteFolder">
+          <configuration destination="javalib"/>
+        </handler>
+      </descriptor>
+      <descriptor type="Absolute Folder Tree">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHAbsoluteFolderTree">
+          <configuration destination="javalib"/>
+        </handler>
+      </descriptor>
+      <descriptor type="File">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHFile">
+          <configuration destination="javalib"/>
+        </handler>
+      </descriptor>
+      <descriptor type="Folder">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHFolder">
+          <configuration destination="javalib"/>
+        </handler>
+      </descriptor>
+      <descriptor type="Folder Tree">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHFolderTree">
+          <configuration destination="javalib"/>
+        </handler>
+      </descriptor>
+      <descriptor type="Web Service Stand-alone Client Proxy" subtype="Class,Source">
+        <componenttype vendor="sap.com" type="Web Services"
+                       subtype="Standalone Proxy"/>
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHStandaloneClientProxy"/>
+      </descriptor>
+      <descriptor type="Web Service Deployable Client Proxy" subtype="Class,Source">
+        <componenttype vendor="sap.com" type="Web Services"
+                       subtype="Deployable Proxy"/>
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHDeployableClientProxy"/>
+      </descriptor>
+      <descriptor type="Web Service Definition" subtype="Class,Source">
+        <componenttype vendor="sap.com" type="Java"/>
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHWebServiceDefinition"/>
+      </descriptor>
+      <descriptor type="Archive" subtype="Java Library,Java Source Archive">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHArchive"/>
+      </descriptor>
+      <descriptor type="SERVER_COMPONENTS">
+        <any-subtype/>
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHNop"/>
+      </descriptor>
+      <descriptor type="EJB-JAR">
+        <public-part-purpose>assembly</public-part-purpose>
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHEjbJar"/>
+      </descriptor>
+      <descriptor type="EJB-Client-JAR">
+        <public-part-purpose>compilation</public-part-purpose>
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHEjbClientJar"/>
+      </descriptor>
+      <descriptor type="Application Client Jar">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHApplicationClient"/>
+      </descriptor>
+      <descriptor type="WAR">
+        <public-part-purpose>assembly</public-part-purpose>
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHWar"/>
+      </descriptor>
+      <descriptor type="MAR"/>
+      <descriptor type="ResourceAdapterArchive"/>
+    </entity>
+    <development-component>
+      <descriptor vendor="sap.com" type="Composite Application Services" subtype=""/>
+      <descriptor vendor="sap.com" type="Content">
+        <anysubtype/>
+        <attributes runtime="SAPJ2EE-Component[type[application]]" deploy-type="SDA[J2EE]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="External Library" subtype="">
+        <attributes runtime="generic-java"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Filesystem SDA" subtype="">
+        <attributes deploy-type="SDA[FS]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="J2EE" subtype="EJBModule">
+        <public-parts default="permit">
+          <public-part permission="enforce" purpose="assembly"/>
+        </public-parts>
+      </descriptor>
+      <descriptor vendor="sap.com" type="J2EE" subtype="WebModule">
+        <public-parts default="permit">
+          <public-part permission="enforce" purpose="assembly"/>
+        </public-parts>
+      </descriptor>
+      <descriptor vendor="sap.com" type="J2EE" subtype="Application Client">
+        <public-parts default="permit">
+          <public-part permission="enforce" purpose="assembly"/>
+        </public-parts>
+      </descriptor>
+      <descriptor vendor="sap.com" type="J2EE" subtype="Resource Adapter">
+        <attributes runtime="SAPJ2EE-Component[type[application]]" deploy-type="SDA[single-module]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="J2EE Server Component" subtype="Library">
+        <attributes runtime="SAPJ2EE-Component[type[library]]" deploy-type="SDA[library]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="J2EE Server Component" subtype="Primary Library">
+        <attributes runtime="SAPJ2EE-Component[type[library]]" deploy-type="SDA[primary-library]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="J2EE Server Component" subtype="Interface">
+        <attributes runtime="SAPJ2EE-Component[type[interface]]" deploy-type="SDA[primary-interface]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="J2EE Server Component" subtype="Service">
+        <attributes runtime="SAPJ2EE-Component[type[service]]" deploy-type="SDA[primary-service]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="J2EE Server Component" subtype="Template">
+        <attributes deploy-type="SDA[j2ee-template]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Java" subtype="">
+        <attributes runtime="generic-java"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Java" subtype="WebService">
+        <attributes runtime="SAPJ2EE-Component[type[application]]" deploy-type="SDA[J2EE]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Java" subtype="Application">
+        <attributes runtime="SAPJ2EE-Component[type[application]]" deploy-type="SDA[J2EE]"/>
+      </descriptor>
+      <!-- begin xApps special legacy types -->
+      <descriptor vendor="sap.com" type="Java" subtype="Service">
+        <deprecated>Use "J2EE Server Component"/"Service"</deprecated>
+        <attributes runtime="SAPJ2EE-Component[type[service]]" deploy-type="SDA[primary-service]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Java" subtype="Library">
+        <deprecated>Use "J2EE Server Component"/"Library"</deprecated>
+        <attributes runtime="SAPJ2EE-Component[type[library]]"  deploy-type="SDA[library]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Java" subtype="Primary Library">
+        <deprecated>Use "J2EE Server Component"/"Library"</deprecated>
+        <attributes runtime="SAPJ2EE-Component[type[library]]"  deploy-type="SDA[primary-library]"/>
+      </descriptor>
+      <!-- end xApps special legacy types -->
+      <descriptor vendor="sap.com" type="Metamodel Repository" subtype="MMR">
+		<attributes runtime="SAPJ2EE-Component[type[application]],J2EE-Application" deploy-type="SDA[J2EE]"/>
+      </descriptor>      
+      <descriptor vendor="sap.com" type="Java" subtype="Migration Archive Standalone">
+      </descriptor>
+      <descriptor vendor="sap.com" type="Web Services" subtype="Standalone Proxy">
+        <attributes runtime="SAPJ2EE-Component[type[application]]" deploy-type="SDA[J2EE]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Web Services" subtype="Deployable Proxy">
+        <attributes runtime="SAPJ2EE-Component[type[application]],J2EE-Application" deploy-type="SDA[J2EE]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Visual Composer Plugin" subtype="">
+        <attributes runtime="SAPJ2EE-Component[type[application]]" deploy-type="SDA[J2EE]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="J2EE" subtype="Enterprise Application">
+        <attributes runtime="SAPJ2EE-Component[type[application]],J2EE-Application" deploy-type="SDA[J2EE]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Composite Application" subtype="">
+        <attributes
+          runtime="SAPJ2EE-Component[type[application]],J2EE-Application"
+          deploy-archive-type="sap.com~j2ee.EAR_SDA"
+                deploy-type="SDA[J2EE]"
+          />
+      </descriptor>
+      <descriptor vendor="sap.com" type="Service Composition">
+        <attributes runtime="SAPJ2EE-Component[type[application]],J2EE-Application" deploy-type="SDA[J2EE]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Dictionary" subtype="">
+        <attributes deploy-type="SDA[JDDSCHEMA]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Dictionary" subtype="Core">
+        <attributes deploy-type="SDA[JDDSCHEMA/core]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Web Dynpro" subtype="">
+        <attributes
+          runtime="SAPJ2EE-Component[type[application]],J2EE-Application"
+                 deploy-type="SDA[J2EE]"
+          deploy-archive-type="sap.com~j2ee.EAR_SDA"
+          text-recipient="WD"
+          />
+      </descriptor>
+      <descriptor vendor="sap.com" type="Mobile Web Dynpro Offline" subtype="">
+      </descriptor>
+      <descriptor vendor="sap.com" type="Content" subtype="UME Permissions">
+        <attributes runtime="SAPJ2EE-Component[type[application]],J2EE-Application" deploy-type="SDA[J2EE]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Content" subtype="DB Content">
+        <attributes deploy-type="SDA[DBSC,DBSC/core]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="DB Content" subtype="">
+        <attributes deploy-type="SDA[DBSC,DBSC/core]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Content" subtype="Guided Procedures">
+        <attributes runtime="SAPJ2EE-Component[type[application]],J2EE-Application" deploy-type="SDA[J2EE]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Content" subtype="Guided Procedures 2.0">
+        <attributes runtime="SAPJ2EE-Component[type[application]],J2EE-Application" deploy-type="SDA[J2EE]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Enterprise Portal" subtype="Portal Application Standalone">
+        <attributes runtime="SAPJ2EE-Component[type[application]],J2EE-Application" deploy-type="SDA[J2EE]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Visual Composer Model" subtype="">
+        <attributes runtime="SAPJ2EE-Component[type[application]],J2EE-Application" deploy-type="SDA[J2EE]" text-recipient="WD"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="VisualComposerModel" subtype="">
+        <attributes runtime="SAPJ2EE-Component[type[application]],J2EE-Application" deploy-type="SDA[J2EE]" text-recipient="WD"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Visual Composer Composition Unit Implementation" subtype="">
+        <attributes runtime="SAPJ2EE-Component[type[application]],J2EE-Application"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Visual Composer Composition Unit Interface" subtype="">
+        <attributes runtime="SAPJ2EE-Component[type[application]],J2EE-Application"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="MassConfiguration" subtype="">
+        <attributes runtime="SAPJ2EE-Component[type[application]],J2EE-Application" deploy-type="SDA[J2EE]"/>
+      </descriptor>	
+      <descriptor vendor="sap.com" type="Text">
+        <attributes runtime="SAPJ2EE-Component" deploy-type="SDA[CONTENT/text]"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Build Plugin">
+        <attributes runtime="DC-Build-Environment"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Build Infrastructure">
+        <attributes runtime="DC-Build-Environment"/>
+      </descriptor>
+      <descriptor vendor="sap.com" type="Build Infrastructure Extension">
+        <attributes runtime="DC-Build-Environment"/>
+      </descriptor>
+    </development-component>
+    <datacontextprovider>
+      <provider classname="com.sap.tc.buildplugin.JavaMacroContextProvider"/>
+    </datacontextprovider>
+    <graphs>
+      <directed-graph key="runtime-compatibility">
+        <edge source="DC-Build-Environment" destination="DC-Build-Environment"/>
+        <edge source="J2EE-Application" destination="J2EE-Application"/>
+        <edge source="generic-java" destination="generic-java"/>
+        <subgraph prefix="SAPJ2EE-Component[type[" suffix="]]">
+          <edge source="application" destinations="application,library,service,interface" default-attributes="strength[hard]"/>
+          <edge source="library" destinations="library,service,interface" default-attributes="strength[weak]"/>
+          <edge source="service" destinations="library,service,interface" default-attributes="strength[weak]"/>
+          <edge source="interface" destination="interface" default-attributes="strength[weak]"/>
+        </subgraph>
+      </directed-graph>
+      <directed-graph key="runtime-deploy-time-mapping">
+        <edge source="SAPJ2EE-Component[type[application]]" destination="SDA[J2EE]"/>
+        <edge source="J2EE-Application" destination="SDA[J2EE]"/>
+        <edge source="SAPJ2EE-Component[type[library]]" destination="SDA[library,primary-library]"/>
+        <edge source="SAPJ2EE-Component[type[service]]" destination="SDA[primary-service]"/>
+        <edge source="SAPJ2EE-Component[type[interface]]" destination="SDA[primary-interface]"/>
+      </directed-graph>
+      <directed-graph key="deploy-time-compatibility">
+        <subgraph prefix="SDA[" suffix="]">
+          <edge source="j2ee-template" destination="JDDSCHEMA/core"/>
+          <edge source="primary-interface" destinations="primary-interface,primary-library"/>
+          <edge source="primary-library" destinations="primary-interface,primary-library,DBSC/core,JDDSCHEMA/core"/>
+          <edge source="primary-library" destination="primary-service" attributes="WARN"/>
+          <edge source="primary-service" destinations="primary-interface,primary-library,primary-service,DBSC/core,JDDSCHEMA/core"/>
+          <edge source="DBSC/core" destination="JDDSCHEMA/core"/>
+          <edge source="JDDSCHEMA/core" destination="JDDSCHEMA/core"/>
+          <edge source="engine-kernel" destination="FS" attributes="WARN"/>
+          <edge source="engine-kernel" destinations="DBSC/core,JDDSCHEMA/core,engine-kernel"/>
+          <edge source="Bootstrap" destinations="FS,DBSC/core,JDDSCHEMA/core" attributes="WARN"/>
+          <edge source="library" destinations="primary-interface,primary-library,library,JAVA-LIB,DBSC,JDDSCHEMA"/>
+          <edge source="library" destinations="primary-service,DBSC/core,JDDSCHEMA/core" attributes="WARN"/>
+          <edge source="JAVA-LIB" destinations="primary-interface,primary-library,library,JAVA-LIB,DBSC,JDDSCHEMA"/>
+          <edge source="single-module" destinations="primary-interface,primary-library,primary-service,library,JAVA-LIB,single-module,J2EE,DBSC,JDDSCHEMA"/>
+          <edge source="J2EE" destinations="primary-interface,primary-library,primary-service,library,JAVA-LIB,single-module,J2EE,DBSC,JDDSCHEMA"/>
+          <edge source="J2EE" destinations="DBSC/core,JDDSCHEMA/core" attributes="WARN"/>
+          <edge source="DBSC" destination="JDDSCHEMA"/>
+          <edge source="JDDSCHEMA" destination="JDDSCHEMA"/>
+        </subgraph>
+      </directed-graph>
+    </graphs>
+    <generators>
+      <generator type="sap.com~javadoc"
+        implementation-type="macro"
+        implementation-name="JavaDocGenerator">
+        <input-types>
+          <type pattern="**/*.java,**/package.html,**/doc-files/**"/>
+        </input-types>
+      </generator>
+      <generator type="sap.com~xlf2prop~standalone"
+        implementation-type="java"
+        implementation-name="com.sap.tc.buildplugin.gen.XlfPropsConverter">
+        <execute-after>sap.com~jdo</execute-after>
+        <input-types>
+          <type pattern="**/*.xlf"/>
+        </input-types>
+        <output-types>
+          <type pattern="**/*.properties"/>
+        </output-types>
+        <description>
+          converts S2X/xliff files to standard Java property files.
+        </description>
+        <inputs>
+          <input name="default" required="true" default-value="$dc_packageDirsAsFiles"/>
+        </inputs>
+        <outputs>
+          <output name="default" required="true"/>
+        </outputs>
+      </generator>
+      <generator type="sap.com~javac"
+        implementation-type="java"
+        implementation-name="com.sap.tc.buildplugin.gen.JavacGenerator">
+        <input-types>
+          <type pattern="**/*.java" attributes="debug"/>
+        </input-types>
+        <output-types>
+          <type pattern="**/*.class"/>
+        </output-types>
+        <inputs>
+          <input name="default" required="true" default-value="$dc_packageDirsAsFiles">
+            <description>Source paths containing Java classes.</description>
+          </input>
+        </inputs>
+        <outputs>
+          <output name="default" required="true" default-value="$dc_gen_javac_default_out">
+            <description>The output path where generated class files will be put</description>
+          </output>
+        </outputs>
+        <usedpaths>
+          <path name="default" default-value="$dc_depend_compileArchives">
+            <description>class path to use for compilation.</description>
+          </path>
+        </usedpaths>
+        <parameters>
+          <parameter name="encoding" default-value="UTF-8">
+            <description>Character encoding of source files</description>
+          </parameter>
+          <parameter name="fork" default-value="$dc_javac_fork_compile">
+            <description>Boolean flag if Javac should fork. Requires executable
+              parameter.</description>
+          </parameter>
+          <parameter name="executable" default-value="$compiler_executable_path">
+            <description>Path to Java compiler executable that will be used if
+              fork is true.</description>
+          </parameter>
+          <parameter name="bootclasspath" default-value="$dc_javac_bootclasspath"/>
+          <parameter name="deprecation">
+            <description>Flag if the compiler should generate deprecation
+              warnings.</description>
+          </parameter>
+          <parameter name="optimize">
+            <description>Flag if the compiler should optimize</description>
+          </parameter>
+        </parameters>
+      </generator>
+      <extension type="sap.com~jlin" extends="sap.com~javac"
+        implementation-type="java"
+        implementation-after="com.sap.tc.buildplugin.gen.JLin"
+        description=" static code checks">
+        <input-types>
+          <type pattern="**/*.java"/>
+        </input-types>
+      </extension>
+      <extension type="sap.com~sqlj" extends="sap.com~javac">
+        <implementation-type>java</implementation-type>
+        <implementation-before>com.sap.tc.buildplugin.gen.SQLJPreprocessor</implementation-before>
+        <implementation-after>com.sap.tc.buildplugin.gen.SQLJPostprocessor</implementation-after>
+        <execute-after>sap.com~jlin</execute-after>
+        <input-types>
+          <type pattern="**/*.sqlj" attributes="debug"/>
+        </input-types>
+        <!--
+          do not define *.java as output type as it is only generated by the
+          preprocessing step and serves as input for the extended javac.
+        <output-types>
+          <pattern>**/*.java</pattern>
+        </output-types>
+        -->
+        <description>
+          SQLJ extension generates java source files from *.sqlj files.
+          This extension will add a sourcepath to the list of sourcepaths
+          for the java compiler that contains the generated java files.
+        </description>
+        <parameters>
+          <parameter name="sqlj_gen_tempdir"/>
+        </parameters>
+      </extension>
+      <extension type="sap.com~jdo" extends="sap.com~javac">
+        <implementation-type>java</implementation-type>
+        <implementation-after>com.sap.tc.buildplugin.gen.JDOPostprocessor</implementation-after>
+        <execute-after>sap.com~sqlj</execute-after>
+        <input-types>
+          <type pattern="**/*.jdo" attributes="runtime"/>
+          <type pattern="**/*.map" attributes="runtime"/>
+        </input-types>
+        <description>
+        </description>
+      </extension>
+      <extension type="sap.com~xlf2prop" extends="sap.com~javac">
+        <implementation-type>java</implementation-type>
+        <implementation-after>com.sap.tc.buildplugin.gen.XlfPropsConverter</implementation-after>
+        <execute-after>sap.com~jdo</execute-after>
+        <input-types>
+          <type pattern="**/*.xlf"/>
+        </input-types>
+        <output-types>
+          <type pattern="**/*.properties"/>
+        </output-types>
+        <description>
+          converts S2X/xliff files to standard Java property files.
+        </description>
+      </extension>
+      <extension type="sap.com~jdoc" extends="sap.com~javac">
+        <implementation-type>java</implementation-type>
+        <implementation-after>com.sap.tc.buildplugin.gen.JDocletPostProcessor</implementation-after>
+        <execute-after>sap.com~xlf2prop</execute-after>
+        <input-types>
+          <type pattern="**/*.java,**/package.html,**/doc-files/**"/>
+        </input-types>
+        <output-types>
+          <type pattern="**/*.jdoc,**/*.html"/>
+        </output-types>
+        <description>
+          serializes doclet output to xml exchange format for javadoc generation.
+        </description>
+      </extension>       
+    </generators>
+    <definition>
+      <folder-attributes path="WEB-INF" attribute="web-inf"/>
+      <folder-attributes path="META-INF" attribute="meta-inf"/>
+    </definition>
+    <descriptor-types>
+      <descriptor-type type="web.xml"
+        source-location="WEB-INF/web.xml"
+        validator-class="com.sap.tc.buildplugin.deploy.val.DescriptorExistsValidator"/>
+      <descriptor-type type="web-j2ee-engine.xml"
+        source-location="WEB-INF/web-j2ee-engine.xml"
+        validator-class="com.sap.tc.buildplugin.deploy.val.NoValidator"/>
+      <descriptor-type type="application.xml"
+        source-location="META-INF/application.xml"
+        validator-class="com.sap.tc.buildplugin.deploy.val.ApplicationXmlValidator"/>
+      <descriptor-type type="application-j2ee-engine.xml"
+        source-location="META-INF/application-j2ee-engine.xml"
+        validator-class="com.sap.tc.buildplugin.deploy.val.ApplicationJ2EEEngineXmlValidator"/>
+      <descriptor-type type="provider.xml"
+        source-location="server/provider.xml"
+        validator-class="com.sap.tc.buildplugin.deploy.val.ProviderXmlValidator"/>
+    </descriptor-types>
+    <archive-types>
+      <archive-type type="sap.com.TEXT_SDA"
+                    classname="com.sap.tc.buildplugin.deploy.TextSDAArchivePacker"
+                    extends="sap.com~SDA"
+                    default-file-suffix="sda">
+        <module-type type="SAP-Text-Module"/>
+      </archive-type>
+      <archive-type type="sap.com~j2ee.EAR" default-file-suffix="ear">
+        <required-descriptor type="application.xml"/>
+        <module-type type="J2EE-Module"/>
+        <module-type type="jar"/>
+      </archive-type>
+      <archive-type type="sap.com~j2ee.EAR_SDA"
+                    extends="sap.com~SDA,sap.com~j2ee.EAR" default-file-suffix="ear">
+        <required-descriptor type="application-j2ee-engine.xml"/>
+        <module-type type="SAP-J2EE-Module"/>
+      </archive-type>
+      <archive-type type="sap.com~j2ee.J2EE_LIBRARY_SDA"
+                    extends="sap.com~SDA">
+        <module-type type="jar"/>
+      </archive-type>
+    </archive-types>
+    <buildfile-creators>
+      <library
+        implementation-name="com.sap.tc.buildplugin.JavaBase"
+        interface-name="com.sap.tc.buildplugin.IJavaBase"
+        context-name="javaBase"/>
+    </buildfile-creators>
+    <build-options>
+      <option name="javac_source14">
+        <obsolete replacement="com.sap.jdk.javac.source"/>
+      </option>
+      <option name="ant_fork_compile">
+        <deprecated replacement="com.sap.jdk.javac.force_fork"/>
+      </option>
+      <option name="ant_jdk_version">
+        <deprecated replacement="com.sap.jdk.home_path_key"/>
+      </option>
+      <option name="ant_javac_deprecation">
+        <deprecated replacement="com.sap.jdk.javac.deprecation"/>
+      </option>
+      <option name="ant_javac_opt">
+        <deprecated replacement="com.sap.jdk.javac.optimize"/>
+      </option>
+      <option name="com.sap.jdk.javac.source" value="1.3,1.4,1.5,5,1.6,6"/>
+      <option name="com.sap.jdk.javac.target" value="1.3,1.4,1.5,5,1.6,6"/>
+      <option name="com.sap.jdk.javac.verbose"/>
+      <option name="com.sap.jdk.javac.compiler"/>
+      <option name="com.sap.jdk.javac.force_fork" value="true,false"/>
+      <option name="com.sap.jdk.home_path_key"/>
+      <option name="com.sap.jdk.javac.deprecation" value="true,false"/>
+      <option name="com.sap.jdk.javac.optimize" value="true,false"/>
+      <option name="com.sap.jdk.javac.debug" value="true,false"/>
+      <option name="com.sap.jdk.javac.debuglevel"/>
+      <option name="com.sap.jdk.javac.Xlint"/>
+      <option name="com.sap.jdk.javac.allow-class-files-in-source-folder"/>
+      <option name="com.sap.jdk.javac.maxmemory"/>
+      <option name="com.sap.j2ee-engine.runtime-editor">
+        <description>classname for provider.xml</description>
+      </option>
+      <option name="com.sap.j2ee-engine.application-frame">
+        <description>classname for provider.xml</description>
+      </option>
+      <option name="com.sap.j2ee-engine.library-type"
+        value="library,primary-library"/>
+      <option name="com.sap.j2ee-engine.service-location"
+        value="server,dispatcher"/>
+      <option name="com.sap.xlf.master-language"/>
+      <option name="com.sap.xlf.trim-property-keys"/>
+      <option name="com.sap.xlf.merge-keys"/>
+      <option name="jlin_run" value="true,false"/>
+      <option name="jlin_testconfig_key"/>
+      <option name="jlin_testconfig_global_file"/>
+      <option name="jlin_testconfig_file"/>
+      <option name="jlin.inventory.generation"/>
+      <option name="com.sap.jlinee.disable-module-checks"/>
+      <option name="com.sap.javadoc.enable" value="true,false"/>
+      <option name="com.sap.javadoc.formats"/>
+      <option name="com.sap.javadoc.verbose" value="true,false"/>
+      <option name="com.sap.javadoc.encoding"/>
+      <option name="com.sap.javadoc.locale"/>
+      <option name="com.sap.javadoc.access" value="public,protected,package,private"/>
+      <option name="com.sap.javadoc.source" value="1.3,1.4,1.5,5,1.6,6"/>      
+      <option name="com.sap.javadoc.maxmemory"/>
+    </build-options>
+    <ant-tasks>
+      <task name="xlf2prop" classname="com.sap.tc.buildplugin.util.XlfConverter" on-demand="true"/>
+      <task name="jlinppcheck" classname="com.sap.tc.buildplugin.pp.ant.JLinEECheckTask" on-demand="true"/>
+      <task name="earval" classname="com.sap.engine.jlinee.lib.ant.JLinEETask" on-demand="true"/>
+      <task name="sqlj" classname="com.sap.sql.sqlj.anttask.Sqlj" on-demand="true"/>
+      <task name="sqlj.cm" classname="com.sap.sql.sqlj.anttask.ClassMapper" on-demand="true"/>
+      <task name="jdo.enhance" classname="com.sap.jdo.anttasks.JDOEnhance" on-demand="true"/>
+      <task name="jlin" classname="com.sap.tc.jtools.jlint.cbs.ant.JLinCBSTask" on-demand="true"/>
+      <task name="jlin_c" classname="com.sap.tc.jtools.jlint.cbs.ant.taskdefs.CollectResultsTask" on-demand="true"/>
+      <task name="jlin_w" classname="com.sap.tc.jtools.jlint.cbs.ant.taskdefs.CollectWarningsTask" on-demand="true"/>
+      <task name="jlin_r" classname="com.sap.tc.jtools.jlint.cbs.ant.taskdefs.ReportResultsTask" on-demand="true"/>
+      <task name="jlinee" classname="com.sap.engine.jlinee.lib.ant.JLinEETask" on-demand="true"/>
+      <task name="jdoc" classname="com.sap.tc.jdoc.ant.JDocTask" on-demand="true"/>
+      <task name="cm2jdoc" classname="com.sap.tc.buildplugin.pp.ant.CMtoDOMTask" on-demand="true"/>
+    </ant-tasks>
+    <packer>
+      <configuration location="javalib">
+        <property key="type" value="jar"/>
+        <property key="path" value="lib/java/${dc_deployFile}${pp_name_suffix}.jar"/>
+        <property key="manifest" value="${bi_manifest_Name}"/>
+        <property key="attributes" value="java-library"/>
+      </configuration>
+      <configuration location="srcarchive">
+        <property key="type" value="zip"/>
+        <property key="path" value="src/java/src.zip"/>
+        <property key="calculate-digest" value="true"/>
+      </configuration>
+      <configuration location="java-i18n">
+        <property key="type" value="zip"/>
+        <property key="path" value="i18n/java/${dc_deployFile}${pp_name_suffix}.zip"/>
+        <property key="attributes" value="SAP-Text-Module"/>
+      </configuration>
+      <configuration location="filesystem">
+        <property key="type" value="filesystem"/>
+      </configuration>
+      <configuration location="jdoclet">
+        <property key="type" value="zip"/>
+        <property key="path" value="doc/java/${dc_deployFile}${pp_name_suffix}.jdar"/>
+        <property key="attributes" value="solid,java-documentation-archive"/>
+      </configuration> 
+      <configuration location="javadoc">
+        <property key="type" value="zip"/>
+        <property key="path" value="doc/java/javadoc.zip"/>
+        <property key="attributes" value="solid,javadoc-html-archive"/>
+      </configuration>
+      <postprocessor location="javalib" classname="com.sap.tc.buildplugin.javatech.JarPackerSignPostprocessor"/>
+    </packer>
+    <ant-properties>
+        <property name="jlin.inventory.generation" type="option"/>
+    </ant-properties>
+  </technology>
+</technologies>

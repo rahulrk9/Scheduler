@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<technologies version="1">
+  <technology name="sap.com/tc/bi/bp/scdef">
+	<uses>sap.com/tc/bi/core</uses>
+	<development-component>                                             
+  		<descriptor vendor="sap.com" type="Software Component Description"/>
+	</development-component>                                            
+
+	<buildfile-creators>
+     	<creator
+       		classname="com.sap.tc.buildplugin.scdef.ScdefBuildFileCreator"
+      	  	step="build"
+         	sequence="build"/>
+	 </buildfile-creators>
+	
+	<ant-tasks>
+		<task name="ScdefGeneratorTask"
+			classname="com.sap.tc.buildplugin.scdef.ScdefGeneratorTask">
+			<description>SC Definition Generation Task</description>
+		</task>
+	</ant-tasks>
+
+        <entity>
+          <descriptor type="Folder">
+            <handler classname="com.sap.tc.buildplugin.pp.entity.EHFolder">
+              <configuration destination="filesystem"/>
+            </handler>
+          </descriptor>
+        </entity>
+	
+	<generators>
+			<generator type="sap.com~sl.scdef.task.generator">
+				<implementation-type>java</implementation-type>
+				<implementation-name>com.sap.tc.buildplugin.scdef.ScdefTaskGenerator</implementation-name>
+
+			    <inputs>
+				  <input name="source" required="true" default-value="$dc_sourceDirsAsFiles" />
+				  <input name="compile_pp" required="true" default-value="$dc_depend_compilePPs" />
+				</inputs>
+				
+				<parameters>
+      				<parameter name="outputFolderName" required="true" />
+    			</parameters>
+    			
+				<outputs>
+					<output name="default" required="true">
+						<description> 
+							The output path where generated model partitions will be put
+						</description>
+					</output>
+					<output name="packdir" required="true">
+						<description> 
+							The output path where CIM-XML files will be put
+						</description>
+					</output>
+					<output name="tempdir" required="true">
+						<description> 
+							The output path where the deployment descriptor will be created
+						</description>
+					</output>
+				</outputs>
+			</generator>
+
+			<chain type="sap.com~sl.scdef_chain" implementation-type="java">
+				<generators>
+<!--
+					<generator id="moininit" type="sap.com~moininit" />
+-->
+					<generator id="scdef" type="sap.com~sl.scdef.task.generator" />
+<!--
+					<generator id="shutdown" type="sap.com~moinshutdown" />
+					<sequence>moininit,scdef,shutdown</sequence>
+-->
+				</generators>
+				<outputs>
+					<output name="default" required="true">
+						<default-value>moin_temp_out/testoutput</default-value>
+					</output>
+					<output name="packdir" required="true"/>
+					<output name="tempdir" required="true"/>
+        		</outputs>
+				<parameters>
+      				<parameter name="outputFolderName" default-value="testoutput" />
+    			</parameters>
+				<links>
+<!--
+					<link>
+						<source	                   type="parameter" name="outputFolderName" />
+						<destination id="moininit" type="parameter" name="outputFolderName" />
+					</link>
+-->
+					<link>
+						<source	                   type="parameter" name="outputFolderName" />
+						<destination id="scdef" type="parameter" name="outputFolderName" />
+					</link>
+					<link>
+						<source	                type="output" name="packdir" />
+						<destination id="scdef" type="output" name="packdir" />
+					</link>
+					<link>
+						<source	                type="output" name="tempdir" />
+						<destination id="scdef" type="output" name="tempdir" />
+					</link>
+  			       	<link>
+            			<source  		           type="output" name="default"/>
+            			<destination id="scdef" type="output" name="default"/>
+          			</link>
+  				</links>				
+			</chain>
+		</generators>
+    
+
+  </technology>
+</technologies>

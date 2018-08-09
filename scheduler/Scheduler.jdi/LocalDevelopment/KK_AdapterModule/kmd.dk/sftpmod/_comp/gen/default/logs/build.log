@@ -1,0 +1,139 @@
+Development Component Build (2018-05-11 12:26:49 GMT+01:00 (CEST))
+  Component name: sftpmod
+  Component vendor: kmd.dk
+  SC compartment: KK_AdapterModule
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: Z8QRR@H46328
+  DC root folder: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_AdapterModule\kmd.dk\sftpmod\_comp\
+  DC type: J2EE
+  DC subtype: EJBModule
+  Host: H46328
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/ejbmodule"
+   validating dependency to  public part "api" of DC "kmd.dk/sftplib"
+   validating dependency to  public part "archives" of DC "kmd.dk/sftplib"
+   validating dependency to  public part "api" of DC "sap.com/com.sap.aii.af.ifc.facade"
+   validating dependency to  public part "api" of DC "sap.com/com.sap.aii.af.lib.facade"
+   validating dependency to  public part "api" of DC "sap.com/engine.jee5.facade"
+   validating dependency to  public part "api" of DC "sap.com/tc/bl/logging/api"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/ejbmodule
+   starting build plugin from : C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\ejbmodule\_comp\gen\default\public\ejb\
+
+
+
+Build Plugin 'EJBModulePlugin', Version 7.30 SP 16 (NW731CORE_16_REL, built on 2015-03-31 18:47:10 +0200, CL206623)
+   development component:  sftpmod (kmd.dk)
+      software component:  KK_AdapterModule (kmd.dk)
+                location:  localDevelopment
+                    type:  J2EE, subtype EJBModule
+           build variant:  default
+         source location:  Z8QRR@H46328
+         output location:  C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\942FB9E6BAF879A9F1E9839E2F2EA259\default
+       generation folder:  C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t\942FB9E6BAF879A9F1E9839E2F2EA259
+       plugin start time:  2018-05-11 12:26:49 GMT+02:00 (CEST)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.45-b01 (1.6, Sun Microsystems Inc.)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Package folder ".apt_generated" exists but is empty and will be ignored.
+Checking path lengths for sources
+Path length checks finished in 0.004 seconds
+ 
+Preparing data context..
+Using custom manifest file "ejbModule/META-INF/MANIFEST.MF"
+Data context preparation finished in 0.032 seconds
+ 
+Creating Ant build file..
+  Creating output file: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\942FB9E6BAF879A9F1E9839E2F2EA259\default\logs\build.xml
+  Using Java class:     com.sap.tc.buildplugin.BuildEJBModule
+Build file creation finished in 0.056 seconds
+ 
+Starting Ant..
+  Using build file:     C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\942FB9E6BAF879A9F1E9839E2F2EA259\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+compile:
+      [echo] Starting Java compiler using the current JVM
+      [echo] Settings:
+      [echo]         debug: on
+      [echo]      optimize: off
+      [echo]   deprecation: default
+      [echo]       verbose: default
+      [echo]      encoding: UTF-8
+      [echo]        source: default
+      [echo]        target: default
+      [echo]   source path: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_AdapterModule\kmd.dk\sftpmod\_comp\ejbModule
+      [echo]    class path:
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftplib\_comp\gen\default\public\api\lib\java\bcprov-jdk16-1.45.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftplib\_comp\gen\default\public\api\lib\java\com.sap.aii.af.lib.mod.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftplib\_comp\gen\default\public\api\lib\java\com.sap.aii.af.ms.ifc_api.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftplib\_comp\gen\default\public\api\lib\java\com.sap.aii.af.svc_api.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftplib\_comp\gen\default\public\api\lib\java\com.sap.security.api.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftplib\_comp\gen\default\public\api\lib\java\com.sap.security_2.0.0.150324064358.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftplib\_comp\gen\default\public\api\lib\java\com.sap.tc.security.https_2.0.0.150324064358.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftplib\_comp\gen\default\public\api\lib\java\jsch-0.1.54.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftplib\_comp\gen\default\public\api\lib\java\sap.com_tc_logging_java_impl.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_SFTPMONITOR\kmd.dk\sftplib\_comp\gen\default\public\api\lib\java\sap.com~tc~je~keystore_api~API.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.lib.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.lib.facade.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.lib.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.lib.filter.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.lib.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.sec.lib.filter.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\logging\api\_comp\gen\default\public\api\lib\java\tc~bl~logging~api~defaultttt.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\ec~java~jsf~api.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\engine.jee5.facade.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\orpersistence_client_lib_filtered.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.ifc.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.ifc.facade.jar
+      [echo]       C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\SAP_XIAF\sap.com\com.sap.aii.af.ifc.facade\_comp\gen\default\public\api\lib\java\com.sap.aii.af.ifc.filter.jar
+      [echo]    output dir: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t\942FB9E6BAF879A9F1E9839E2F2EA259\classes
+     [javac] Compiling 3 source files to C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t\942FB9E6BAF879A9F1E9839E2F2EA259\classes
+     [timer] Java compilation finished in 0.211 seconds
+ 
+      [echo] Start XLF conversion
+  [xlf2prop] Found 0 XLF files to convert in folder "ejbModule"
+     [timer] XLF conversion finished in 0.001 seconds
+ 
+ 
+createPublicParts:
+  [pppacker] Packing public part 'client'
+  [pppacker] Packed   2 files for entity SftpMod (Java Class/Class, com/kmd/sftp/mod/)
+  [pppacker] Packed 1 entity for public part 'client'
+     [timer] Packing of public part 'client' finished in 0.102 seconds
+ 
+  [pppacker] Packing public part 'ejbjar'
+  [pppacker] Packed   8 files for entity kmd.dk~sftpmod (EJB-JAR)
+  [pppacker] Packed 1 entity for public part 'ejbjar'
+     [timer] Packing of public part 'ejbjar' finished in 0.112 seconds
+ 
+ 
+build:
+ 
+Ant runtime 0.468 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2018-05-11 12:26:50 GMT+02:00 (CEST)
+Total build plugin runtime: 0.914 seconds
+ 
+Build finished with WARNING
+
+==== Post-Processing ====   started at 2018-05-11 12:26:50.807 CEST
+Comparison of previous and actual build results took: 0.053 seconds
+
+Copy the build results 
+  from: C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\t2\942FB9E6BAF879A9F1E9839E2F2EA259\default\
+  to:   C:\Work Related\Workspaces\Scheduler.jdi\LocalDevelopment\KK_AdapterModule\kmd.dk\sftpmod\_comp\gen\default\
+
+The build results of the following public parts were not copied, since they have not changed:
+  ejbjar
+  client

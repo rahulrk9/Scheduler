@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.wst.server.ui.launchConfigurationType">
+<stringAttribute key="client-id" value="sapLaunchableClient"/>
+<stringAttribute key="launchable-adapter-id" value="com.sap.ide.wtpserver.sapServerLaunchableAdapterDelegate"/>
+<stringAttribute key="module-artifact" value="org.eclipse.jst.jee.server:LocalDevelopment~sftpmodear~kmd.dk"/>
+<stringAttribute key="module-artifact-class" value="org.eclipse.wst.server.core.util.NullModuleArtifact"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/LocalDevelopment~sftpmodear~kmd.dk"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="server-id" value="sapserver_KDI"/>
+</launchConfiguration>

@@ -1,0 +1,29 @@
+#macro (BytecodeModificationAss)
+<project name="Postbuild" default="build" basedir=".">
+
+<property name="modifier_conf" value="${dc_rootDir}/cfg/bytecode-modifier.properties"/>
+
+<target name="build">
+<taskdef name="modify" classname="com.sap.engine.library.bytecode.modifier.ModifierTask"/>
+	#if ($dc_depend_assJars.size()>0)
+		<unzip src="${dc_deployDir}/${dc_deployFile}.sda" dest="${dc_gen_tempDir}"/>
+
+		#foreach($jar in $dc_depend_assJars)
+			#if (! $var)
+				#set ($var = "${dc_gen_tempDir}/${jar}")
+			#else
+				#set ($var ="${var};${dc_gen_tempDir}/${jar}")
+			#end
+		#end
+			<modify inputFile="${var}" outputFile="${var}" conf="${modifier_conf}" verbosity="2" check="true" failonerror="true" />
+
+
+		<jar jarfile="${dc_deployDir}/${dc_deployFile}.sda" update="true">
+			<fileset dir="${dc_gen_tempDir}">
+				<include name="*.jar"/>
+			</fileset>
+		</jar>
+	#end
+</target>
+</project>
+#end
